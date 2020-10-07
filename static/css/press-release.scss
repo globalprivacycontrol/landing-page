@@ -1,0 +1,123 @@
+@import "util";
+@import "shared";
+
+/*=======================================================================================*/
+/* NAVIGATION BAR */
+header {
+  background-color: #0a3e2d;
+}
+
+nav {
+  &.navbar {
+    padding-top: calculateRem(40px);
+    padding-bottom: calculateRem(40px);
+  }
+}
+
+main {
+  background-color: #e5e5e5;
+}
+
+.press-release {
+  color: #49504e;
+  padding: calculateRem(70px) 0;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    @include fontSize(44px);
+    font-weight: 900;
+    line-height: calculateRem(58px);
+    letter-spacing: -0.01em;
+  }
+
+  &__heading {
+    font-weight: bold;
+    @include fontSize(20px);
+    line-height: calculateRem(23px);
+    text-align: center;
+  }
+
+  p {
+    @include fontSize(18px);
+    line-height: calculateRem(28px);
+
+    a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+  .quote {
+    &__img {
+      display: block;
+      height: 50px;
+      box-sizing: content-box;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  .blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+
+    @supports (hanging-punctuation: first) {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+
+    p {
+      @include fontSize(18px);
+      color: #6a737d;
+      text-indent: -0.45em;
+      quotes: "“" "”" "‘" "’";
+      line-height: calculateRem(28px);
+      margin-bottom: calculateRem(18px);
+
+      &::before {
+        content: open-quote;
+      }
+
+      &::after {
+        content: close-quote;
+      }
+    }
+
+    footer {
+      @include fontSize(14px);
+
+      a {
+        font-weight: bold;
+        line-height: calculateRem(28px);
+        text-decoration-line: underline;
+        color: #058a5e;
+      }
+    }
+  }
+}
+
+.author-info {
+  padding: 0 calculateRem(150px);
+  background-image: url("../img/contact-bg.svg");
+  background-size: cover;
+  padding: calculateRem(53px) 0 calculateRem(56px);
+
+  .author__photo {
+    height: calculateRem(100px);
+    width: calculateRem(100px);
+  }
+
+  .author__name {
+    font-weight: bold;
+    @include fontSize(22px);
+    line-height: calculateRem(28px);
+  }
+
+  .author__bio {
+    @include fontSize(18px);
+    line-height: calculateRem(28px);
+  }
+}

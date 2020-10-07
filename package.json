@@ -1,0 +1,49 @@
+{
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "alpinejs": "^2.7.0",
+    "autoprefixer": "^9.8.6",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.5.0",
+    "popper.js": "^1.16.1",
+    "sass": "^1.26.11"
+  },
+  "name": "landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html press-release/*.html",
+    "build": "parcel build index.html press-release/*.html"
+  },
+  "staticFiles": {
+    "staticPath": [
+      "/static/img/favicon/favicon.ico"
+    ]
+  },
+  "targets": {
+    "main": {
+      "engines": {
+        "browsers": [
+          ">= 1%",
+          "last 1 major version",
+          "not dead",
+          "Chrome >= 60",
+          "Firefox >= 60",
+          "Edge >= 15.15063",
+          "Explorer 11",
+          "iOS >= 10",
+          "Safari >= 10",
+          "Android >= 6",
+          "not ExplorerMobile <= 11"
+        ]
+      }
+    }
+  },
+  "repository": "git@github.com:globalprivacycontrol/landing-page.git",
+  "license": "CC BY 4.0",
+  "dependencies": {
+    "static": "^2.0.0"
+  }
+}
