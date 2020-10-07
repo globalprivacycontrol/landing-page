@@ -8,12 +8,12 @@ if (navigator.globalPrivacyControl) {
   statusClass = "status-dot--green";
   statusColor = "#058A5E";
   statusText =
-    "Good news, you're already sending the <a href='https://global-privacy-control.glitch.me/'>GPC signal</a>";
+    "Good news, GPC signal detected.<br>Click <a href='https://global-privacy-control.glitch.me'>here</a> to test against the reference server.";
 } else {
   statusClass = "status-dot--red";
   statusColor = "#de0000";
   statusText =
-    "You're currently not sending the <a href='https://global-privacy-control.glitch.me/'>GPC signal</a>. Please <a href='#download'>download a browser/extension that supports it</a>, and make sure to enable it to signal your privacy preference.";
+    "GPC signal not detected.<br>Please <a href='#download'>download a browser or extension that supports it</a>.";
 }
 
 // Update status bar
