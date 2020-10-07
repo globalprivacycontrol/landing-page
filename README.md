@@ -21,7 +21,7 @@ Apart from any logos or marks that may be contained in this repo, this work is l
 
 ## Resources
 - Read [proposed specification](https://globalprivacycontrol.github.io/gpc-spec) for technical details
-- Visit [test site](https://global-privacy-control.glitch.me) to see how to interact with the GPC signal
+- Visit [test site](https://global-privacy-control.glitch.me) to learn how to interact with the GPC signal
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
