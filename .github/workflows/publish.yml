@@ -39,6 +39,8 @@ jobs:
           git stash
           git checkout gh-pages
           git checkout stash -- dist
+          git checkout main -- .well-known/
+          git checkout main -- _config.yml
           rm ./*.js ./*.svg ./*.png ./*.css ./*.map
           mv ./dist/press-release/* ./press-release/
           rmdir ./dist/press-release
