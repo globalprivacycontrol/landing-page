@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />               
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all" />                                  
+    <meta name="HandheldFriendly" content="true" />                       
+    <meta name="referrer" content="no-referrer-when-downgrade" />         
+
+    <!-- FAVICONS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- PRIMARY META TAGS -->
+    <title>Press Release | Global Privacy Control</title>
+    <meta
+      name="description"
+      content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
+    />
+    <link
+      rel="canonical"
+      href="https://globalprivacycontrol.org/faq/faq.html"
+    />
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://globalprivacycontrol.org/faq/faq.html"
+    />
+    <meta
+      property="og:title"
+      content="Frequently Asked Questions | Global Privacy Control"
+    />
+    <meta
+      property="og:description"
+      content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
+    />
+    <meta property="og:image" content="/static/img/gpc-social-big.jpg" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://globalprivacycontrol.org/faq/faq.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Frequently Asked Questions | Global Privacy Control"
+    />
+    <meta
+      name="twitter:description"
+      content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
+    />
+    <meta name="twitter:image" content="/static/img/gpc-social-big.jpg" />
+    <meta name="twitter:site" content="@globalprivcntrl" />
+    <meta name="twitter:creator" content="@globalprivcntrl" />
+
+    
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-10">
+            <nav class="navbar" x-data="{ open: false }">
+              <a href="/index.html" class="d-block navbar__logos">
+                <img
+                  class="d-lg-none"
+                  src="/static/img/gpc-logo-mobile.svg"
+                  alt="global privacy control logo"
+                  id="hero-logo"
+                />
+                <img
+                  class="d-none d-lg-block"
+                  src="/static/img/gpc-logo.svg"
+                  alt="global privacy control logo"
+                  id="hero-logo"
+                />
+              </a>
+
+              <!-- NAV TOGGLE -->
+              <button
+                class="ml-auto bg-transparent border-0"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                @click="open = !open"
+                x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                x-bind:aria-expanded="open"
+              >
+                <svg
+                  width="22"
+                  height="12"
+                  viewBox="0 0 22 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 1C0 0.447715 0.447715 0 1 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H1C0.447716 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H1C0.447716 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447716 12 1 12H21C21.5523 12 22 11.5523 22 11C22 10.4477 21.5523 10 21 10H1Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+
+              <!-- NAV LINKS -->
+              <div
+                x-show="open"
+                id="navbarSupportedContent"
+                class="w-100 overflow-hidden animate navbar__links"
+                id="navbarSupportedContent"
+                x-transition:enter-start="navbar--collapsed"
+                x-transition:leave-end="navbar--collapsed"
+              >
+                <div class="mt-4 d-flex">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="/index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase"
+                        href="/index.html#about"
+                        >About</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase"
+                        href="/index.html#gpc-spec"
+                        >Specification</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="/index.html#orgs"
+                        >Organizations</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase"
+                        href="/index.html#download"
+                        >Download</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link text-uppercase"
+                        href="/index.html#get-involved"
+                        >Get Involved</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- PRESS RELEASE SECTION -->
+        <article class="faq">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="text-center">
+                        <h1 class="faq__title mb-4">
+                        Frequently Asked Questions
+                        </h1>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Suspendisse mattis tempor orci, ut ultricies mauris ultrices 
+                            quis. Pellentesque habitant morbi tristique senectus et 
+                            netus et malesuada fames ac turpis egestas.
+                        </p>
+                    </div>
+                 </div>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="py-1">
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                        <div class="content">
+                            <div class="px-4 pt-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi posuere tortor et ante scelerisque, sit amet 
+                                scelerisque massa aliquet. Aliquam erat volutpat. Sed 
+                                vel magna et velit suscipit varius at at felis. 
+                                Vivamus vel rhoncus ligula. Ut tincidunt massa vitae
+                                 sapien fringilla porta. Nunc nec massa placerat, efficitur
+                                  lacus eget, auctor nibh. Morbi nec risus dolor. 
+                                  Duis dapibus et enim vitae ultrices. Vivamus eu 
+                                  scelerisque tortor, sit amet mattis tellus.</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="py-1">
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                        <div class="content">
+                            <div class="px-4 pt-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi posuere tortor et ante scelerisque, sit amet 
+                                scelerisque massa aliquet. Aliquam erat volutpat. Sed 
+                                vel magna et velit suscipit varius at at felis. 
+                                Vivamus vel rhoncus ligula. Ut tincidunt massa vitae
+                                 sapien fringilla porta. Nunc nec massa placerat, efficitur
+                                  lacus eget, auctor nibh. Morbi nec risus dolor. 
+                                  Duis dapibus et enim vitae ultrices. Vivamus eu 
+                                  scelerisque tortor, sit amet mattis tellus.</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="py-1">
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                        <div class="content">
+                            <div class="px-4 pt-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi posuere tortor et ante scelerisque, sit amet 
+                                scelerisque massa aliquet. Aliquam erat volutpat. Sed 
+                                vel magna et velit suscipit varius at at felis. 
+                                Vivamus vel rhoncus ligula. Ut tincidunt massa vitae
+                                 sapien fringilla porta. Nunc nec massa placerat, efficitur
+                                  lacus eget, auctor nibh. Morbi nec risus dolor. 
+                                  Duis dapibus et enim vitae ultrices. Vivamus eu 
+                                  scelerisque tortor, sit amet mattis tellus.</p>
+                                </div>
+                        </div>
+                </div>
+                <div class="py-1">
+                    <button type="button" class="collapsible">Open Collapsible</button>
+                        <div class="content">
+                            <div class="px-4 pt-4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                Morbi posuere tortor et ante scelerisque, sit amet 
+                                scelerisque massa aliquet. Aliquam erat volutpat. Sed 
+                                vel magna et velit suscipit varius at at felis. 
+                                Vivamus vel rhoncus ligula. Ut tincidunt massa vitae
+                                 sapien fringilla porta. Nunc nec massa placerat, efficitur
+                                  lacus eget, auctor nibh. Morbi nec risus dolor. 
+                                  Duis dapibus et enim vitae ultrices. Vivamus eu 
+                                  scelerisque tortor, sit amet mattis tellus.</p>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- AUTHOR INFO SECTION -->
+    <!-- HIDDEN FOR NOW
+    <section class="author-info">
+      <div class="container">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <div class="col-auto">
+                <div class="author__photo mb-4 mb-lg-0">
+                  <img
+                    class="rounded-circle"
+                    src="/static/img/avatar.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="author__name mb-3">John Doe</div>
+                <div class="author__bio">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse mattis tempor orci, ut ultricies mauris ultrices
+                  quis. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Quisque nec lacus
+                  egestas, eleifend ipsum sit amet, malesuada sapien. Sed magna
+                  tellus, tincidunt sed efficitur ut, lobortis vitae tellus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <p class="mb-0">
+              This site is hosted by <a href="https://github.com">GitHub</a> and
+              is subject to its
+              <a
+                href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement"
+                >Privacy Policy</a
+              >
+              and
+              <a
+                href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-terms-of-service"
+                >Terms of Service</a
+              >.
+            </p>
+            <p class="mb-0">
+              Content on this site is licensed under a Creative Commons
+              Attribution 4.0 International license. This license does not apply
+              to any logos or marks on this site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/js/faq.js"></script>
+    <!-- Ignored by IE11 -->
+    <script type="module" src="/static/js/load-alpine.js"></script>
+    <!-- Fallback for IE11 -->
+    <script nomodule src="/static/js/load-alpine-ie11.js" defer></script>
+  </body>
+</html>
