@@ -39,7 +39,7 @@ header {
     background-color: #F8F8F8;
     color: #49504E;
     cursor: pointer;
-    padding: 18px;
+    padding: 18px;  
     width: 100%;
     border: 1px solid #D8D8D8;
     text-align: left;
@@ -48,7 +48,7 @@ header {
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
+  .active, .collapsible:hover, .collapsible:focus{
     color: $text-bright-green;
   }
   
