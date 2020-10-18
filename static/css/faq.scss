@@ -8,7 +8,8 @@ main {
 
 
 header {
-    background-color: #0a3e2d;
+    background-image: url("../img/contact-bg.svg");
+    background-size: cover;
   }
 
   nav {
@@ -48,8 +49,11 @@ header {
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover, .collapsible:focus{
+  .active, .collapsible:hover{
     color: $text-bright-green;
+    .arrow-icons{
+        filter: invert(70%) sepia(15%) saturate(1805%) hue-rotate(107deg) brightness(85%) contrast(93%);
+    }
   }
   
   /* Style the collapsible content. Note: hidden by default */
