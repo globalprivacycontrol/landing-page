@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />               
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="all" />                                  
+    <meta name="HandheldFriendly" content="true" />                       
+    <meta name="referrer" content="no-referrer-when-downgrade" />         
+
+    <!-- FAVICONS -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/static/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/static/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- PRIMARY META TAGS -->
+    <title>Press & Announcements | Global Privacy Control</title>
+    <meta
+      name="description"
+      content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
+    />
+    <link
+      rel="canonical"
+      href="https://globalprivacycontrol.org/press/press.html"
+    />
+
+    <!-- OPEN GRAPH / FACEBOOK -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://globalprivacycontrol.org/press/press.html"
+    />
+    <meta
+      property="og:title"
+      content="Press & Announcements | Global Privacy Control"
+    />
+    <meta
+      property="og:description"
+      content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
+    />
+    <meta property="og:image" content="/static/img/gpc-social-big.jpg" />
+
+    <!-- TWITTER -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:url"
+      content="https://globalprivacycontrol.org/press/press.html"
+    />
+    <meta
+      name="twitter:title"
+      content="Press & Announcements | Global Privacy Control"
+    />
+    <meta
+      name="twitter:description"
+      content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
+    />
+    <meta name="twitter:image" content="/static/img/gpc-social-big.jpg" />
+    <meta name="twitter:site" content="@globalprivcntrl" />
+    <meta name="twitter:creator" content="@globalprivcntrl" />
+
+    
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-10">
+            <nav class="navbar navbar-expand-md" x-data="{ open: false }">
+                <div class="navbar__logos">
+                  <img
+                    class="d-lg-none"
+                    src="../static/img/gpc-logo-mobile.svg"
+                    alt="global privacy control logo"
+                    id="hero-logo"
+                  />
+                  <img
+                    class="d-none d-lg-block"
+                    src="../static/img/gpc-logo-small.svg"
+                    alt="global privacy control logo"
+                    id="hero-logo"
+                  />
+                </div>
+            
+                <!-- MOBILE NAV TOGGLE -->
+                <button
+                  class="d-md-none bg-transparent border-0"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  @click="open = !open"
+                  x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                  x-bind:aria-expanded="open"
+                >
+                  <svg
+                    width="22"
+                    height="12"
+                    viewBox="0 0 22 12"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 1C0 0.447715 0.447715 0 1 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H1C0.447716 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H1C0.447716 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447716 12 1 12H21C21.5523 12 22 11.5523 22 11C22 10.4477 21.5523 10 21 10H1Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+            
+                <!-- DESKTOP NAV LINKS -->
+                <div class="d-none d-md-block ml-auto text-nowrap">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="/index.html#about">About</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="/index.html#orgs"
+                        >Organizations</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="/index.html#download">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="/index.html#contact"
+                          >Get Involved</a
+                        >
+                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">|</a>
+                      </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#">Press</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="../faq/faq.html">FAQ</a>
+                      </li>
+                  </ul>
+                </div>
+            
+                <!-- MOBILE NAV LINKS -->
+                <div
+                  x-show="open"
+                  class="w-100 d-md-none overflow-hidden animate navbar__links"
+                  id="navbarSupportedContent"
+                  x-transition:enter-start="navbar--collapsed"
+                  x-transition:leave-end="navbar--collapsed"
+                >
+                  <div class="mt-4 d-flex">
+                    <ul class="navbar-nav">
+                          <li class="nav-item">
+                              <a class="nav-link text-uppercase" href="/index.html#about">About</a>
+                            </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="/index.html#orgs"
+                              >Organizations</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="/index.html#download">Download</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="/index.html#contact"
+                              >Get Involved</a
+                            >
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#">Press</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="../faq/faq.html">FAQ</a>
+                          </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <article class="press">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <div class="text-center">
+                        <h1 class="press__title mb-4">
+                        Press & Announcements
+                        </h1>
+                    </div>
+                 </div>
+            </div>
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <ul class="press__table">
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 8th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://www.theregister.com/2020/10/10/global_privacy_control/"
+                            >Global Privacy Control emerges as latest attempt to let netizens choose whether they want to be tracked online</a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">The Register</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 8th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://www.fastcompany.com/90561555/global-privacy-control-duckduckgo-eff-mozilla"
+                            >DuckDuckGo, EFF, and others just launched privacy settings for the whole internet</a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">Fast Company</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://iapp.org/news/a/global-privacy-control-initiative-hopes-to-help-consumers-exercise-ccpa-rights/#:~:text=A%20coalition%20of%20organizations%20launched,data%20preferences%20with%20participating%20publishers."
+                            >Global Privacy Control initiative aims to help consumers exercise privacy rights</a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">IAPP</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://arstechnica.com/tech-policy/2020/10/coming-to-a-browser-near-you-a-new-way-to-keep-sites-from-selling-your-data/"
+                            >Now you can enforce your privacy rights with a single browser tick</a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">Ars Technica</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://www.cnet.com/news/privacy-effort-could-stop-some-annoying-website-popups-and-online-tracking/"
+                            >Privacy push could stop some annoying website pop-ups and online tracking</a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">CNET</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://duo.com/decipher/global-privacy-control-protocol-aims-to-pick-up-where-do-not-track-left-off"
+                            >Global Privacy Control Protocol Aims to Pick Up Where Do Not Track Left Off</a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">Decipher</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://techcrunch.com/2020/10/07/tech-publisher-coalition-backs-new-push-for-browser-level-privacy-controls/"
+                            >Tech-publisher coalition backs new push for browser-level privacy controls
+                            </a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">TechCrunch</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://www.wired.com/story/global-privacy-control-launches-do-not-track-is-back/"
+                            >‘Do Not Track’ Is Back, and This Time It Might Work
+                            </a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">Wired</div>
+                    </li>
+                    <li class="position-relative text-nowrap">
+                        <div class="table__left text-left pl-0">Oct 7th, 2020</div>
+                        <div class="table__desc text-truncate">
+                            <a class="stretched-link" href="https://globalprivacycontrol.org/press-release/20201007.html"
+                            >Announcing Global Privacy Control: Making it Easy for Consumers to Exercise Their Privacy Rights
+                            </a
+                            >
+                        </div>
+                        <div class="table__date text-right pr-0">Global Privacy Control</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- AUTHOR INFO SECTION -->
+    <!-- HIDDEN FOR NOW
+    <section class="author-info">
+      <div class="container">
+        <div class="row no-gutters justify-content-center">
+          <div class="col-10">
+            <div class="row">
+              <div class="col-auto">
+                <div class="author__photo mb-4 mb-lg-0">
+                  <img
+                    class="rounded-circle"
+                    src="/static/img/avatar.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="author__name mb-3">John Doe</div>
+                <div class="author__bio">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse mattis tempor orci, ut ultricies mauris ultrices
+                  quis. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Quisque nec lacus
+                  egestas, eleifend ipsum sit amet, malesuada sapien. Sed magna
+                  tellus, tincidunt sed efficitur ut, lobortis vitae tellus.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
+
+     <!-- CONTACT SECTION -->
+     <section id="contact" class="contact section section--green text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+              <h1 class="contact__title">Get Involved</h1>
+  
+              <p class="contact__text">
+                Contact us to learn more about becoming a Participating
+                Organization and supporting GPC on your browser, app or website.
+              </p>
+              <a
+                class="d-block contact__link"
+                href="mailto:info@globalprivacycontrol.org"
+                >info@globalprivacycontrol.org</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <p class="mb-0">
+              This site is hosted by <a href="https://github.com">GitHub</a> and
+              is subject to its
+              <a
+                href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement"
+                >Privacy Policy</a
+              >
+              and
+              <a
+                href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-terms-of-service"
+                >Terms of Service</a
+              >.
+            </p>
+            <p class="mb-0">
+              Content on this site is licensed under a Creative Commons
+              Attribution 4.0 International license. This license does not apply
+              to any logos or marks on this site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/static/js/press.js"></script>
+    <!-- Ignored by IE11 -->
+    <script type="module" src="/static/js/load-alpine.js"></script>
+    <!-- Fallback for IE11 -->
+    <script nomodule src="/static/js/load-alpine-ie11.js" defer></script>
+  </body>
+</html>

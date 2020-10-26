@@ -29,7 +29,7 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <!-- PRIMARY META TAGS -->
-    <title>Press Release | Global Privacy Control</title>
+    <title>Frequently Asked Questions | Global Privacy Control</title>
     <meta
       name="description"
       content="Exercise your privacy rights in one step via the “Global Privacy Control” (GPC) signal, a proposed specification backed by over a dozen organizations."
@@ -83,122 +83,115 @@
         <div class="row no-gutters justify-content-center">
           <div class="col-10">
             <nav class="navbar navbar-expand-md" x-data="{ open: false }">
-                <div class="navbar__logos">
-                  <img
-                    class="d-lg-none"
-                    src="../static/img/gpc-logo-mobile.svg"
-                    alt="global privacy control logo"
-                    id="hero-logo"
-                  />
-                  <img
-                    class="d-none d-lg-block"
-                    src="../static/img/gpc-logo-small.svg"
-                    alt="global privacy control logo"
-                    id="hero-logo"
-                  />
-                </div>
-            
-                <!-- MOBILE NAV TOGGLE -->
-                <button
-                  class="d-md-none bg-transparent border-0"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent"
-                  @click="open = !open"
-                  x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
-                  x-bind:aria-expanded="open"
+              <div class="navbar__logos">
+                <img
+                  class="d-lg-none"
+                  src="../static/img/gpc-logo-mobile.svg"
+                  alt="global privacy control logo"
+                  id="hero-logo"
+                />
+                <img
+                  class="d-none d-lg-block"
+                  src="../static/img/gpc-logo-small.svg"
+                  alt="global privacy control logo"
+                  id="hero-logo"
+                />
+              </div>
+          
+              <!-- MOBILE NAV TOGGLE -->
+              <button
+                class="d-md-none bg-transparent border-0"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                @click="open = !open"
+                x-bind:aria-label="open ? 'Close main menu' : 'Main menu'"
+                x-bind:aria-expanded="open"
+              >
+                <svg
+                  width="22"
+                  height="12"
+                  viewBox="0 0 22 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <svg
-                    width="22"
-                    height="12"
-                    viewBox="0 0 22 12"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0 1C0 0.447715 0.447715 0 1 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H1C0.447716 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H1C0.447716 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447716 12 1 12H21C21.5523 12 22 11.5523 22 11C22 10.4477 21.5523 10 21 10H1Z"
-                      fill="white"
-                    />
-                  </svg>
-                </button>
-            
-                <!-- DESKTOP NAV LINKS -->
-                <div class="d-none d-md-block ml-auto text-nowrap">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="/index.html">Home</a>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 1C0 0.447715 0.447715 0 1 0H21C21.5523 0 22 0.447715 22 1C22 1.55228 21.5523 2 21 2H1C0.447716 2 0 1.55228 0 1ZM0 6C0 5.44772 0.447715 5 1 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H1C0.447716 7 0 6.55228 0 6ZM1 10C0.447715 10 0 10.4477 0 11C0 11.5523 0.447716 12 1 12H21C21.5523 12 22 11.5523 22 11C22 10.4477 21.5523 10 21 10H1Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+          
+              <!-- DESKTOP NAV LINKS -->
+              <div class="d-none d-md-block ml-auto text-nowrap">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="/index.html#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-uppercase" href="/index.html#about">About</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="/index.html#gpc-spec"
-                        >Specification</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="/index.html#orgs"
-                        >Organizations</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="/index.html#download">Download</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-uppercase" href="../press-release/20201007.html">Press</a>
-                    </li>
-                    <li class="nav-item">
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="/index.html#orgs"
+                      >Organizations</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="/index.html#download">Download</a>
+                  </li>
+                  <li class="nav-item">
                       <a class="nav-link text-uppercase" href="/index.html#contact"
                         >Get Involved</a
                       >
                     </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">|</a>
+                    </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-uppercase" href="../press/press.html">Press</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-uppercase" href="#">FAQ</a>
+                    </li>
+                </ul>
+              </div>
+          
+              <!-- MOBILE NAV LINKS -->
+              <div
+                x-show="open"
+                class="w-100 d-md-none overflow-hidden animate navbar__links"
+                id="navbarSupportedContent"
+                x-transition:enter-start="navbar--collapsed"
+                x-transition:leave-end="navbar--collapsed"
+              >
+                <div class="mt-4 d-flex">
+                  <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="/index.html#about">About</a>
+                          </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="/index.html#orgs"
+                            >Organizations</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="/index.html#download">Download</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="/index.html#contact"
+                            >Get Involved</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="../press/press.html">Press</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-uppercase" href="#">FAQ</a>
+                        </li>
                   </ul>
                 </div>
-            
-                <!-- MOBILE NAV LINKS -->
-                <div
-                  x-show="open"
-                  class="w-100 d-md-none overflow-hidden animate navbar__links"
-                  id="navbarSupportedContent"
-                  x-transition:enter-start="navbar--collapsed"
-                  x-transition:leave-end="navbar--collapsed"
-                >
-                  <div class="mt-4 d-flex">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="/index.html">Home</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link text-uppercase" href="/index.html#about">About</a>
-                            </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="/index.html#gpc-spec"
-                              >Specification</a
-                            >
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="/index.html#orgs"
-                              >Organizations</a
-                            >
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="/index.html#download">Download</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="../press-release/20201007.html">Press</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link text-uppercase" href="/index.html#contact"
-                              >Get Involved</a
-                            >
-                          </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+              </div>
+            </nav>
           </div>
         </div>
       </div>

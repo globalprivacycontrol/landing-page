@@ -1,3 +1,6 @@
+@import "~bootstrap/scss/bootstrap";
+
+
 /*=======================================================================================*/
 /* VARIABLES */
 
@@ -65,6 +68,54 @@ a {
   }
 }
 
+/*=========================================================================================*/
+/* TABLE STYLING */
+
+%list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+
+  li {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  li:hover {
+    cursor: pointer;
+    background-color: white;
+
+    .table__link a {
+      text-decoration: underline;
+    }
+  }
+  
+
+  div {
+    display: flex;
+    align-items: center;
+    padding: calculateRem(18px) calculateRem(20px);
+
+    a {
+      color: $text-bright-green;
+      font-weight: 700;
+      // letter-spacing: 0.2em;
+    }
+  }
+
+
+  @include media-breakpoint-down(xs) {
+    div {
+      padding: calculateRem(10px);
+    }
+  }
+}
+
 
 /*=========================================================================================*/
 /* PRESS/FAQ PAGE STYLINGS */
@@ -76,7 +127,7 @@ a {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
   %title {
-    @include fontSize(44px);
+    @include fontSize(43px);
     font-weight: 900;
     line-height: calculateRem(58px);
     letter-spacing: -0.01em;
