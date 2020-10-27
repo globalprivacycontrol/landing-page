@@ -4,7 +4,9 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 "use strict";require("../css/index.scss");
 },{"../css/index.scss":"DJTv"}],"LmSk":[function(require,module,exports) {
 
-},{"./../img/contact-bg.svg":[["contact-bg.0fc4af54.svg","lweq"],"lweq"]}],"bQMq":[function(require,module,exports) {
-"use strict";require("./shared.js"),require("../css/press-release.scss");
-},{"./shared.js":"ZkeY","../css/press-release.scss":"LmSk"}]},{},["bQMq"], null)
-//# sourceMappingURL=/press-release.b6597728.js.map
+},{"./../img/contact-bg.svg":[["contact-bg.0fc4af54.svg","lweq"],"lweq"]}],"JqIW":[function(require,module,exports) {
+var t,e,a,o=document.getElementById("status-text"),s=document.getElementsByClassName("status-dot")[0];navigator.globalPrivacyControl?(t="status-dot--green",a="#058A5E",e="Good news, GPC signal detected.<br>Click <a href='https://global-privacy-control.glitch.me'>here</a> to test against the reference server."):(t="status-dot--red",a="#de0000",e="GPC signal not detected.<br>Download a <a href='/index.html#download'>browser or extension</a> that supports it."),s.classList.add(t),s.style.backgroundColor=a,o.innerHTML=e;
+},{}],"bQMq":[function(require,module,exports) {
+"use strict";require("./shared.js"),require("../css/press-release.scss"),require("./check_gpc_status.js");
+},{"./shared.js":"ZkeY","../css/press-release.scss":"LmSk","./check_gpc_status.js":"JqIW"}]},{},["bQMq"], null)
+//# sourceMappingURL=/press-release.1cd467de.js.map
