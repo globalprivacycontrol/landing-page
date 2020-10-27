@@ -43,7 +43,11 @@ jobs:
           git checkout main -- _config.yml
           rm ./*.js ./*.svg ./*.png ./*.css ./*.map
           mv ./dist/press-release/* ./press-release/
+          mv ./dist/press/* ./press/
+          mv ./dist/faq/* ./faq/
           rmdir ./dist/press-release
+          rmdir ./dist/press
+          rmdir ./dist/faq
           mv ./dist/* ./
           rmdir ./dist
           git add .
