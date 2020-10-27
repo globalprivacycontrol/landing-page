@@ -1,1 +1,0 @@
-{"version":3,"sources":["static/js/shared.js","static/js/press-release.js"],"names":[],"mappings":";;;AAAA,aAAA,QAAA;;;;ACEA,aAFA,QAAA,eAEA,QAAA","file":"press-release.a593b42c.js","sourceRoot":"..","sourcesContent":["import \"../css/index.scss\";\n","import \"./shared.js\";\n\nimport \"../css/press-release.scss\";\n"]}

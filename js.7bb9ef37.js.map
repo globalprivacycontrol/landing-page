@@ -1,1 +1,0 @@
-{"version":3,"sources":["static/js/shared.js","static/js/index.js"],"names":[],"mappings":";;;AAAA,aAAA,QAAA;;ACAA,aAAA,QAAA","file":"js.7bb9ef37.js","sourceRoot":"..","sourcesContent":["import \"../css/index.scss\";\n","import \"./shared.js\";\n"]}
