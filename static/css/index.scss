@@ -89,46 +89,7 @@
   }
 }
 
-/*=======================================================================================*/
-/* STATUS SECTION */
 
-.status {
-  @extend .justify-content-center, .align-items-center;
-
-  &--dark {
-    background-color: $bg--dark;
-    backdrop-filter: blur(30px);
-  }
-
-  &--light {
-    background: #172a24;
-    color: #849f96;
-  }
-
-  &__text {
-    @include fontSize(14px);
-    line-height: calculateRem(28px);
-    color: #849f96;
-
-    a {
-      color: white;
-    }
-  }
-}
-
-.status-dot {
-  width: calculateRem(12px);
-  height: calculateRem(12px);
-  background-color: #de0000;
-
-  &--green {
-    background-color: #058A5E!important;
-  }
-
-  &--red {
-    background-color: #de0000!important;
-  }
-}
 
 /*=======================================================================================*/
 /* NAVIGATION BAR */

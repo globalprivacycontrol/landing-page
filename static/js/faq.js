@@ -2,6 +2,8 @@ import "./shared.js";
 
 import "../css/faq.scss";
 
+import "./check_gpc_status.js";
+
 
 
 

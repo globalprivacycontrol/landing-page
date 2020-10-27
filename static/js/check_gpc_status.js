@@ -13,7 +13,7 @@ if (navigator.globalPrivacyControl) {
   statusClass = "status-dot--red";
   statusColor = "#de0000";
   statusText =
-    "GPC signal not detected.<br>Please <a href='#download'>download a browser or extension that supports it</a>.";
+    "GPC signal not detected.<br>Download a <a href='/index.html#download'>browser or extension</a> that supports it.";
 }
 
 // Update status bar

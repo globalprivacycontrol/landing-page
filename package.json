@@ -14,7 +14,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html press-release/*.html",
+    "dev": "parcel /index.html press/index.html faq/index.html",
     "build": "parcel build index.html press-release/*.html"
   },
   "staticFiles": {
