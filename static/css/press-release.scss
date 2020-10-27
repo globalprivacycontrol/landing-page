@@ -4,7 +4,8 @@
 /*=======================================================================================*/
 /* NAVIGATION BAR */
 header {
-  background-color: #0a3e2d;
+  background-image: url("../img/contact-bg.svg");
+  background-size: cover;
 }
 
 nav {
@@ -19,23 +20,23 @@ main {
 }
 
 .press-release {
-  color: #49504e;
-  padding: calculateRem(70px) 0;
-  background-color: white;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  @extend %main-box;
 
   &__title {
-    @include fontSize(44px);
-    font-weight: 900;
-    line-height: calculateRem(58px);
-    letter-spacing: -0.01em;
+    @extend %title;
+    // @include fontSize(44px);
+    // font-weight: 900;
+    // line-height: calculateRem(58px);
+    // letter-spacing: -0.01em;
   }
 
   &__heading {
-    font-weight: bold;
-    @include fontSize(20px);
-    line-height: calculateRem(23px);
-    text-align: center;
+    @extend %heading;
+    // font-weight: bold;
+    // @include fontSize(20px);
+    // line-height: calculateRem(23px);
+    // text-align: center;
   }
 
   p {

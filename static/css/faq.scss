@@ -1,0 +1,71 @@
+@import "util";
+@import "shared";
+
+
+main {
+  background-color: #e5e5e5;
+}
+
+
+header {
+    background-image: url("../img/contact-bg.svg");
+    background-size: cover;
+  }
+
+  nav {
+    &.navbar {
+      padding-top: calculateRem(40px);
+      padding-bottom: calculateRem(40px);
+    }
+  }
+
+.faq {
+    @extend %main-box;
+
+    &__title {
+        @extend %title;
+    }
+
+    &__heading {
+        @extend %heading;
+    }
+}
+
+
+/*=========================================================================================*/
+/* COLLAPSIBLE BUTTONS */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #F8F8F8;
+    color: #49504E;
+    cursor: pointer;
+    padding: 18px;  
+    width: 100%;
+    border: 1px solid #D8D8D8;
+    text-align: left;
+    outline: none;
+    font-weight: 700;
+
+    &:focus{
+      outline: none;
+    }
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover{
+    color: $text-bright-green;
+    .arrow-icons{
+        filter: invert(70%) sepia(15%) saturate(1805%) hue-rotate(107deg) brightness(85%) contrast(93%);
+    }
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    // padding: 0 18px;
+    color: #49504E;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    line-height: calculateRem(30px);
+  }
