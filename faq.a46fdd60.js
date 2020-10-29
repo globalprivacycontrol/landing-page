@@ -9,4 +9,4 @@ var t,e,a,o=document.getElementById("status-text"),s=document.getElementsByClass
 },{}],"iIlE":[function(require,module,exports) {
 "use strict";require("./shared.js"),require("../css/faq.scss"),require("./check_gpc_status.js");var e,s=document.getElementsByClassName("collapsible");for(e=0;e<s.length;e++)s[e].addEventListener("click",function(){this.classList.toggle("active");var e=this.nextElementSibling;this.querySelector("#down").classList.toggle("d-none"),this.querySelector("#right").classList.toggle("d-none"),e.style.maxHeight?e.style.maxHeight=null:e.style.maxHeight=e.scrollHeight+"px"});
 },{"./shared.js":"ZkeY","../css/faq.scss":"IADW","./check_gpc_status.js":"JqIW"}]},{},["iIlE"], null)
-//# sourceMappingURL=/faq.96a62247.js.map
+//# sourceMappingURL=/faq.a46fdd60.js.map
