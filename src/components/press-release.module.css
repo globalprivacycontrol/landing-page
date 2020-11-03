@@ -1,0 +1,64 @@
+.pressRelease {
+  & p {
+    font-size: calc(18 * var(--px-in-rem));
+    line-height: calc(28 / 18);
+    & a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+
+
+  & blockquote {
+    position: relative;
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+
+    & img {
+      padding: 1.5rem 0;
+      display: block;
+      height: 50px;
+      box-sizing: content-box;
+      width: 100%;
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+      border-left: 0.25em solid white;
+    }
+
+    @supports (hanging-punctuation: first) {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+
+    & p {
+      font-size: calc(18 * var(--px-in-rem));
+      color: #6a737d;
+      text-indent: -0.45em;
+      quotes: "“" "”" "‘" "’";
+      line-height: calculateRem(28px);
+      margin-bottom: calculateRem(18px);
+
+      &::before {
+        content: open-quote;
+      }
+
+      &::after {
+        content: close-quote;
+      }
+    }
+
+    & footer {
+      font-size: calc(14 * var(--px-in-rem));
+
+      & a {
+        font-weight: bold;
+        line-height: calc(28 * var(--px-in-rem));
+        text-decoration-line: underline;
+        color: var(--primary-bg);
+      }
+    }
+
+  }
+}

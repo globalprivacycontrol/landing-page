@@ -1,0 +1,15 @@
+.featured {
+  margin: 0 0 2em;
+  & header {
+    margin: 2em 0;
+    text-align: center;
+    & h2 {
+      font-weight: 900;
+      font-size: calc(10 * var(--px-in-rem));
+      line-height: 1;
+      letter-spacing: 0.2em;
+      color: var(--text-light);
+      text-transform: uppercase;
+    }
+  }
+}

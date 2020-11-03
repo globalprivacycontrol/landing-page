@@ -1,0 +1,6 @@
+.bottomButton {
+  min-width: 200px;
+  @media(--media-breakpoint-down-md) {
+    width: 100%;
+  }
+}

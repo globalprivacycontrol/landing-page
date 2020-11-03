@@ -1,0 +1,24 @@
+:root {
+  --color: red;
+  --px-in-rem: 0.0625rem; /* 1/16 */
+
+  --bg-dark: #0a3e2d;
+  --text-light: #999999;
+  --text-dark: #49504e;
+  --text-bright-green: #25bf87;
+
+  --focus-outline: rgba(0, 123, 255, 0.25);
+  --primary-bg: #058a5e;
+  --primary-bg-hover: rgba(5, 138, 94, 0.7);
+}
+
+
+@custom-media --media-breakpoint-up-xs (min-width: 576px);
+@custom-media --media-breakpoint-up-sm (min-width: 768px);
+@custom-media --media-breakpoint-up-md (min-width: 992px);
+@custom-media --media-breakpoint-up-lg (min-width: 1200px);
+
+@custom-media --media-breakpoint-down-xs (max-width: 575.98px);
+@custom-media --media-breakpoint-down-sm (max-width: 767.98px);
+@custom-media --media-breakpoint-down-md (max-width: 991.98px);
+@custom-media --media-breakpoint-down-lg (max-width: 1199.98px);

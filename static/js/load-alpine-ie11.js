@@ -1,1 +1,0 @@
-import "alpinejs/dist/alpine-ie11.js";

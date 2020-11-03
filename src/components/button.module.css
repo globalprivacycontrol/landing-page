@@ -1,0 +1,30 @@
+.button {
+  font-size: calc(15 * var(--px-in-rem));
+  padding: calc(19 * var(--px-in-rem));
+  border-radius: calc(74 * var(--px-in-rem));
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem var(--focus-outline);
+  }
+}
+
+
+.primary {
+  background-color: var(--primary-bg);
+  color: white;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: var(--primary-bg-hover);
+    color: white;
+  }
+}

@@ -1,0 +1,24 @@
+@import './fonts.css';
+@import './variables.css';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

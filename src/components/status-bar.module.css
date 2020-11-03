@@ -1,0 +1,24 @@
+.statusBar {
+  background-color: #172a24;
+  color: #849f96;
+
+  font-size: calc(14 * var(--px-in-rem));
+  line-height: calc(28 * var(--px-in-rem));
+
+  & a {
+    color: white;
+  }
+}
+
+.dot {
+  width: calc(12 * var(--px-in-rem));
+  height: calc(12 * var(--px-in-rem));
+}
+
+.dotGreen {
+  background-color: #058A5E;
+}
+
+.dotRed {
+  background-color: #de0000;
+}
