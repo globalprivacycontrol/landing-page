@@ -1,6 +1,7 @@
 .button {
   font-size: calc(15 * var(--px-in-rem));
   padding: calc(19 * var(--px-in-rem));
+  border: 1px solid transparent;
   border-radius: calc(74 * var(--px-in-rem));
   letter-spacing: 0.1em;
   font-weight: 900;
@@ -17,7 +18,6 @@
   }
 }
 
-
 .primary {
   background-color: var(--primary-bg);
   color: white;
@@ -26,5 +26,38 @@
   &:hover {
     background-color: var(--primary-bg-hover);
     color: white;
+  }
+}
+
+.primaryInverted {
+  color: #1a7958;
+  background-color: white;
+  &:hover {
+    color: #1a7958;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.secondary {
+  border-color: var(--primary-bg);
+  color: var(--primary-bg);
+  background-color: transparent;
+  text-transform: uppercase;
+
+  &:hover {
+    background: var(--primary-bg-hover);
+    color: white;
+  }
+}
+
+.secondaryInverted {
+  border-color: white;
+  color: white;
+  backdrop-filter: blur(10px);
+
+  &:hover {
+    color: white;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.3);
   }
 }

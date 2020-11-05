@@ -8,6 +8,9 @@
 }
 
 .contact {
+  padding: calc(154 * var(--px-in-rem)) 0 calc(130 * var(--px-in-rem));
+  color: white;
+
   background-image: url("/img/contact-bg.svg");
   background-size: cover;
 
@@ -38,8 +41,6 @@
     }
   }
 }
-
-
 
 .footer {
   background: var(--bg-dark);

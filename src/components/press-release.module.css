@@ -1,4 +1,8 @@
 .pressRelease {
+  & h1 {
+    text-align: left;
+  }
+
   & p {
     font-size: calc(18 * var(--px-in-rem));
     line-height: calc(28 / 18);

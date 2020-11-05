@@ -11,7 +11,12 @@ const Button = forwardRef(function Button(
     <Comp
       ref={ref}
       className={classNames(className, styles.button, {
-        [styles.primary]: variant === 'primary'
+        [styles.primary]:
+          variant === 'primary' || variant === 'primaryInverted',
+        [styles.primaryInverted]: variant === 'primaryInverted',
+        [styles.secondary]:
+          variant === 'secondary' || variant === 'secondaryInverted',
+        [styles.secondaryInverted]: variant === 'secondaryInverted'
       })}
       {...others}
     >
@@ -24,7 +29,12 @@ Button.propTypes = {
   as: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   children: PropTypes.any,
   className: PropTypes.string,
-  variant: PropTypes.oneOf(['primary'])
+  variant: PropTypes.oneOf([
+    'primary',
+    'primaryInverted',
+    'secondary',
+    'secondaryInverted'
+  ])
 };
 
 export default Button;

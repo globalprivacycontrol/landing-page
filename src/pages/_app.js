@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Head from 'next/head';
-import '../styles/legacy.scss';
+import 'bootstrap/scss/bootstrap.scss';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {

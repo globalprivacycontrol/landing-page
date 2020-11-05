@@ -77,10 +77,7 @@ export default function Layout({
       <main>{children}</main>
 
       {/* <!-- CONTACT SECTION --> */}
-      <section
-        id="contact"
-        className={`${styles.contact} section section--green text-center`}
-      >
+      <section id="contact" className={`${styles.contact} text-center`}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-6">

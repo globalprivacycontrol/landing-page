@@ -4,10 +4,20 @@ import Layout from '../components/layout';
 import Home from '../components/home';
 import { parseMarkdown } from '../utils/markdown';
 
-export default function HomePage({ pressData, faqData }) {
+export default function HomePage({
+  pressData,
+  faqData,
+  orgsData,
+  downloadsData
+}) {
   return (
     <Layout header={false}>
-      <Home pressData={pressData} faqData={faqData} />
+      <Home
+        pressData={pressData}
+        faqData={faqData}
+        orgsData={orgsData}
+        downloadsData={downloadsData}
+      />
     </Layout>
   );
 }
@@ -42,6 +52,32 @@ HomePage.propTypes = {
         html: PropTypes.string.isRequired
       })
     ).isRequired
+  }).isRequired,
+  orgsData: PropTypes.shape({
+    data: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      entries: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          url: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
+        })
+      ).isRequired
+    }).isRequired,
+    html: PropTypes.string.isRequired
+  }).isRequired,
+  downloadsData: PropTypes.shape({
+    data: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      entries: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          url: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
+        })
+      ).isRequired
+    }).isRequired,
+    html: PropTypes.string.isRequired
   }).isRequired
 };
 
@@ -52,6 +88,13 @@ export async function getStaticProps(context) {
   const pressData = await parseMarkdown(
     path.join(process.cwd(), 'content', 'press.md')
   );
+  const orgsData = await parseMarkdown(
+    path.join(process.cwd(), 'content', 'orgs.md')
+  );
 
-  return { props: { faqData, pressData } };
+  const downloadsData = await parseMarkdown(
+    path.join(process.cwd(), 'content', 'downloads.md')
+  );
+
+  return { props: { faqData, pressData, orgsData, downloadsData } };
 }

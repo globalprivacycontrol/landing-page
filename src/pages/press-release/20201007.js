@@ -131,7 +131,7 @@ export default function PressRelease20201007Page() {
             <hr className="my-5" />
 
             {/* <!-- QUOTES SECTION --> */}
-            <h2 className="press-release__heading mb-4 font-weight-bold text-center">
+            <h2 className="mb-4 font-weight-bold text-center">
               Quotes from Participating Orgs
             </h2>
 

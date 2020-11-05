@@ -3,46 +3,54 @@ import Link from 'next/link';
 import Navbar from './navbar';
 import Button from './button';
 import FaqList from './faq-list';
-import styles from './home.module.css';
 import FeaturedArticles from './featured-articles';
 import VisuallyHidden from './visually-hidden';
+import styles from './home.module.css';
 
-export default function Home({ pressData, faqData }) {
+export default function Home({ pressData, faqData, orgsData, downloadsData }) {
   return (
     <>
       {/* <!-- HERO SECTION --> */}
-      <section className="hero-background">
+      <section className={styles.heroBackground}>
         <header className="container">
           <Navbar isLarge={true} />
         </header>
 
-        <div className="hero">
+        <div className={styles.hero}>
           <div className="container">
             <div className="row">
               <div className="col-12 col-lg-7">
-                <h1 className="hero__title">Take Control Of Your Privacy</h1>
-                <p className="hero__text">
+                <h1 className={styles.heroTitle}>
+                  Take Control Of Your Privacy
+                </h1>
+                <p className={styles.heroText}>
                   Exercising privacy rights more simply is critical to making
                   online privacy accessible to all.
                 </p>
 
                 {/* <!-- HERO BUTTONSs --> */}
-                <div className="row hero__btns">
+                <div className={`row ${styles.heroBtns}`}>
                   <div className="col-sm-12 col-md-6 mb-5 mb-lg-0">
-                    <a
-                      className="hero__btn hero__btn--primary bg-white"
-                      href="#download"
-                    >
-                      Download Now
-                    </a>
+                    <Link href="/#download" passHref>
+                      <Button
+                        as="a"
+                        variant="primaryInverted"
+                        className="d-block"
+                      >
+                        Download Now
+                      </Button>
+                    </Link>
                   </div>
                   <div className="col-sm-12 col-md-6">
-                    <a
-                      className="hero__btn hero__btn--secondary bg-transparent"
-                      href="#contact"
-                    >
-                      Get Involved
-                    </a>
+                    <Link href="/#contact" passHref>
+                      <Button
+                        as="a"
+                        variant="secondaryInverted"
+                        className="d-block"
+                      >
+                        Get Involved
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -61,9 +69,8 @@ export default function Home({ pressData, faqData }) {
       </section>
 
       {/* <!-- NEWS SECTION --> */}
-      {/* <!-- Use className `news--light` for light background --> */}
-      <section className="news news--dark py-5 px-3 px-sm-4">
-        <div className="news__announcement">
+      <section className={`${styles.news} py-5 px-3 px-sm-4`}>
+        <div className={styles.newsAnnouncement}>
           <div className="container">
             <div className="row justify-content-center align-items-center">
               {/*<!-- HORN ICON --> */}
@@ -97,11 +104,13 @@ export default function Home({ pressData, faqData }) {
       </section>
 
       {/*<!-- ABOUT SECTION --> */}
-      <section id="about" className="about">
+      <section id="about" className={styles.about}>
         <div className="container">
-          <div className="about__cards row row-cols-1 row-cols-lg-3">
+          <div className={`${styles.aboutCards} row row-cols-1 row-cols-lg-3`}>
             <div className="col">
-              <div className="card h-100 text-center border-0">
+              <div
+                className={`card ${styles.aboutCard} h-100 text-center border-0`}
+              >
                 <img
                   src={`${process.env.publicPrefix}/img/turn-on-gpc.svg`}
                   className="card-img-top"
@@ -116,8 +125,11 @@ export default function Home({ pressData, faqData }) {
                 </div>
               </div>
             </div>
+
             <div className="col">
-              <div className="card h-100 text-center border-0">
+              <div
+                className={`card ${styles.aboutCard} h-100 text-center border-0`}
+              >
                 <img
                   src={`${process.env.publicPrefix}/img/browser-fights-for-you.svg`}
                   className="card-img-top"
@@ -132,8 +144,11 @@ export default function Home({ pressData, faqData }) {
                 </div>
               </div>
             </div>
+
             <div className="col">
-              <div className="card h-100 text-center border-0">
+              <div
+                className={`card ${styles.aboutCard} h-100 text-center border-0`}
+              >
                 <img
                   src={`${process.env.publicPrefix}/img/live-more-privately.svg`}
                   className="card-img-top"
@@ -152,10 +167,9 @@ export default function Home({ pressData, faqData }) {
         </div>
 
         {/* <!-- HORIZONTAL DIVIDER --> */}
-        <div className="about-sec-2">
+        <div className={styles.aboutSec2}>
           <img
             src={`${process.env.publicPrefix}/img/divider-lines.svg`}
-            className="about__divider"
             alt="dividing placeholder"
           />
         </div>
@@ -164,7 +178,7 @@ export default function Home({ pressData, faqData }) {
           <div className="container text-lg-center">
             <div className="row justify-content-center">
               <div className="col-lg-8">
-                <div className="about__text section__text">
+                <div className={`${styles.aboutText} ${styles.sectionText}`}>
                   <p>
                     You might have noticed “Do Not Sell” and “Object To
                     Processing” links around the web from companies complying
@@ -191,27 +205,30 @@ export default function Home({ pressData, faqData }) {
       </section>
 
       {/*<!-- GPC SPEC SECTION --> */}
-      <section id="gpc-spec" className="gpc section section--dark">
+      <section
+        id="gpc-spec"
+        className={`${styles.section} ${styles.sectionDark}`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5">
-              <p className="section__title">
+              <p className={styles.sectionTitle}>
                 The Global Privacy Control (GPC) specification describes how to
                 implement a browser mechanism to help users signal their desired
                 privacy to websites and services.
               </p>
-              <p className="section__text">
+              <p className={styles.sectionText}>
                 Right now the GPC signal is not a finalized standard, but it is
                 already available to users as part of several major browsers and
                 extensions and is respected by several major websites (see
                 below). The GPC signal will be intended to communicate a Do Not
-                Sell request from a global privacy control, as per
+                Sell request from a global privacy control, as per{' '}
                 <a
                   className="font-weight-bold"
                   href="https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf"
                 >
                   <u>CCPA-REGULATIONS §999.315</u>
-                </a>
+                </a>{' '}
                 for that browser or device, or, if known, the consumer. Under
                 the GDPR, the intent of the GPC signal is to convey a general
                 request that data controllers limit the sale or sharing of the
@@ -225,19 +242,24 @@ export default function Home({ pressData, faqData }) {
                 ). Over time, the GPC signal may be intended to communicate
                 rights in other jurisdictions.
               </p>
-              <div className="gpc__btn-wrap">
-                <a
-                  className="hero__btn text-uppercase"
+              <div>
+                <Button
+                  as="a"
+                  variant="primary"
+                  className="d-block"
                   href="https://globalprivacycontrol.github.io/gpc-spec/"
                 >
                   View Full Spec
-                </a>
-                <a
-                  className="hero__btn hero__btn--wire text-uppercase mt-4"
+                </Button>
+
+                <Button
+                  as="a"
+                  variant="secondary"
+                  className="d-block mt-4"
                   href="https://global-privacy-control.glitch.me/"
                 >
                   Test against the reference server
-                </a>
+                </Button>
               </div>
             </div>
             <div className="d-none d-lg-block offset-lg-1 col">
@@ -252,137 +274,30 @@ export default function Home({ pressData, faqData }) {
       </section>
 
       {/* <!-- PARTICIPATING ORGS SECTION --> */}
-      <section id="orgs" className="orgs section">
+      <section id="orgs" className={styles.section}>
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg -5">
-              <h2 className="section__title">Participating Organizations</h2>
-              <p className="section__text">
-                The following organizations are in support of or have
-                implemented the GPC specification.
-              </p>
+              <h2 className={styles.sectionTitle}>{orgsData.data.title}</h2>
+
+              <div
+                className={styles.sectionText}
+                dangerouslySetInnerHTML={{ __html: orgsData.html }}
+              />
             </div>
+
             <div className="offset-lg-1 col-12 col-lg-6">
               <div className="orgs__list row row-cols-2 row-cols-md-3 align-items-stretch no-gutters justify-content-center">
-                <div className="col text-center">
-                  <a href="https://www.abine.com/" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/abine.svg`}
-                      alt="Abine logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://automattic.com/" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/automattic.svg`}
-                      alt="Automattic logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a
-                    href="https://brave.com/global-privacy-content/"
-                    className="orgs__logo"
-                  >
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/brave.svg`}
-                      alt="Brave logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a
-                    href="https://advocacy.consumerreports.org/issue/tech-privacy/"
-                    className="orgs__logo"
-                  >
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/cr.svg`}
-                      alt="Consumer Reports logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://disconnect.me/" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/disconnect.svg`}
-                      alt="Disconnect logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a
-                    href="https://digitalcontentnext.org/"
-                    className="orgs__logo"
-                  >
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/dcn.svg`}
-                      alt="Digital Content Next logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a
-                    href="https://spreadprivacy.com/announcing-global-privacy-control/"
-                    className="orgs__logo"
-                  >
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/duckduckgo-vertical.svg`}
-                      alt="DuckDuckGo logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://www.eff.org" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/eff.svg`}
-                      alt="EFF logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://www.ft.com/" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/ft.svg`}
-                      alt="Financial Times logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://glitch.com" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/glitch.svg`}
-                      alt="Glitch logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://mozilla.org" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/mozilla.svg`}
-                      alt="Mozilla logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a href="https://www.nytimes.com/" className="orgs__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/nyt.svg`}
-                      alt="New York Times logo"
-                    />
-                  </a>
-                </div>
-                <div className="col text-center">
-                  <a
-                    href="https://www.washingtonpost.com/"
-                    className="orgs__logo"
-                  >
-                    <img
-                      src={`${process.env.publicPrefix}/img/participating-logos/washington-post.svg`}
-                      alt="Washington Post logo"
-                    />
-                  </a>
-                </div>
+                {orgsData.data.entries.map(({ url, img, name }) => (
+                  <div className="col text-center" key={name}>
+                    <a href={url} className={styles.orgLogo}>
+                      <img
+                        src={`${process.env.publicPrefix}${img}`}
+                        alt={`${name} logo`}
+                      />
+                    </a>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -390,147 +305,52 @@ export default function Home({ pressData, faqData }) {
       </section>
 
       {/* <!-- DOWNLOAD SECTION --> */}
-      <section id="download" className="download section section--dark">
+      <section
+        id="download"
+        className={`${styles.section} ${styles.sectionDark}`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5">
               <div>
-                <h2 className="section__title">
-                  Get your privacy rights under control.
+                <h2 className={styles.sectionTitle}>
+                  {downloadsData.data.title}
                 </h2>
-                <p className="section__text">
-                  Download one of these participating browsers or extensions to
-                  communicate your Global Privacy Preferences to participating
-                  websites.
-                </p>
+                <div
+                  className={styles.sectionText}
+                  dangerouslySetInnerHTML={{ __html: downloadsData.html }}
+                />
               </div>
             </div>
 
             {/* <!-- DOWNLOAD TABLE --> */}
             <div className="offset-lg-1 col-12 col-lg-6">
-              <ul className="download__table">
-                <li className="position-relative">
-                  <div className="table__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/download-logos/abine.png`}
-                      alt="Abine logo"
-                    />
-                  </div>
-                  <div className="table__desc">Abine</div>
-                  <div className="table__link">
-                    <a
-                      className="stretched-link"
-                      href="https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/"
-                    >
-                      LEARN MORE <VisuallyHidden>about Abine</VisuallyHidden>
-                    </a>
-                  </div>
-                </li>
-                <li className="position-relative">
-                  <div className="table__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/download-logos/brave.png`}
-                      alt="Brave logo"
-                    />
-                  </div>
-                  <div className="table__desc">Brave Privacy Browser</div>
-                  <div className="table__link">
-                    <a
-                      className="stretched-link"
-                      href="https://brave.com/global-privacy-content/"
-                    >
-                      LEARN MORE{' '}
-                      <VisuallyHidden>
-                        about Brave Privacy Browser
-                      </VisuallyHidden>
-                    </a>
-                  </div>
-                </li>
-                <li className="position-relative">
-                  <div className="table__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/download-logos/disconnect.png`}
-                      alt="Disconnect logo"
-                    />
-                  </div>
-                  <div className="table__desc">Disconnect</div>
-                  <div className="table__link">
-                    <a className="stretched-link" href="https://disconnect.me/">
-                      LEARN MORE{' '}
-                      <VisuallyHidden>about Disconnect</VisuallyHidden>
-                    </a>
-                  </div>
-                </li>
-                <li className="position-relative">
-                  <div className="table__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/download-logos/duckduckgo.png`}
-                      alt="DuckDuckGo logo"
-                    />
-                  </div>
-                  <div className="table__desc">DuckDuckGo Privacy Browser</div>
-                  <div className="table__link">
-                    <a
-                      className="stretched-link"
-                      href="https://spreadprivacy.com/announcing-global-privacy-control/"
-                    >
-                      LEARN MORE{' '}
-                      <VisuallyHidden>
-                        about DuckDuckGo Privacy Browser
-                      </VisuallyHidden>
-                    </a>
-                  </div>
-                </li>
-                <li className="position-relative">
-                  <div className="table__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/download-logos/optmeowt.png`}
-                      id="optmeowt-logo"
-                      alt="OptMeOwt logo"
-                    />
-                  </div>
-                  <div className="table__desc">
-                    OptMeowt by privacy-tech-lab
-                  </div>
-                  <div className="table__link">
-                    <a
-                      className="stretched-link"
-                      href="https://privacytechlab.org/optmeowt"
-                    >
-                      LEARN MORE{' '}
-                      <VisuallyHidden>
-                        about OptMeowt by privacy-tech-lab
-                      </VisuallyHidden>
-                    </a>
-                  </div>
-                </li>
-                <li className="position-relative">
-                  <div className="table__logo">
-                    <img
-                      src={`${process.env.publicPrefix}/img/download-logos/badger.png`}
-                      alt="Privacy Badger logo"
-                    />
-                  </div>
-                  <div className="table__desc">Privacy Badger by EFF</div>
-                  <div className="table__link">
-                    <a
-                      className="stretched-link"
-                      href="https://privacybadger.org"
-                    >
-                      LEARN MORE{' '}
-                      <VisuallyHidden>Privacy Badger by EFF</VisuallyHidden>
-                    </a>
-                  </div>
-                </li>
+              <ul className={styles.downloadTable}>
+                {downloadsData.data.entries.map(({ name, url, img }) => (
+                  <li key={name} className="position-relative">
+                    <div className={styles.tableLogo}>
+                      <img
+                        src={`${process.env.publicPrefix}${img}`}
+                        alt={`${name} logo`}
+                      />
+                    </div>
+                    <div className={styles.tableDesc}>{name}</div>
+                    <div className={styles.tableLink}>
+                      <a className="stretched-link" href={url}>
+                        LEARN MORE <VisuallyHidden>about {name}</VisuallyHidden>
+                      </a>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="section">
+      <section className={styles.section}>
         <div id="press" className="container">
-          <h2 className="section__title text-center">
+          <h2 className={`${styles.sectionTitle} text-center`}>
             Featured Press & Announcements
           </h2>
 
@@ -550,9 +370,11 @@ export default function Home({ pressData, faqData }) {
         </div>
       </section>
 
-      <section className="section section--dark">
+      <section className={`${styles.section} ${styles.sectionDark}`}>
         <div id="faq" className="container">
-          <h2 className="section__title text-center">{faqData.data.title}</h2>
+          <h2 className={`${styles.sectionTitle} text-center`}>
+            {faqData.data.title}
+          </h2>
 
           <div className="row justify-content-center mt-5">
             <div className="col-12 col-lg-8">
@@ -608,5 +430,31 @@ Home.propTypes = {
         html: PropTypes.string.isRequired
       })
     ).isRequired
+  }).isRequired,
+  orgsData: PropTypes.shape({
+    data: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      entries: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          url: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
+        })
+      ).isRequired
+    }).isRequired,
+    html: PropTypes.string.isRequired
+  }).isRequired,
+  downloadsData: PropTypes.shape({
+    data: PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      entries: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          url: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
+        })
+      ).isRequired
+    }).isRequired,
+    html: PropTypes.string.isRequired
   }).isRequired
 };
