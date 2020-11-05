@@ -1,7 +1,0 @@
----
-permalink: .well-known/gpc.json
----
-{
-  "gpc": true,
-  "version": 1
-}
