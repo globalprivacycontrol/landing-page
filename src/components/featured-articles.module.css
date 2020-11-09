@@ -1,0 +1,99 @@
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  flex-wrap: wrap;
+
+  & li {
+    box-sizing: border-box;
+    border-radius: 3px;
+    /*filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));*/
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    &:hover {
+      border: 1px solid var(--text-bright-green);
+    }
+    margin-bottom: 24px;
+    & + li {
+      margin-left: 24px;
+      @media(--media-breakpoint-down-md) {
+        &:nth-child(2n + 1) {
+          margin-left: 0;
+        }
+      }
+      @media(--media-breakpoint-down-sm) {
+        margin-left: 0;
+      }
+    }
+    flex: 1 1 0;
+    @media(--media-breakpoint-down-md) {
+      flex: 0 1 auto;
+      width: calc((100% - 24px) / 2); /* 50 % */
+    }
+    @media(--media-breakpoint-down-sm) {
+      width: 100%;
+      min-height: auto;
+    }
+  }
+
+  & a {
+    border-radius: 3px;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    @media(--media-breakpoint-down-md) {
+      flex-direction: row;
+    }
+
+    /* image */
+    & > span:first-child {
+      background-color: var(--primary-bg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 135px;
+      @media(--media-breakpoint-down-md) {
+        min-height: 180px;
+        min-width: 33%;
+      }
+      @media(--media-breakpoint-down-sm) {
+        min-height: auto;
+      }
+      & img {
+        max-width: 100%;
+        padding: 0 1em;
+      }
+    }
+
+    /* title + source */
+    & > span:last-child {
+      background-color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      font-size: calc(14 * var(--px-in-rem));
+      line-height: calc(20/14);
+      font-weight: 500;
+      color: var(--text-dark);
+      @media(--media-breakpoint-down-md) {
+        justify-content: center;
+      }
+
+      /* source */
+      & span:last-child {
+        margin-top: 2em;
+        font-size: calc(10 * var(--px-in-rem));
+        line-height: 1;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: var(--text-bright-green);
+      }
+    }
+  }
+}

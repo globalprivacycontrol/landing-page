@@ -1,16 +1,33 @@
-const autoprefixer = require("autoprefixer");
+const isProd = process.env.NODE_ENV === 'production';
 
-const purgecss = require("@fullhuman/postcss-purgecss")({
-  content: ["./**/*.html", "./static/css/*.scss"]
-});
-
-const cssnano = require("cssnano")({
-  preset: "default",
-});
+const GH_PAGES_PREFIX = ''; // '/gpc-next' without CNAME
 
 module.exports = {
   plugins: [
-    require("autoprefixer"),
-    ...(process.env.NODE_ENV === "production" ? [cssnano, purgecss] : []),
-  ],
+    'postcss-flexbugs-fixes',
+    [
+      'postcss-preset-env',
+      {
+        autoprefixer: {
+          flexbox: 'no-2009'
+        },
+        stage: 3,
+        importFrom: ['./src/styles/variables.css'],
+        features: {
+          'custom-properties': true,
+          'custom-media-queries': true,
+          'nesting-rules': true
+        }
+      }
+    ],
+    [
+      'postcss-url',
+      {
+        // note `rebase` option doesn't work so we use `url`
+        url: function ({ url }) {
+          return isProd ? `${GH_PAGES_PREFIX}${url}` : url;
+        }
+      }
+    ]
+  ]
 };

@@ -1,0 +1,25 @@
+.navbar {
+   padding: calc(40 * var(--px-in-rem)) 0 0;
+}
+
+.mobileMenu {
+  transition: all 300ms ease-out;
+  max-height: 0;
+  &.open {
+    max-height: 330px;
+  }
+}
+
+.linkList {
+  & a {
+    font-size: calc(12 * var(--px-in-rem));
+    font-weight: 900;
+    line-height: calc(28 * var(--px-in-rem));
+    color: white;
+
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

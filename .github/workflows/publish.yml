@@ -1,21 +1,18 @@
 name: Publish
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 jobs:
-  run:
-    name: GitHubPages
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v1.4.3
+      - uses: actions/setup-node@v2.1.2
         with:
-          node-version: "12.x"
+          node-version: '14'
 
       - name: Cache node modules
         uses: actions/cache@v2
@@ -28,29 +25,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static files
-        run: npm run build
-
-      - name: Move assets from dist to root, commit changes
+      - name: Build 🔧
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add ./dist -f
-          git stash
-          git checkout gh-pages
-          git checkout stash -- dist
-          git checkout main -- .well-known/
-          git checkout main -- _config.yml
-          rm ./*.js ./*.svg ./*.png ./*.css ./*.map
-          mv ./dist/press-release/* ./press-release/
-          mv ./dist/press/* ./press/
-          mv ./dist/faq/* ./faq/
-          rmdir ./dist/press-release
-          rmdir ./dist/press
-          rmdir ./dist/faq
-          mv ./dist/* ./
-          rmdir ./dist
-          git add .
-          git commit -m "Push changes to GitHub Pages"
-          git push origin gh-pages
-          git stash clear
+          npm run build
+          touch out/.nojekyll
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: out
+          CLEAN: true

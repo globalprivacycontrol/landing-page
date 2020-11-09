@@ -1,0 +1,63 @@
+.header {
+  background-image: url("/img/contact-bg.svg");
+  background-size: cover;
+}
+
+.navWrapper {
+  padding-bottom: calc(40 * var(--px-in-rem));
+}
+
+.contact {
+  padding: calc(154 * var(--px-in-rem)) 0 calc(130 * var(--px-in-rem));
+  color: white;
+
+  background-image: url("/img/contact-bg.svg");
+  background-size: cover;
+
+  & h1 {
+    font-weight: 900;
+    font-size: calc(30 * var(--px-in-rem));
+    line-height: calc(36 * var(--px-in-rem));
+  }
+
+  & p {
+    font-size: calc(18 * var(--px-in-rem));
+    line-height: calc(28 * var(--px-in-rem))
+  }
+
+  & a {
+    font-size: calc(20 * var(--px-in-rem));
+    line-height: calc(36 / 20);
+    margin-top: calc(46 * var(--px-in-rem));
+    font-weight: 900;
+    color: white;
+
+    @media(--media-breakpoint-up-md) {
+      font-size: calc(30 * var(--px-in-rem));
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer {
+  background: var(--bg-dark);
+  padding: calc(42 * var(--px-in-rem)) 0 calc(42 * var(--px-in-rem));
+
+  & p {
+    font-size: calc(12 * var(--px-in-rem));
+    line-height: calc(18 * var(--px-in-rem));
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  & a {
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      color: white;
+    }
+  }
+}

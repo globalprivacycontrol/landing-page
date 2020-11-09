@@ -1,0 +1,46 @@
+.header {
+  & h2, & h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+  background-color: #F8F8F8;
+  &.dark {
+    background-color: white;
+  }
+
+  cursor: pointer;
+  width: 100%;
+  border: 1px solid #D8D8D8;
+  text-align: left;
+  outline: none;
+
+  & a {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    color: var(--text-dark);
+    & svg {
+      min-width: 1rem;
+      margin-left: auto;
+      transition: transform 0.3s ease-out;
+    }
+    &:hover, &.active {
+      text-decoration: none;
+      color: var(--text-bright-green);
+      & svg {
+        fill: var(--text-bright-green);
+      }
+    }
+    &.active svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.content {
+  color: var(--text-dark);
+  line-height: calc(30 * var(--px-in-rem));
+}
