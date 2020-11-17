@@ -24,7 +24,8 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   Take Control Of Your Privacy
                 </h1>
                 <p className={styles.heroText}>
-                  Making online privacy accessible to everyone starts with a simpler way to exercise your rights.
+                  Making online privacy accessible to everyone starts with a
+                  simpler way to exercise your rights.
                 </p>
 
                 {/* <!-- HERO BUTTONSs --> */}
@@ -137,8 +138,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                 <div className="card-body">
                   <h2 className="card-title">Send the Signal</h2>
                   <p className="card-text">
-                    Your browser will send the GPC signal to websites you
-                    visit.
+                    Your browser will send the GPC signal to websites you visit.
                   </p>
                 </div>
               </div>
@@ -181,9 +181,9 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   <p>
                     You might have noticed “Do Not Sell” and “Object To
                     Processing” links around the web from companies complying
-                    with privacy regulations. Rather than clicking on
-                    each of these links individually across many websites, you
-                    can exercise your rights in one step via the “Global Privacy
+                    with privacy regulations. Rather than clicking on each of
+                    these links individually across many websites, you can
+                    exercise your rights in one step via the “Global Privacy
                     Control” (GPC) signal, which is required under the
                     California Consumer Protection Act (CCPA) and Europe’s
                     Global Data Protection Regulation (GDPR).
@@ -212,14 +212,16 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           <div className="row">
             <div className="col-12 col-lg-5">
               <p className={styles.sectionTitle}>
-                The Global Privacy Control (GPC) helps users signal their desired
-                privacy to websites and services, just by using their browser.
+                The Global Privacy Control (GPC) helps users signal their
+                desired privacy to websites and services, just by using their
+                browser.
               </p>
               <p className={styles.sectionText}>
-                While the GPC signal is not a finalized standard, it's
-                already available to users as part of several major browsers and
-                extensions and is respected by major websites. The GPC signal will be intended to communicate a Do Not
-                Sell request from a global privacy control, as per{' '}
+                While the GPC signal is not a finalized standard, it’s already
+                available to users as part of several major browsers and
+                extensions and is respected by major websites. The GPC signal
+                will be intended to communicate a Do Not Sell request from a
+                global privacy control, as per{' '}
                 <a
                   className="font-weight-bold"
                   href="https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf"
