@@ -84,8 +84,8 @@ export default function Layout({
               <h1>Get Involved</h1>
 
               <p>
-                Contact us to learn more about becoming a Participating
-                Organization and supporting GPC on your browser, app or website.
+                Contact us to learn more about becoming a participating
+                organization and supporting GPC on your browser, app, or website.
               </p>
               <a
                 className="d-block"
