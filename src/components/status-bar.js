@@ -29,21 +29,17 @@ export default function StatusBar() {
             <span className="mb-0 text-center">
               {hasGpc ? (
                 <>
-                  Good news, GPC signal detected.
+                  GPC signal detected.
                   <br />
-                  Click{' '}
-                  <a href="https://global-privacy-control.glitch.me">here</a> to
-                  test against the reference server.
+                  <a href="https://global-privacy-control.glitch.me">Test against the reference server.</a>
                 </>
               ) : (
                 <>
                   GPC signal not detected.
                   <br />
-                  Download a{' '}
                   <Link href="/#download">
-                    <a>browser or extension</a>
-                  </Link>{' '}
-                  that supports it.
+                    <a>Please download a browser or extension that supports it.</a>
+                  </Link>
                 </>
               )}
             </span>

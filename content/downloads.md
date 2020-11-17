@@ -21,5 +21,4 @@ entries:
     img: /img/download-logos/badger.png
 ---
 
-Download one of these participating browsers or extensions to communicate your
-Global Privacy Preferences to participating websites.
+Download one of these supported browsers or extensions to start exercising your privacy rights on participating websites.
