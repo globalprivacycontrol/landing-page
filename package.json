@@ -86,7 +86,7 @@
     "classnames": "^2.2.6",
     "gray-matter": "^4.0.2",
     "js-yaml": "^3.14.0",
-    "next": "10.0.0",
+    "next": "^10.0.2",
     "next-sitemap": "^1.2.22",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-preset-env": "^6.7.0",

@@ -24,8 +24,8 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   Take Control Of Your Privacy
                 </h1>
                 <p className={styles.heroText}>
-                  Making online privacy accessible to everyone starts with a
-                  simpler way to exercise your rights.
+                  Online privacy should be accessible to everyone. It starts
+                  with a simpler way to exercise your rights.
                 </p>
 
                 {/* <!-- HERO BUTTONSs --> */}
