@@ -22,34 +22,6 @@ entries:
     url: https://disconnect.me/
     img: /img/participating-logos/disconnect.svg
     type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
-  - name: Disconnect
-    url: https://disconnect.me/
-    img: /img/participating-logos/disconnect.svg
-    type: Downloadable
   - name: Digital Content Next
     url: https://digitalcontentnext.org/
     img: /img/participating-logos/dcn.svg

@@ -1,4 +1,4 @@
-.sectionText {
+.sectionTitle {
     & h2 {
         font-weight: 900;
         font-size: calc(11 * var(--px-in-rem));

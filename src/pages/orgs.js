@@ -12,7 +12,13 @@ export default function OrgsPage({ data: { title, headerText, entries}= {} }) {
   return (
     <Layout title="Participating Organizations | Global Privacy Control">
       <Article title={title}>
-        <section className={`${styles.sectionText} col-10 text-center`}>
+          <section className="sectionText">
+              <p>
+                  {headerText}
+              </p>
+          </section>
+          
+        <section className={`${styles.sectionTitle} col-10 text-center`}>
               <header>
                   <h2>Browsers + Plug-Ins <span>/ Representing XX,XXX,XXX Users</span></h2>
               </header>
