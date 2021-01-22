@@ -42,5 +42,5 @@ entries:
     img: /img/participating-logos/washington-post.svg
 ---
 
-The following organizations are in support of or have implemented the GPC
-specification.
+The following organizations- representinng XX,XXX,XXX users- are in support of or have implemented the GPC specification.
+
