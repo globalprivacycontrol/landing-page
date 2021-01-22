@@ -297,7 +297,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
             </div>
           </div>
           <div className="d-flex justify-content-center mt-5">
-            <Link href="/press" passHref>
+            <Link href="/orgs" passHref>
               <Button as="a" variant="primary" className={styles.bottomButton}>
                 View All
               </Button>
@@ -305,35 +305,6 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           </div>
         </div>
       </section>
-      {/* <section id="orgs" className={styles.section}>
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg -5">
-              <h2 className={styles.sectionTitle}>{orgsData.data.title}</h2>
-
-              <div
-                className={styles.sectionText}
-                dangerouslySetInnerHTML={{ __html: orgsData.html }}
-              />
-            </div>
-
-            <div className="offset-lg-1 col-12 col-lg-6">
-              <div className="orgs__list row row-cols-2 row-cols-md-3 align-items-stretch no-gutters justify-content-center">
-                {orgsData.data.entries.map(({ url, img, name }) => (
-                  <div className="col text-center" key={name}>
-                    <a href={url} className={styles.orgLogo}>
-                      <img
-                        src={`${process.env.publicPrefix}${img}`}
-                        alt={`${name} logo`}
-                      />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       {/* <!-- DOWNLOAD SECTION --> */}
       <section

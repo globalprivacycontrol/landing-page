@@ -1,0 +1,13 @@
+.sectionText {
+    & h2 {
+        font-weight: 900;
+        font-size: calc(11 * var(--px-in-rem));
+        line-height: 1;
+        letter-spacing: 0.2em;
+        color: var(--text-bright-green);
+        text-transform: uppercase;
+        }
+    & span {
+        color: var(--text-light);
+    }
+}
