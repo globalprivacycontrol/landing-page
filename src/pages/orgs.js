@@ -38,24 +38,24 @@ export default function OrgsPage({ data: { title, headerText, entries}= {} }) {
           <BrowsersPlugins entries={entries} />
         </section>
 
-        <section className={`${styles.sectionTitle} col-9 text-center pt-5 pb-3`}>
+        <section className={`${styles.sectionTitle} col-9 text-center pt-5 pb-3`} id="news">
               <header>
                   <h2>News + Publications <span>/ Representing XX,XXX,XXX Users</span></h2>
               </header>
           </section>
-        <section className="col-9 py-3">
+        <section className="col-9 py-3" >
           <OrgList entries={news} type="News"/>
         </section>
 
 
-        <section className={`${styles.sectionTitle} col-9 text-center pt-5 pb-3`}>
+        <section className={`${styles.sectionTitle} col-9 text-center pt-5 pb-3`} id="partners">
               <header>
                   <h2>Supporting Partners</h2>
               </header>
           </section>
 
         
-        <section className="col-9 py-3">
+        <section className="col-9 py-3" >
           <OrgList entries={partners} type="Partners"/>
         </section>
 

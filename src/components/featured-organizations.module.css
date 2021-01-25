@@ -1,0 +1,27 @@
+.orgLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: calc(20 * var(--px-in-rem));
+    min-height: calc(80 * var(--px-in-rem));
+  
+    @media (--media-breakpoint-up-lg) {
+      min-height: calc(100 * var(--px-in-rem));
+    }
+  
+    &:hover {
+      border: 1px solid var(--text-bright-green);
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+  
+    & img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      max-height: 10rem;
+    }
+  }

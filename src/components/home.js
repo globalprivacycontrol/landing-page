@@ -6,6 +6,7 @@ import FaqList from './faq-list';
 import FeaturedArticles from './featured-articles';
 import VisuallyHidden from './visually-hidden';
 import styles from './home.module.css';
+import FeaturedOrganizations from './featured-organizations';
 
 export default function Home({ pressData, faqData, orgsData, downloadsData }) {
   return (
@@ -334,22 +335,11 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               />
           <div className="row">
             <div className="col-12">
-              <div className="orgs__list row row-cols-2 row-cols-md-6 align-items-stretch no-gutters justify-content-center">
-                {orgsData.data.entries.map(({ url, img, name }) => (
-                  <div className="col text-center" key={name}>
-                    <a href={url} className={styles.orgLogo}>
-                      <img
-                        src={`${process.env.publicPrefix}${img}`}
-                        alt={`${name} logo`}
-                      />
-                    </a>
-                  </div>
-                ))}
-              </div>
+            <FeaturedOrganizations entries={orgsData.data.entries}/>
             </div>
           </div>
           <div className="d-flex justify-content-center mt-5">
-            <Link href="/orgs" passHref>
+            <Link href="/orgs#partners" passHref>
               <Button as="a" variant="primary" className={styles.bottomButton}>
                 View All
               </Button>

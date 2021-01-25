@@ -6,22 +6,27 @@ entries:
     url: https://www.abine.com/
     img: /img/participating-logos/abine.svg
     type: Downloadable
+    isFeaturedIndex: 1
   - name: Automattic
     url: https://automattic.com/
     img: /img/participating-logos/automattic.svg
     type: Partner
+    isFeaturedIndex: 1
   - name: Brave
     url: https://brave.com/global-privacy-content/
     img: /img/participating-logos/brave.svg
     type: Downloadable
+    isFeaturedIndex: 1
   - name: Consumer Reports
     url: https://advocacy.consumerreports.org/issue/tech-privacy/
     img: /img/participating-logos/cr.svg
     type: News
+    isFeaturedIndex: 1
   - name: Disconnect
     url: https://disconnect.me/
     img: /img/participating-logos/disconnect.svg
     type: Downloadable
+    isFeaturedIndex: 1
   - name: Digital Content Next
     url: https://digitalcontentnext.org/
     img: /img/participating-logos/dcn.svg
@@ -30,10 +35,12 @@ entries:
     url: https://spreadprivacy.com/announcing-global-privacy-control/
     img: /img/participating-logos/duckduckgo-vertical.svg
     type: Downloadable
+    isFeaturedIndex: 1
   - name: EFF
     url: https://www.eff.org
     img: /img/participating-logos/eff.svg
     type: Partner
+    isFeaturedIndex: 1
   - name: Financial Times
     url: https://www.ft.com/
     img: /img/participating-logos/ft.svg
@@ -46,10 +53,16 @@ entries:
     url: https://mozilla.org
     img: /img/participating-logos/mozilla.svg
     type: Partner
+    isFeaturedIndex: 1
+  - name: National Science Foundation
+    url: https://www.nsf.gov/
+    img: /img/participating-logos/nsf.svg
+    type: Partner
   - name: New York Times
     url: https://www.nytimes.com/
     img: /img/participating-logos/nyt.svg
     type: News
+    isFeaturedIndex: 1
   - name: OptMeowt by privacy-tech-lab
     url: https://www.privacytechlab.org/optmeowt/
     img: /img/participating-logos/optmeowt.svg
@@ -58,11 +71,19 @@ entries:
     url: https://privacybadger.org
     img: /img/participating-logos/privacybadger.svg
     type: Downloadable
+  - name: Wesleyan University
+    url: https://wesleyan.edu
+    img: /img/participating-logos/wesleyan.svg
+    type: Partner
   - name: Washington Post
     url: https://www.washingtonpost.com/
     img: /img/participating-logos/washington-post.svg
     type: News
+    isFeaturedIndex: 1
+
 ---
+
+The following organizations- representinng XX,XXX,XXX users- are in support of or have implemented the GPC specification.
 
 ---Browsers
 title: Browsers + Plugins / Representing XX,XXX,XXX Users
@@ -75,6 +96,4 @@ title: News + Publications / Representing XX,XXX,XXX Users
 ---Supporting
 title: Supporting Partners
 ---
-
-The following organizations- representinng XX,XXX,XXX users- are in support of or have implemented the GPC specification.
 

@@ -6,7 +6,6 @@ export default function OrgList({ entries, type }) {
     if (type == "News") {
         isNews = true;
     }
-    console.log("isNews is", isNews);
     return (
         <ul className={styles.downloadTable}>
         {entries.map(({ name, url}) => (
@@ -14,7 +13,6 @@ export default function OrgList({ entries, type }) {
             <div className={styles.tableDesc}>{name}</div>
             <div className={styles.tableLink}>
               <a className="stretched-link" href={url}>
-                  {/* {isNews.toString()} */}
                   {!isNews
                 ? name.toUpperCase()
                 : "LEARN MORE"

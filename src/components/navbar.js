@@ -86,11 +86,6 @@ function Links() {
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#orgs">
-          <a className="nav-link text-uppercase">Organizations</a>
-        </Link>
-      </li>
-      <li className="nav-item">
         <Link href="/#gpc-spec">
           <a className="nav-link text-uppercase">Spec</a>
         </Link>
@@ -98,6 +93,11 @@ function Links() {
       <li className="nav-item">
         <Link href="/#download">
           <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link href="/#orgs">
+          <a className="nav-link text-uppercase">Organizations</a>
         </Link>
       </li>
       <li className="nav-item">
