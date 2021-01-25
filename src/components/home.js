@@ -272,8 +272,60 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
+
+      {/* <!-- DOWNLOAD SECTION --> */}
+      <section
+        id="download"
+        className={`${styles.section} `}
+      >
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-lg-5">
+              <div>
+                <h2 className={styles.sectionTitle}>
+                  {downloadsData.data.title}
+                </h2>
+                <div
+                  className={` ${styles.sectionText} mb-5`}
+                  dangerouslySetInnerHTML={{ __html: downloadsData.html }}
+                />
+              </div>
+              <div className="d-flex mt-0">
+                <Link href="/orgs" passHref>
+                  <Button as="a" variant="primary" className={styles.bottomButton}>
+                    View All
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* <!-- DOWNLOAD TABLE --> */}
+            <div className="offset-lg-1 col-12 col-lg-6">
+              <ul className={styles.downloadTable}>
+                {downloadsData.data.entries.map(({ name, url, img }) => (
+                  <li key={name} className="position-relative">
+                    <div className={styles.tableLogo}>
+                      <img
+                        src={`${process.env.publicPrefix}${img}`}
+                        alt={`${name} logo`}
+                      />
+                    </div>
+                    <div className={styles.tableDesc}>{name}</div>
+                    <div className={styles.tableLink}>
+                      <a className="stretched-link" href={url}>
+                        LEARN MORE <VisuallyHidden>about {name}</VisuallyHidden>
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* <!-- PARTICIPATING ORGS SECTION --> */}
-      <section id="orgs" className={styles.section}>
+      <section id="orgs" className={` ${styles.section} ${styles.sectionDark}`}>
         <div className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>{orgsData.data.title}</h2>
           <div
@@ -302,50 +354,6 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                 View All
               </Button>
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- DOWNLOAD SECTION --> */}
-      <section
-        id="download"
-        className={`${styles.section} ${styles.sectionDark}`}
-      >
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg-5">
-              <div>
-                <h2 className={styles.sectionTitle}>
-                  {downloadsData.data.title}
-                </h2>
-                <div
-                  className={styles.sectionText}
-                  dangerouslySetInnerHTML={{ __html: downloadsData.html }}
-                />
-              </div>
-            </div>
-
-            {/* <!-- DOWNLOAD TABLE --> */}
-            <div className="offset-lg-1 col-12 col-lg-6">
-              <ul className={styles.downloadTable}>
-                {downloadsData.data.entries.map(({ name, url, img }) => (
-                  <li key={name} className="position-relative">
-                    <div className={styles.tableLogo}>
-                      <img
-                        src={`${process.env.publicPrefix}${img}`}
-                        alt={`${name} logo`}
-                      />
-                    </div>
-                    <div className={styles.tableDesc}>{name}</div>
-                    <div className={styles.tableLink}>
-                      <a className="stretched-link" href={url}>
-                        LEARN MORE <VisuallyHidden>about {name}</VisuallyHidden>
-                      </a>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </section>

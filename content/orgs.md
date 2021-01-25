@@ -1,6 +1,6 @@
 ---
 title: Participating Organizations
-headerText: Lorem Ipsem Header Text Lorem Ipsem Header Text Lorem Ipsem Header Text Lorem Ipsem Header Text
+headerText: Global Privacy Control has broad industry support. Below, you’ll find browsers and extensions which send the GPC signal, businesses that honor GPC and other supporting partners involved in the creating the specification.
 entries:
   - name: Abine
     url: https://www.abine.com/
@@ -50,6 +50,14 @@ entries:
     url: https://www.nytimes.com/
     img: /img/participating-logos/nyt.svg
     type: News
+  - name: OptMeowt by privacy-tech-lab
+    url: https://www.privacytechlab.org/optmeowt/
+    img: /img/participating-logos/optmeowt.svg
+    type: Downloadable
+  - name: Privacy Badger by EFF
+    url: https://privacybadger.org
+    img: /img/participating-logos/privacybadger.svg
+    type: Downloadable
   - name: Washington Post
     url: https://www.washingtonpost.com/
     img: /img/participating-logos/washington-post.svg
