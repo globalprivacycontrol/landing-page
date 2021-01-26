@@ -9,10 +9,13 @@
     & li {
       box-sizing: border-box;
       border-radius: 3px;
-      /* max-width: 23%; */
       /*filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.15));*/
       box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15);
       border: 1px solid rgba(0, 0, 0, 0.15);
+      @media(--media-breakpoint-up-lg) {
+        max-width: 22%;
+      }
+
       &:hover {
         border: 1px solid var(--text-bright-green);
       }
@@ -28,6 +31,7 @@
             &:nth-child(4n + 1) {
               margin-left: 0;
             }
+
           }
         @media(--media-breakpoint-down-sm) {
           margin-left: 0;

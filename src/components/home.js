@@ -330,7 +330,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         <div className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>{orgsData.data.title}</h2>
           <div
-                className={`${styles.sectionText} text-center`}
+                className={`${styles.sectionText} text-center mb-5`}
                 dangerouslySetInnerHTML={{ __html: orgsData.html }}
               />
           <div className="row">

@@ -26,6 +26,7 @@ export default function FeaturedOrganizations({ entries }) {
     );
   }
   
+  
 FeaturedOrganizations.propTypes = {
     entries: PropTypes.arrayOf(
       PropTypes.shape({

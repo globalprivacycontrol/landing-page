@@ -68,6 +68,7 @@
     line-height: 1;
     text-align: right;
     letter-spacing: 0.2em;
+    white-space: nowrap;
   
     @media (--media-breakpoint-only-lg) {
       flex: 0;

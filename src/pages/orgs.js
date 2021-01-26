@@ -7,13 +7,14 @@ import PressList from '../components/press-list';
 import FeaturedArticles from '../components/featured-articles';
 import BrowsersPlugins from '../components/browsers-plugins';
 import OrgList from '../components/org-list';
+import OrgsHeader from '../components/orgs-header';
 import styles from './orgs.module.css';
 
-export default function OrgsPage({ data: { title, headerText, entries}= {} }) {
+export default function OrgsPage({ data: { title, headerText, entries}= {}, sections }) {
   const partners = entries
     .filter(e => e.type == 'Partner');
   const news = entries
-    .filter(e => e.type == 'News');
+    .filter(e => e.type == 'News'); 
   return (
 
     <Layout title="Participating Organizations | Global Privacy Control">
@@ -28,34 +29,19 @@ export default function OrgsPage({ data: { title, headerText, entries}= {} }) {
               </div>
           </section>
           
-        <section className={`${styles.sectionTitle} col-10 text-center py-4`}>
-              <header>
-                  <h2>Browsers + Plug-Ins <span>/ Representing XX,XXX,XXX Users</span></h2>
-              </header>
-          </section>
-          
-        <section className={`${styles.featured} col-9 py-4`}>
+        <OrgsHeader section={sections.filter(e => e.key == 'Browsers')[0].data}/>
+        <section className={`${styles.featured} col-9 pb-3`}>
           <BrowsersPlugins entries={entries} />
         </section>
 
-        <section className={`${styles.sectionTitle} col-9 text-center pt-5 pb-3`} id="news">
-              <header>
-                  <h2>News + Publications <span>/ Representing XX,XXX,XXX Users</span></h2>
-              </header>
-          </section>
-        <section className="col-9 py-3" >
+        <OrgsHeader section={sections.filter(e => e.key == 'News')[0].data}/>
+        <section className="col-9 pb-3" >
           <OrgList entries={news} type="News"/>
         </section>
 
 
-        <section className={`${styles.sectionTitle} col-9 text-center pt-5 pb-3`} id="partners">
-              <header>
-                  <h2>Supporting Partners</h2>
-              </header>
-          </section>
-
-        
-        <section className="col-9 py-3" >
+        <OrgsHeader section={sections.filter(e => e.key == 'Partners')[0].data}/>
+        <section className="col-9 pb-3" >
           <OrgList entries={partners} type="Partners"/>
         </section>
 

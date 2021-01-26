@@ -14,7 +14,7 @@ export default function OrgList({ entries, type }) {
             <div className={styles.tableLink}>
               <a className="stretched-link" href={url}>
                   {!isNews
-                ? name.toUpperCase()
+                ? url.slice(8,-1).toUpperCase()
                 : "LEARN MORE"
                 }
               </a>

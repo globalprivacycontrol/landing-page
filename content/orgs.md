@@ -37,7 +37,7 @@ entries:
     type: Downloadable
     isFeaturedIndex: 1
   - name: EFF
-    url: https://www.eff.org
+    url: https://www.eff.org/
     img: /img/participating-logos/eff.svg
     type: Partner
     isFeaturedIndex: 1
@@ -46,11 +46,11 @@ entries:
     img: /img/participating-logos/ft.svg
     type: News
   - name: Glitch
-    url: https://glitch.com
+    url: https://glitch.com/
     img: /img/participating-logos/glitch.svg
     type: Partner
   - name: Mozilla
-    url: https://mozilla.org
+    url: https://mozilla.org/
     img: /img/participating-logos/mozilla.svg
     type: Partner
     isFeaturedIndex: 1
@@ -68,11 +68,11 @@ entries:
     img: /img/participating-logos/optmeowt.svg
     type: Downloadable
   - name: Privacy Badger by EFF
-    url: https://privacybadger.org
+    url: https://privacybadger.org/
     img: /img/participating-logos/privacybadger.svg
     type: Downloadable
   - name: Wesleyan University
-    url: https://wesleyan.edu
+    url: https://wesleyan.edu/
     img: /img/participating-logos/wesleyan.svg
     type: Partner
   - name: Washington Post
@@ -86,14 +86,16 @@ entries:
 The following organizations- representinng XX,XXX,XXX users- are in support of or have implemented the GPC specification.
 
 ---Browsers
-title: Browsers + Plugins / Representing XX,XXX,XXX Users
+green: Browsers + Extensions 
+gray:  / Representing 40,000,000+ Users
 ---
 
 ---News
-title: News + Publications / Representing XX,XXX,XXX Users
+green: Businessess Honoring GPC 
+gray:  / Representing XX,XXX,XXX Users
 ---
 
----Supporting
-title: Supporting Partners
+---Partners
+green: Supporting Partners
 ---
 
