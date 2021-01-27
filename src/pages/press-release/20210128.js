@@ -73,7 +73,7 @@ export default function PressRelease20210128Page() {
             </h2>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/meredith.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/meredith.svg`}
                 alt="Meredith Digital logo"
               />
               <p>
@@ -92,7 +92,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/nyt.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/nyt.svg`}
                 alt="New York Times logo"
               />
               <p>
@@ -110,7 +110,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/washington-post.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/washington-post.svg`}
                 alt="Washington Post logo"
               />
               <p>
@@ -126,7 +126,7 @@ export default function PressRelease20210128Page() {
             
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/cafemedia.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/cafemedia.svg`}
                 alt="CafeMedia logo"
               />
               <p>
@@ -145,7 +145,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/onetrust.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/onetrust.svg`}
                 alt="One Trust logo"
               />
               <p>
@@ -163,7 +163,7 @@ export default function PressRelease20210128Page() {
             </blockquote>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/complianz.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/complianz.svg`}
                 alt="Complianz logo"
               />
               <p>
@@ -178,7 +178,7 @@ export default function PressRelease20210128Page() {
             </blockquote>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/sourcepoint.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/sourcepoint.svg`}
                 alt="Sourcepoint logo"
               />
               <p>
@@ -194,7 +194,7 @@ export default function PressRelease20210128Page() {
             </blockquote>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/wirewheel.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/wirewheel.svg`}
                 alt="WireWheel logo"
               />
               <p>

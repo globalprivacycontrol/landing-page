@@ -1,1 +1,14 @@
-<svg height="146pt" preserveAspectRatio="xMidYMid meet" viewBox="0 0 600 146" width="600pt" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(.1 0 0 -.1 0 146)"><path d="m0 730v-730h965 965v205 205h-650-650v50 50h650 650v215 215h-650-650v50 50h650 650v210 210h-965-965z"/><path d="m2030 730v-730h320 320v255 255l648 2 647 3 3 213 2 212h-650-650v50 50h650 650v210 210h-970-970z"/><path d="m4070 730v-730h315 315v255 255h650 650v215 215h-650-650v50 50h650 650v210 210h-965-965z"/></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="100px" viewBox="0 0 260 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>eff</title>
+    <g id="eff" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F8F8F8" x="0" y="0" width="260" height="100"></rect>
+        <g transform="translate(55.000000, 32.000000)" fill="#000000" fill-rule="nonzero" id="Group">
+            <g transform="translate(75.000000, 18.250000) scale(-1, 1) rotate(-180.000000) translate(-75.000000, -18.250000) ">
+                <polygon id="Path" points="0 18.25 0 0 24.125 0 48.25 0 48.25 5.125 48.25 10.25 32 10.25 15.75 10.25 15.75 11.5 15.75 12.75 32 12.75 48.25 12.75 48.25 18.125 48.25 23.5 32 23.5 15.75 23.5 15.75 24.75 15.75 26 32 26 48.25 26 48.25 31.25 48.25 36.5 24.125 36.5 0 36.5"></polygon>
+                <polygon id="Path" points="50.75 18.25 50.75 0 58.75 0 66.75 0 66.75 6.375 66.75 12.75 82.95 12.8 99.125 12.875 99.2 18.2 99.25 23.5 83 23.5 66.75 23.5 66.75 24.75 66.75 26 83 26 99.25 26 99.25 31.25 99.25 36.5 75 36.5 50.75 36.5"></polygon>
+                <polygon id="Path" points="101.75 18.25 101.75 0 109.625 0 117.5 0 117.5 6.375 117.5 12.75 133.75 12.75 150 12.75 150 18.125 150 23.5 133.75 23.5 117.5 23.5 117.5 24.75 117.5 26 133.75 26 150 26 150 31.25 150 36.5 125.875 36.5 101.75 36.5"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
