@@ -20,7 +20,7 @@ entries:
   - name: Consumer Reports
     url: https://advocacy.consumerreports.org/issue/tech-privacy/
     img: /img/participating-logos/cr.svg
-    type: News
+    type: Business
     isFeaturedIndex: 1
   - name: Disconnect
     url: https://disconnect.me/
@@ -39,29 +39,33 @@ entries:
   - name: EFF
     url: https://www.eff.org/
     img: /img/participating-logos/eff.svg
-    type: Partner
+    type: Business
     isFeaturedIndex: 1
   - name: Financial Times
     url: https://www.ft.com/
     img: /img/participating-logos/ft.svg
-    type: News
+    type: Business
   - name: Glitch
     url: https://glitch.com/
     img: /img/participating-logos/glitch.svg
-    type: Partner
+    type: Business
+  - name: Meredith Digital
+    url: https://www.meredith.com/
+    img: /img/participating-logos/meredith.svg
+    type: Business
   - name: Mozilla
     url: https://mozilla.org/
     img: /img/participating-logos/mozilla.svg
-    type: Partner
+    type: Business
     isFeaturedIndex: 1
   - name: National Science Foundation
     url: https://www.nsf.gov/
     img: /img/participating-logos/nsf.svg
-    type: Partner
+    type: Business
   - name: New York Times
     url: https://www.nytimes.com/
     img: /img/participating-logos/nyt.svg
-    type: News
+    type: Business
     isFeaturedIndex: 1
   - name: OptMeowt by privacy-tech-lab
     url: https://www.privacytechlab.org/optmeowt/
@@ -74,23 +78,27 @@ entries:
   - name: Wesleyan University
     url: https://wesleyan.edu/
     img: /img/participating-logos/wesleyan.svg
-    type: Partner
+    type: Business
   - name: Washington Post
     url: https://www.washingtonpost.com/
     img: /img/participating-logos/washington-post.svg
-    type: News
+    type: Business
     isFeaturedIndex: 1
+  - name: WireWheel
+    url: https://www.wirewheel.io
+    img: /img/participating-logos/wirewheel.svg
+    type: Business
 
 ---
 
-The following organizations- representinng XX,XXX,XXX users- are in support of or have implemented the GPC specification.
+The following organizations- representinng 40,000,000 users- are in support of or have implemented the GPC specification.
 
 ---Browsers
 green: Browsers + Extensions 
 gray:  / Representing 40,000,000+ Users
 ---
 
----News
+---Business
 green: Businessess Honoring GPC 
 gray:  / Representing XX,XXX,XXX Users
 ---

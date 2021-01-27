@@ -1,0 +1,219 @@
+import Layout from '../../components/layout';
+import Article from '../../components/article';
+import PressRelease from '../../components/press-release';
+
+export default function PressRelease20210128Page() {
+  return (
+    <Layout title="Press Release | Global Privacy Control">
+      <PressRelease>
+        <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored by Major Publishers ">
+          <div className="col-10">
+            <p>
+              <time className="d-block mb-3" dateTime="2021-01-28">
+                Jan. 28, 2021
+              </time>
+            </p>
+            <p>
+            In conjunction with Data Privacy Day, we are excited to 
+            announce a major milestone on the path to making the Global 
+            Privacy Control (GPC) legally binding under the California 
+            Consumer Privacy Act (CCPA): Millions of users have adopted 
+            GPC-enabled technologies, and major publishers and Consent 
+            Management Platforms now support GPC as a valid means for 
+            web users to opt out of the sale of their personal information. 
+            </p>
+            <p>
+            As of today, over <strong>40 million users</strong> are utilizing a browser or 
+            extension with GPC support—such as <a href="https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/">Abine</a>
+            , <a href="https://brave.com/global-privacy-control/">Brave</a>
+            , <a href="https://spreadprivacy.com/announcing-global-privacy-control/"> DuckDuckGo</a>
+            , <a href="https://disconnect.me/"> Disconnect</a>
+            , and <a href="https://www.eff.org/gpc-privacy-badger"> Privacy Badger</a>.
+             Major publishers such as <a href="https://nytimes.com">The New York Times</a> already recognize the GPC signal as a valid 
+            opt-out of sale under CCPA and others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://automattic.com">Automattic (WordPress.com &amp; Tumblr)</a> and   
+             <a href="https://cafemedia.com/"> CafeMedia</a> have 
+            committed to honoring it this coming quarter. In a major win for 
+            consumer privacy, thousands of websites will soon automatically 
+            honor opt-outs from California residents who are using the 
+            GPC-enabled browsers. This is just the beginning: Leading Consent 
+            Management Platforms <a href="https://www.onetrust.com/solutions/consent-management-platform/">OneTrust</a>
+            , <a href="https://www.sourcepoint.com/">SourcePoint</a>
+            , <a href="https://wirewheel.io">WireWheel</a>
+            , and <a href="https://complianz.io">Complianz.io</a> also 
+            now support GPC so we expect to see many more publishers and websites 
+            that support GPC in the coming months. 
+            </p>
+            <p>
+            The introduction of privacy regulations such as the CCPA and the newly 
+            passed California Privacy Rights Act (CPRA) give consumers the legal 
+            right to opt out of the sale of their data, including via automated 
+            means such as a browser-based Global Privacy Control. Two months ago, 
+            we announced the initial experimental phase of GPC and are excited 
+            to see its growing adoption in the marketplace.
+            </p>
+            <p>
+            With millions of people exercising their rights and a common 
+            implementation across multiple technology providers, we believe 
+            GPC answers California Attorney General Xavier Becerra's <a href="https://www.commerce.senate.gov/services/files/8AF136EE-DE50-4258-98C6-249F5BCECFA4">call</a> for 
+            frictionless privacy controls and can ultimately be legally binding 
+            under CCPA and CPRA.
+            </p>
+            <p>
+            We invite other browsers, publishers and online businesses to meet 
+            the growing demand for online privacy by respecting their customers' 
+            preferences and <a href="https://globalprivacycontrol.org/faq#Publisher">supporting GPC</a>. 
+            </p>
+
+            
+            <hr className="my-5" />
+
+            {/* <!-- QUOTES SECTION --> */}
+            <h2 className="mb-4 font-weight-bold text-center">
+              Quotes from Participating Orgs
+            </h2>
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/meredith.svg`}
+                alt="Meredith Digital logo"
+              />
+              <p>
+              Meredith Digital is committed to providing consumers choice and 
+              respecting their privacy in order to maintain and strengthen their 
+              trusted relationships with our brands. We have already provided CCPA
+               rights nationally to consumers and are extremely supportive of GPC,
+                which is part of our evolving efforts to our digital audience of 
+                150 million consumers.
+              </p>
+              <footer>
+                <a href="linkedin.com/in/alysia-borsa-0911249/">Alysia Borsa</a>,
+                President @ <a href="https://www.meredith.com/">Meredith Digital</a>
+              </footer>
+            </blockquote>
+
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/nyt.svg`}
+                alt="New York Times logo"
+              />
+              <p>
+              The trust of our readers is essential, and privacy is about trust. 
+              Supporting Global Privacy Control on nytimes.com is a powerful way 
+              for us to meet more of our readers' expectations of privacy in relevant 
+              jurisdictions by providing them with a simple, easy-to-use way to convey 
+              their preference once across all sites.
+              </p>
+              <footer>
+                <a href="https://twitter.com/robinberjon">Robin Berjon</a>,
+                VP Data Governance @ <a href="https://www.nytimes.com">The New York Times</a>
+              </footer>
+            </blockquote>
+
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/washington-post.svg`}
+                alt="Washington Post logo"
+              />
+              <p>
+              We take the privacy of our readers seriously and are committed to 
+              providing the best reading experience. With further adoption of GPC, 
+              it will allow us to continue to bring utility and value to our readers
+              </p>
+              <footer>
+                <a href="https://twitter.com/chronotope">Aram Zucker-Scharff</a>,
+                Senior Software Engineer @ <a href="https://www.washingtonpost.com">The Washington Post</a>
+              </footer>
+            </blockquote>
+            
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/cafemedia.svg`}
+                alt="CafeMedia logo"
+              />
+              <p>
+              CafeMedia already enables CCPA Do Not Sell preferences for more than 
+              3,000 independent publishers, reaching more than 170 million monthly 
+              active users. We will begin supporting GPC as a way to enable people 
+              to opt out of the sale of their personal information, as required by 
+              CCPA. We’re excited to build on our efforts to accurately reflect 
+              people’s preferences on how their personal information is used.
+              </p>
+              <footer>
+                <a href="https://twitter.com/pbannist">Paul Bannister</a>,
+                Chief Strategy Officer @ <a href="https://cafemedia.com/">CafeMedia</a>
+              </footer>
+            </blockquote>
+
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/onetrust.svg`}
+                alt="One Trust logo"
+              />
+              <p>
+              Consumer’s expect privacy. As privacy professionals it is our 
+              responsibility to respect those  choices, while also providing a 
+              consistent experience across the internet. OneTrust is honored 
+              to partner with GPC to expand individual privacy controls and 
+              support organizations in achieving compliance through the use of 
+              the Privacy Browser Signal.
+              </p>
+              <footer>
+                <a href="https://twitter.com/blakebrannon">Blake Brannon</a>,
+                Chief Technology Officer @ <a href="https://www.onetrust.com/solutions/consent-management-platform/">One Trust</a>
+              </footer>
+            </blockquote>
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/complianz.svg`}
+                alt="Complianz logo"
+              />
+              <p>
+              Complianz allows 200.000 websites around the globe to respect 
+              GPC as it is likely to become the next standard for consumers 
+              to exercise their rights under international privacy legislation.
+              </p>
+              <footer>
+                <a href="">Leon Wimmenhoeve</a>,
+                Founder & CEO @ <a href="https://complianz.io/">Complianz</a>
+              </footer>
+            </blockquote>
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/sourcepoint.svg`}
+                alt="Sourcepoint logo"
+              />
+              <p>
+              Improving experience for users who want to exercise their data rights 
+              should be an imperative for all organizations. Sourcepoint is pleased 
+              to support the GPC initiative and drive continued innovation in consumer 
+              privacy experience.
+              </p>
+              <footer>
+                <a href="https://twitter.com/bnb">Ben Barokas</a>,
+                Co-Founder & CEO @ <a href="https://www.sourcepoint.com/">Sourcepoint</a>
+              </footer>
+            </blockquote>
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/wirewheel.svg`}
+                alt="WireWheel logo"
+              />
+              <p>
+              WireWheel was founded on the principle of enabling companies to 
+              be the best stewards of their customer’s information, so we are 
+              excited to support GPC efforts to more easily and automatically 
+              exercise their privacy rights. As new privacy laws are enacted 
+              around the world, initiatives such as GPC will be critical to 
+              simplifying the process for consumers to communicate privacy preferences.
+              </p>
+              <footer>
+                <a href="https://twitter.com/justinant1">Justin Antonipillai</a>,
+                Founder & CEO @ <a href="https://wirewheel.io">WireWheel</a>
+              </footer>
+            </blockquote>
+
+          </div>
+        </Article>
+      </PressRelease>
+    </Layout>
+  );
+}

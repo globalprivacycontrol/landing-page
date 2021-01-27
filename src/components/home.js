@@ -93,7 +93,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </span>
 
               <p className="mb-0 py-3 text-center">
-                <Link href="/press-release/20201007">
+                <Link href="/">
                   <a>
                     <u>Read the Global Privacy Control press release.</u>
                   </a>

@@ -13,8 +13,8 @@ import styles from './orgs.module.css';
 export default function OrgsPage({ data: { title, headerText, entries}= {}, sections }) {
   const partners = entries
     .filter(e => e.type == 'Partner');
-  const news = entries
-    .filter(e => e.type == 'News'); 
+  const Business = entries
+    .filter(e => e.type == 'Business'); 
   return (
 
     <Layout title="Participating Organizations | Global Privacy Control">
@@ -34,16 +34,16 @@ export default function OrgsPage({ data: { title, headerText, entries}= {}, sect
           <BrowsersPlugins entries={entries} />
         </section>
 
-        <OrgsHeader section={sections.filter(e => e.key == 'News')[0].data}/>
+        <OrgsHeader section={sections.filter(e => e.key == 'Business')[0].data}/>
         <section className="col-9 pb-3" >
-          <OrgList entries={news} type="News"/>
+          <OrgList entries={Business} type="Business"/>
         </section>
 
 
-        <OrgsHeader section={sections.filter(e => e.key == 'Partners')[0].data}/>
+        {/* <OrgsHeader section={sections.filter(e => e.key == 'Partners')[0].data}/>
         <section className="col-9 pb-3" >
           <OrgList entries={partners} type="Partners"/>
-        </section>
+        </section> */}
 
       </Article>
     </Layout>

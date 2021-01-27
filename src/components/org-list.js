@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import styles from './org-list.module.css';
 
 export default function OrgList({ entries, type }) {
-    var isNews = false;
-    if (type == "News") {
-        isNews = true;
+    var isBusiness = false;
+    if (type == "Business") {
+        isBusiness = true;
     }
     return (
         <ul className={styles.downloadTable}>
@@ -13,7 +13,7 @@ export default function OrgList({ entries, type }) {
             <div className={styles.tableDesc}>{name}</div>
             <div className={styles.tableLink}>
               <a className="stretched-link" href={url}>
-                  {!isNews
+                  {!isBusiness
                 ? url.slice(8,-1).toUpperCase()
                 : "LEARN MORE"
                 }
