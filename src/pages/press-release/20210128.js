@@ -25,16 +25,16 @@ export default function PressRelease20210128Page() {
             <p>
             As of today, over 40 million users are utilizing a browser or 
             extension with GPC support—such as <a href="https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/">Abine</a>
-            , <a href="https://brave.com/global-privacy-control/">Brave</a>
+            , <a href="https://brave.com/">Brave</a>
             , <a href="https://spreadprivacy.com/announcing-global-privacy-control/"> DuckDuckGo</a>
             , <a href="https://disconnect.me/"> Disconnect</a>
             , and <a href="https://www.eff.org/gpc-privacy-badger"> Privacy Badger</a>.
              Major publishers such as <a href="https://nytimes.com">The New York Times</a> now recognize the GPC signal as a valid 
-            opt-out of sale under CCPA.  Others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://www.meredith.com">Meredith Digital (People.com, Allrecipes.com, etc)</a>, <a href="https://automattic.com">Automattic (WordPress.com)</a> and   
+            opt-out of sale under CCPA.  Others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://www.meredith.com">Meredith Digital (People.com, Allrecipes.com, etc)</a>, <a href="https://automattic.com">Automattic (WordPress.com)</a> and,   
              <a href="https://cafemedia.com/"> CafeMedia</a> have 
             committed to honoring it this coming quarter. Leading Consent 
             Management Platforms <a href="https://www.onetrust.com/solutions/consent-management-platform/">OneTrust</a>
-            , <a href="https://www.sourcepoint.com/">SourcePoint</a>
+            , <a href="https://www.sourcepoint.com/cmp">Sourcepoint</a>
             , <a href="https://wirewheel.io">WireWheel</a>
             , and <a href="https://complianz.io">Complianz.io</a> also 
             now support GPC so we expect to see many more publishers and websites 
@@ -171,7 +171,7 @@ export default function PressRelease20210128Page() {
               </p>
               <footer>
                 <a href="https://twitter.com/bnb">Ben Barokas</a>,
-                Co-Founder & CEO @ <a href="https://www.sourcepoint.com/">Sourcepoint</a>
+                Co-Founder & CEO @ <a href="https://www.sourcepoint.com/cmp">Sourcepoint</a>
               </footer>
             </blockquote>
             <blockquote className="mb-5">
