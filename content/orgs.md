@@ -10,7 +10,7 @@ entries:
   - name: Automattic
     url: https://automattic.com/
     img: /img/participating-logos/automattic.svg
-    type: Partner
+    type: Business
     isFeaturedIndex: 1
   - name: Brave
     url: https://brave.com/global-privacy-content/
@@ -39,7 +39,7 @@ entries:
   - name: Digital Content Next
     url: https://digitalcontentnext.org/
     img: /img/participating-logos/dcn.svg
-    type: Partner
+    type: Business
   - name: DuckDuckGo
     url: https://spreadprivacy.com/announcing-global-privacy-control/
     img: /img/participating-logos/duckduckgo-vertical.svg
@@ -109,7 +109,7 @@ entries:
 
 ---
 
-The following organizations- representinng 40,000,000 users- are in support of or have implemented the GPC specification.
+The following organizations- representing 40,000,000 users- are in support of or have implemented the GPC specification.
 
 ---Browsers
 green: Browsers + Extensions 
