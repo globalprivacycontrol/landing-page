@@ -1,0 +1,10 @@
+
+.sectionText {
+    font-size: calc(16 * var(--px-in-rem));
+    line-height: calc(28 * var(--px-in-rem));
+    margin-bottom: calc(97 * var(--px-in-rem));
+  
+    & a {
+      color: var(--text-dark);
+    }
+  }

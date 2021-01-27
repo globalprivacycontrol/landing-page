@@ -6,6 +6,7 @@ import FaqList from './faq-list';
 import FeaturedArticles from './featured-articles';
 import VisuallyHidden from './visually-hidden';
 import styles from './home.module.css';
+import FeaturedOrganizations from './featured-organizations';
 
 export default function Home({ pressData, faqData, orgsData, downloadsData }) {
   return (
@@ -92,7 +93,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </span>
 
               <p className="mb-0 py-3 text-center">
-                <Link href="/press-release/20201007">
+                <Link href="/">
                   <a>
                     <u>Read the Global Privacy Control press release.</u>
                   </a>
@@ -272,41 +273,11 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
-      {/* <!-- PARTICIPATING ORGS SECTION --> */}
-      <section id="orgs" className={styles.section}>
-        <div className="container">
-          <div className="row">
-            <div className="col-12 col-lg -5">
-              <h2 className={styles.sectionTitle}>{orgsData.data.title}</h2>
-
-              <div
-                className={styles.sectionText}
-                dangerouslySetInnerHTML={{ __html: orgsData.html }}
-              />
-            </div>
-
-            <div className="offset-lg-1 col-12 col-lg-6">
-              <div className="orgs__list row row-cols-2 row-cols-md-3 align-items-stretch no-gutters justify-content-center">
-                {orgsData.data.entries.map(({ url, img, name }) => (
-                  <div className="col text-center" key={name}>
-                    <a href={url} className={styles.orgLogo}>
-                      <img
-                        src={`${process.env.publicPrefix}${img}`}
-                        alt={`${name} logo`}
-                      />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* <!-- DOWNLOAD SECTION --> */}
       <section
         id="download"
-        className={`${styles.section} ${styles.sectionDark}`}
+        className={`${styles.section} `}
       >
         <div className="container">
           <div className="row">
@@ -316,9 +287,16 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   {downloadsData.data.title}
                 </h2>
                 <div
-                  className={styles.sectionText}
+                  className={` ${styles.sectionText} mb-5`}
                   dangerouslySetInnerHTML={{ __html: downloadsData.html }}
                 />
+              </div>
+              <div className="d-flex mt-0 mb-4">
+                <Link href="/orgs" passHref>
+                  <Button as="a" variant="primary" className={styles.bottomButton}>
+                    View All
+                  </Button>
+                </Link>
               </div>
             </div>
 
@@ -347,6 +325,31 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
+      {/* <!-- PARTICIPATING ORGS SECTION --> */}
+      <section id="orgs" className={` ${styles.section} ${styles.sectionDark}`}>
+        <div className="container">
+          <h2 className={`${styles.sectionTitle} text-center`}>{orgsData.data.title}</h2>
+          <div
+                className={`${styles.sectionText} text-center mb-5`}
+                dangerouslySetInnerHTML={{ __html: orgsData.html }}
+              />
+          <div className="row">
+            <div className="col-12">
+            <FeaturedOrganizations entries={orgsData.data.entries}/>
+            </div>
+          </div>
+          <div className="d-flex justify-content-center mt-5">
+            <Link href="/orgs#Business" passHref>
+              <Button as="a" variant="primary" className={styles.bottomButton}>
+                View All
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+
+      {/* <!-- PRESS SECTION --> */}
       <section className={styles.section}>
         <div id="press" className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>
@@ -369,6 +372,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
+      {/* <!-- FAQ SECTION --> */}
       <section className={`${styles.section} ${styles.sectionDark}`}>
         <div id="faq" className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>

@@ -21,4 +21,4 @@ entries:
     img: /img/download-logos/badger.png
 ---
 
-Download one of these supported browsers or extensions to start exercising your privacy rights on participating websites.
+Join the more than **40 million people** using one of these supported browsers or extensions to start exercising your privacy rights on participating websites. 

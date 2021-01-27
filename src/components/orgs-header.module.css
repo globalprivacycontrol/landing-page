@@ -1,0 +1,14 @@
+.sectionTitle {
+    & h2 {
+        font-weight: 900;
+        font-size: calc(12 * var(--px-in-rem));
+        line-height: calc(28 * var(--px-in-rem));
+        letter-spacing: 0.2em;
+        color: var(--text-bright-green);
+        text-transform: uppercase;
+        }
+    & span {
+        color: var(--text-light);
+        font-weight: 900;
+    }
+}
