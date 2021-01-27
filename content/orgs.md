@@ -109,16 +109,16 @@ entries:
 
 ---
 
-The following organizations- representing 40,000,000 users- are in support of or have implemented the GPC specification.
+The following organizations- representing over ~40million users- are in support of or have implemented the GPC specification.
 
 ---Browsers
 green: Browsers + Extensions 
-gray:  / Representing 40,000,000+ Users
+gray:  / (Collectively Over ~40million Users)
 ---
 
 ---Business
-green: Businessess Honoring GPC 
-gray:  / Representing XX,XXX,XXX Users
+green: Participating Organizations GPC 
+gray:  / (Collectively Over Hundreds of Thousands of Websites and Blogs)
 ---
 
 ---Partners
