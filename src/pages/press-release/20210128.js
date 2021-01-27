@@ -18,8 +18,8 @@ export default function PressRelease20210128Page() {
             announce a major milestone on the path to making the Global 
             Privacy Control (GPC) legally binding under the California 
             Consumer Privacy Act (CCPA): <strong>Millions of users have adopted 
-            GPC-enabled technologies, and major publishers and hundreds of thousands of
-            websites support GPC as a valid means for California consumers to opt out of
+            GPC-enabled technologies, and major publishers alongside hundreds of thousands of
+            smaller websites support GPC as a valid means for California consumers to opt out of
             the sale of their personal information.</strong>
             </p>
             <p>
@@ -56,7 +56,7 @@ export default function PressRelease20210128Page() {
             under CCPA and CPRA.
             </p>
             <p>
-            We invite other browsers, publishers and online businesses to meet 
+            We invite other browsers, publishers, and online businesses to meet 
             the growing demand for online privacy by respecting their customers' 
             preferences and <a href="https://globalprivacycontrol.org/faq#Publisher">supporting GPC</a>. 
             </p>
