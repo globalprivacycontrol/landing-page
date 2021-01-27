@@ -291,7 +291,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   dangerouslySetInnerHTML={{ __html: downloadsData.html }}
                 />
               </div>
-              <div className="d-flex mt-0">
+              <div className="d-flex mt-0 mb-4">
                 <Link href="/orgs" passHref>
                   <Button as="a" variant="primary" className={styles.bottomButton}>
                     View All
@@ -339,7 +339,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
             </div>
           </div>
           <div className="d-flex justify-content-center mt-5">
-            <Link href="/orgs#partners" passHref>
+            <Link href="/orgs#Business" passHref>
               <Button as="a" variant="primary" className={styles.bottomButton}>
                 View All
               </Button>

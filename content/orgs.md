@@ -17,6 +17,15 @@ entries:
     img: /img/participating-logos/brave.svg
     type: Downloadable
     isFeaturedIndex: 1
+  - name: CafeMedia
+    url: https://cafemedia.com/
+    img: /img/participating-logos/cafemedia.svg
+    type: Business
+    isFeaturedIndex: 1
+  - name: Complianz
+    url: https://complianz.io/
+    img: /img/participating-logos/complianz.svg
+    type: Business
   - name: Consumer Reports
     url: https://advocacy.consumerreports.org/issue/tech-privacy/
     img: /img/participating-logos/cr.svg
@@ -53,6 +62,7 @@ entries:
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
     type: Business
+    isFeaturedIndex: 1
   - name: Mozilla
     url: https://mozilla.org/
     img: /img/participating-logos/mozilla.svg
@@ -67,6 +77,10 @@ entries:
     img: /img/participating-logos/nyt.svg
     type: Business
     isFeaturedIndex: 1
+  - name: OneTrust
+    url: https://www.onetrust.com/solutions/consent-management-platform/
+    img: /img/participating-logos/onetrust.svg
+    type: Business
   - name: OptMeowt by privacy-tech-lab
     url: https://www.privacytechlab.org/optmeowt/
     img: /img/participating-logos/optmeowt.svg
@@ -75,6 +89,10 @@ entries:
     url: https://privacybadger.org/
     img: /img/participating-logos/privacybadger.svg
     type: Downloadable
+  - name: SourcePoint
+    url: https://www.sourcepoint.com/
+    img: /img/participating-logos/sourcepoint.svg
+    type: Business
   - name: Wesleyan University
     url: https://wesleyan.edu/
     img: /img/participating-logos/wesleyan.svg

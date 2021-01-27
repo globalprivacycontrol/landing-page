@@ -6,7 +6,6 @@ import styles from './featured-organizations.module.css';
 export default function FeaturedOrganizations({ entries }) {
     const featured = entries
       .filter(e => e.isFeaturedIndex != null)
-      .slice(0, 10)
       .sort();
   
     return (

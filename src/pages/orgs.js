@@ -35,7 +35,7 @@ export default function OrgsPage({ data: { title, headerText, entries}= {}, sect
         </section>
 
         <OrgsHeader section={sections.filter(e => e.key == 'Business')[0].data}/>
-        <section className="col-9 pb-3" >
+        <section className="col-9 pb-3" id="Business">
           <OrgList entries={Business} type="Business"/>
         </section>
 
