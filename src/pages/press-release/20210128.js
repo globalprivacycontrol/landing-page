@@ -6,7 +6,7 @@ export default function PressRelease20210128Page() {
   return (
     <Layout title="Press Release | Global Privacy Control">
       <PressRelease>
-        <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored by Major Publishers ">
+        <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored by Hundreds of Thousands of Websites">
           <div className="col-10">
             <p>
               <time className="d-block mb-3" dateTime="2021-01-28">
@@ -17,31 +17,28 @@ export default function PressRelease20210128Page() {
             In conjunction with Data Privacy Day, we are excited to 
             announce a major milestone on the path to making the Global 
             Privacy Control (GPC) legally binding under the California 
-            Consumer Privacy Act (CCPA): Millions of users have adopted 
-            GPC-enabled technologies, and major publishers and Consent 
-            Management Platforms now support GPC as a valid means for 
-            web users to opt out of the sale of their personal information. 
+            Consumer Privacy Act (CCPA): <strong>Millions of users have adopted 
+            GPC-enabled technologies, and major publishers and hundreds of thousands of
+            websites support GPC as a valid means for California consumers to opt out of
+            the sale of their personal information.</strong>
             </p>
             <p>
-            As of today, over <strong>40 million users</strong> are utilizing a browser or 
+            As of today, over 40 million users are utilizing a browser or 
             extension with GPC support—such as <a href="https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/">Abine</a>
             , <a href="https://brave.com/global-privacy-control/">Brave</a>
             , <a href="https://spreadprivacy.com/announcing-global-privacy-control/"> DuckDuckGo</a>
             , <a href="https://disconnect.me/"> Disconnect</a>
             , and <a href="https://www.eff.org/gpc-privacy-badger"> Privacy Badger</a>.
-             Major publishers such as <a href="https://nytimes.com">The New York Times</a> already recognize the GPC signal as a valid 
-            opt-out of sale under CCPA and others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://automattic.com">Automattic (WordPress.com &amp; Tumblr)</a> and   
+             Major publishers such as <a href="https://nytimes.com">The New York Times</a> now recognize the GPC signal as a valid 
+            opt-out of sale under CCPA.  Others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://www.meredith.com">Meredith Digital (People.com / Allrecipes.com)</a>, <a href="https://automattic.com">Automattic (WordPress.com)</a> and   
              <a href="https://cafemedia.com/"> CafeMedia</a> have 
-            committed to honoring it this coming quarter. In a major win for 
-            consumer privacy, thousands of websites will soon automatically 
-            honor opt-outs from California residents who are using the 
-            GPC-enabled browsers. This is just the beginning: Leading Consent 
+            committed to honoring it this coming quarter. Leading Consent 
             Management Platforms <a href="https://www.onetrust.com/solutions/consent-management-platform/">OneTrust</a>
             , <a href="https://www.sourcepoint.com/">SourcePoint</a>
             , <a href="https://wirewheel.io">WireWheel</a>
             , and <a href="https://complianz.io">Complianz.io</a> also 
             now support GPC so we expect to see many more publishers and websites 
-            that support GPC in the coming months. 
+            that will offer support for GPC in the coming months. 
             </p>
             <p>
             The introduction of privacy regulations such as the CCPA and the newly 
@@ -163,21 +160,6 @@ export default function PressRelease20210128Page() {
             </blockquote>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/complianz.svg`}
-                alt="Complianz logo"
-              />
-              <p>
-              Complianz allows 200.000 websites around the globe to respect 
-              GPC as it is likely to become the next standard for consumers 
-              to exercise their rights under international privacy legislation.
-              </p>
-              <footer>
-                <a href="">Leon Wimmenhoeve</a>,
-                Founder & CEO @ <a href="https://complianz.io/">Complianz</a>
-              </footer>
-            </blockquote>
-            <blockquote className="mb-5">
-              <img
                 src={`${process.env.publicPrefix}/img/participating-logos/sourcepoint.svg`}
                 alt="Sourcepoint logo"
               />
@@ -210,7 +192,21 @@ export default function PressRelease20210128Page() {
                 Founder & CEO @ <a href="https://wirewheel.io">WireWheel</a>
               </footer>
             </blockquote>
-
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/complianz.svg`}
+                alt="Complianz logo"
+              />
+              <p>
+              Complianz allows 200.000 websites around the globe to respect 
+              GPC as it is likely to become the next standard for consumers 
+              to exercise their rights under international privacy legislation.
+              </p>
+              <footer>
+                <a href="">Leon Wimmenhoeve</a>,
+                Founder & CEO @ <a href="https://complianz.io/">Complianz</a>
+              </footer>
+            </blockquote>
           </div>
         </Article>
       </PressRelease>
