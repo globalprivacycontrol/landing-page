@@ -155,26 +155,7 @@ export default function PressRelease20210128Page() {
               </p>
               <footer>
                 <a href="https://twitter.com/blakebrannon">Blake Brannon</a>,
-<<<<<<< HEAD
-                Chief Technology Officer @ <a href="https://www.onetrust.com/solutions/consent-management-platform/">One Trust</a>
-              </footer>
-            </blockquote>
-            <blockquote className="mb-5">
-              <img
-                src={`${process.env.publicPrefix}/img/press-release-logos/complianz.svg`}
-                alt="Complianz logo"
-              />
-              <p>
-              Complianz allows 200.000 websites around the globe to respect 
-              GPC as it is likely to become the next standard for consumers 
-              to exercise their rights under international privacy legislation.
-              </p>
-              <footer>
-                <a href="">Leon Wimmenhoeve</a>,
-                Founder & CEO @ <a href="https://complianz.io/">Complianz</a>
-=======
                 Chief Technology Officer @ <a href="https://www.onetrust.com/solutions/consent-management-platform/">OneTrust</a>
->>>>>>> 7c6fbe6652c1934f520a1361979de9d5fb169c21
               </footer>
             </blockquote>
             <blockquote className="mb-5">

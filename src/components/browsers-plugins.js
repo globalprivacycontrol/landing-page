@@ -10,12 +10,12 @@ export default function BrowsersPlugins({ entries }) {
 
   return (
     <ul className={styles.list}>
-      {browsersPlugins.map(({ name, url, img }) => (
+      {browsersPlugins.map(({ name, url, browser_img }) => (
         <li key={name}>
           <a href={url}>
             <span>
               <img
-                src={`${process.env.publicPrefix}${img}`}
+                src={`${process.env.publicPrefix}${browser_img}`}
                 alt={`logo for ${name}`}
               />
             </span>
@@ -35,6 +35,7 @@ BrowsersPlugins.propTypes = {
         name: PropTypes.string.isRequired,
         url: PropTypes.string.isRequired,
         img: PropTypes.string,
+        browser_img: PropTypes.string,
         type: PropTypes.string.isRequired,
     })
   ).isRequired
