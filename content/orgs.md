@@ -117,7 +117,7 @@ gray:  / (Collectively Over ~40million Users)
 ---
 
 ---Business
-green: Participating Organizations GPC 
+green: Participating Organizations 
 gray:  / (Collectively Over Hundreds of Thousands of Websites and Blogs)
 ---
 
