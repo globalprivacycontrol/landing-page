@@ -30,7 +30,7 @@ export default function PressRelease20210128Page() {
             , <a href="https://disconnect.me/"> Disconnect</a>
             , and <a href="https://www.eff.org/gpc-privacy-badger"> Privacy Badger</a>.
              Major publishers such as <a href="https://nytimes.com">The New York Times</a> now recognize the GPC signal as a valid 
-            opt-out of sale under CCPA.  Others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://www.meredith.com">Meredith Digital (People.com, Allrecipes.com, etc)</a>, <a href="https://automattic.com">Automattic (WordPress.com)</a> and,   
+            opt-out of sale under CCPA.  Others, including <a href="https://washingtonpost.com">The Washington Post</a>, <a href="https://www.meredith.com">Meredith Digital (People.com, Allrecipes.com, etc)</a>, <a href="https://automattic.com">Automattic (WordPress.com)</a>, and   
              <a href="https://cafemedia.com/"> CafeMedia</a> have 
             committed to honoring it this coming quarter. Leading Consent 
             Management Platforms <a href="https://www.onetrust.com/solutions/consent-management-platform/">OneTrust</a>
