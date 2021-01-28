@@ -44,7 +44,7 @@ entries:
     img: /img/participating-logos/dcn.svg
     type: Business
   - name: DuckDuckGo
-    url: https://spreadprivacy.com/announcing-global-privacy-control/
+    url: https://spreadprivacy.com/global-privacy-control-enabled-by-default/
     img: /img/participating-logos/duckduckgo-vertical.svg
     browser_img: /img/browser-logos/DDG.svg
     type: Downloadable
