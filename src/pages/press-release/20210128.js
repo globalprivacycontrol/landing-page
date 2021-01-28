@@ -150,7 +150,7 @@ export default function PressRelease20210128Page() {
               </p>
               <footer>
                 <a href="https://twitter.com/yegg">Gabriel Weinberg</a>,
-                CEO & Founder @ <a href="https://duckduckgo.com.com/">DuckDuckGo</a>
+                CEO & Founder @ <a href="https://duckduckgo.com/">DuckDuckGo</a>
               </footer>
             </blockquote>
 
