@@ -6,7 +6,7 @@ export default function PressRelease20210128Page() {
   return (
     <Layout title="Press Release | Global Privacy Control">
       <PressRelease>
-        <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored by Hundreds of Thousands of Websites">
+        <Article title="GPC Privacy Browser Signal Now Used by Millions and Will Be Honored by Hundreds of Thousands of Websites">
           <div className="col-10">
             <p>
               <time className="d-block mb-3" dateTime="2021-01-28">
@@ -70,30 +70,7 @@ export default function PressRelease20210128Page() {
             </h2>
             <blockquote className="mb-5">
               <img
-<<<<<<< HEAD
-                src={`${process.env.publicPrefix}/img/press-release-logos/meredith.svg`}
-                alt="Meredith Digital logo"
-              />
-              <p>
-              Meredith Digital is committed to providing consumers choice and 
-              respecting their privacy in order to maintain and strengthen their 
-              trusted relationships with our brands. We have already provided CCPA
-               rights nationally to consumers and are extremely supportive of GPC,
-                which is part of our evolving efforts to our digital audience of 
-                150 million consumers.
-              </p>
-              <footer>
-                <a href="linkedin.com/in/alysia-borsa-0911249/">Alysia Borsa</a>,
-                President @ <a href="https://www.meredith.com/">Meredith Digital</a>
-              </footer>
-            </blockquote>
-
-            <blockquote className="mb-5">
-              <img
-                src={`${process.env.publicPrefix}/img/press-release-logos/nyt.svg`}
-=======
                 src={`${process.env.publicPrefix}/img/participating-logos/nyt.svg`}
->>>>>>> 3361bb5cafc0b19b01a9545299525d36ff10a8d0
                 alt="New York Times logo"
               />
               <p>

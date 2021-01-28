@@ -3,7 +3,7 @@ title: Press & Announcements
 entries:
   - datePublished: Jan. 28, 2021
     contentUrl: https://globalprivacycontrol.org/press-release/20210128
-    title: "GPC Privacy Browser Signal Now Used by Millions and Honored by Hundreds of Thousands of Websites"
+    title: "GPC Privacy Browser Signal Now Used by Millions and Will Be Honored by Hundreds of Thousands of Websites"
     source: Global Privacy Control
     isFeaturedIndex: 1
     img: "/img/press-logos/gpc-white.svg"
