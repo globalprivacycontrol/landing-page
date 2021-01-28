@@ -144,7 +144,7 @@ export default function PressRelease20210128Page() {
             <blockquote className="mb-5">
               <img
               
-                src={`${process.env.publicPrefix}/img/participating-logos/duckduckgo-horizontal.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/duckduckgo.svg`}
                 alt="DuckDuckGo logo"
               />
               <p>
@@ -158,7 +158,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/brave.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/brave.svg`}
                 alt="Brave logo"
               />
               <p>
