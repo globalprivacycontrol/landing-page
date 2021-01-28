@@ -22,27 +22,27 @@ export default function Layout({
         <meta name="description" content={description} />
         <link
           rel="canonical"
-          href={`https://globalprivacycontrol.org${router.pathname}`}
+          href={`${process.env.siteUrl}${router.pathname}`}
         />
 
         {/* <!-- OPEN GRAPH / FACEBOOK --> */}
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
-          content={`https://globalprivacycontrol.org${router.pathname}`}
+          content={`${process.env.siteUrl}${router.pathname}`}
         />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta
           property="og:image"
-          content={`${process.env.publicPrefix}/img/gpc-social-big.jpg`}
+          content={`${process.env.siteUrl}/img/gpc-social-big.jpg`}
         />
 
         {/* <!-- TWITTER --> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:url"
-          content={`https://globalprivacycontrol.org${router.pathname}`}
+          content={`${process.env.siteUrl}${router.pathname}`}
         />
         <meta
           name="twitter:title"
@@ -51,7 +51,7 @@ export default function Layout({
         <meta name="twitter:description" content={description} />
         <meta
           name="twitter:image"
-          content={`${process.env.publicPrefix}/img/gpc-social-big.jpg`}
+          content={`${process.env.siteUrl}/img/gpc-social-big.jpg`}
         />
         <meta name="twitter:site" content="@globalprivcntrl" />
         <meta name="twitter:creator" content="@globalprivcntrl" />
@@ -85,7 +85,8 @@ export default function Layout({
 
               <p>
                 Contact us to learn more about becoming a participating
-                organization and supporting GPC on your browser, app, or website.
+                organization and supporting GPC on your browser, app, or
+                website.
               </p>
               <a
                 className="d-block"
