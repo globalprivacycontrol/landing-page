@@ -4,7 +4,7 @@ import PressRelease from '../../components/press-release';
 
 export default function PressRelease20210128Page() {
   return (
-    <Layout title="Press Release | Global Privacy Control">
+    <Layout title="Press Release | Global Privacy Control" description="Global Privacy Control (GPC) Privacy Browser Signal Now Used by Millions and Honored By Major Publishers.">
       <PressRelease>
 
         <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored By Major Publishers">
