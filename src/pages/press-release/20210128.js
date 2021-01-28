@@ -27,7 +27,7 @@ export default function PressRelease20210128Page() {
             As of today, over 40 million users are utilizing a browser or 
             extension with GPC support—such as <a href="https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/">Abine</a>
             , <a href="https://brave.com/">Brave</a>
-            , <a href="https://spreadprivacy.com/announcing-global-privacy-control/"> DuckDuckGo</a>
+            , <a href="https://spreadprivacy.com/global-privacy-control-enabled-by-default/"> DuckDuckGo</a>
             , <a href="https://disconnect.me/"> Disconnect</a>
             , and <a href="https://www.eff.org/gpc-privacy-badger"> Privacy Badger</a>.
              Major publishers such as <a href="https://nytimes.com">The New York Times</a> now recognize the GPC signal as a valid 
