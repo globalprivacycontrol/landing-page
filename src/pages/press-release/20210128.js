@@ -6,7 +6,7 @@ export default function PressRelease20210128Page() {
   return (
     <Layout title="Press Release | Global Privacy Control">
       <PressRelease>
-        <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored by Hundreds of Thousands of Websites">
+        <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored By Major Publishers">
           <div className="col-10">
             <p>
               <time className="d-block mb-3" dateTime="2021-01-28">
