@@ -74,12 +74,17 @@
         }
         @media(--media-breakpoint-down-sm) {
           min-height: auto;
-          min-width: 75%;
+          min-width: 100%;
         }
         & img {
           min-height: 3em;
           max-width: 100%;
           padding: 0 1em;
+
+          /* @media(--media-breakpoint-down-sm) {
+            padding: 0 2em;
+
+          } */
         }
       }
   
@@ -96,6 +101,10 @@
         @media(--media-breakpoint-down-md) {
           justify-content: center;
           width: 10em;
+        }
+        @media(--media-breakpoint-down-sm) {
+          width: 0px;
+          padding: 0px;
         }
         
   

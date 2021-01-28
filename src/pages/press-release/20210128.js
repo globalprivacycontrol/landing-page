@@ -6,7 +6,11 @@ export default function PressRelease20210128Page() {
   return (
     <Layout title="Press Release | Global Privacy Control">
       <PressRelease>
+<<<<<<< HEAD
+        <Article title="GPC Privacy Browser Signal Now Used by Millions and Will Be Honored by Hundreds of Thousands of Websites">
+=======
         <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored By Major Publishers">
+>>>>>>> 2c742ede9695d7af787d057661332b40b98b4947
           <div className="col-10">
             <p>
               <time className="d-block mb-3" dateTime="2021-01-28">
@@ -88,7 +92,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/washington-post.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/washington-post.svg`}
                 alt="Washington Post logo"
               />
               <p>
@@ -123,7 +127,7 @@ export default function PressRelease20210128Page() {
             
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/cafemedia.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/cafemedia.svg`}
                 alt="CafeMedia logo"
               />
               <p>
@@ -142,6 +146,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
+              
                 src={`${process.env.publicPrefix}/img/participating-logos/duckduckgo-horizontal.svg`}
                 alt="DuckDuckGo logo"
               />
@@ -189,7 +194,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/sourcepoint.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/sourcepoint.svg`}
                 alt="Sourcepoint logo"
               />
               <p>
@@ -205,7 +210,7 @@ export default function PressRelease20210128Page() {
             </blockquote>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/wirewheel.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/wirewheel.svg`}
                 alt="WireWheel logo"
               />
               <p>

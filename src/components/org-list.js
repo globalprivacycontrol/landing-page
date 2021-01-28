@@ -33,6 +33,7 @@ OrgList.propTypes = {
           name: PropTypes.string.isRequired,
           url: PropTypes.string.isRequired,
           img: PropTypes.string,
+          browser_img: PropTypes.string,
           type: PropTypes.string.isRequired,
       })
     ).isRequired

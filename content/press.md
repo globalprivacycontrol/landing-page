@@ -1,6 +1,12 @@
 ---
 title: Press & Announcements
 entries:
+  - datePublished: Jan. 28, 2021
+    contentUrl: https://globalprivacycontrol.org/press-release/20210128
+    title: "GPC Privacy Browser Signal Now Used by Millions and Honored By Major Publishers"
+    source: Global Privacy Control
+    isFeaturedIndex: 1
+    img: "/img/press-logos/gpc-white.svg"
   - datePublished: Oct 8th, 2020
     contentUrl: https://www.theregister.com/2020/10/10/global_privacy_control/
     title: Global Privacy Control emerges as latest attempt to let netizens choose whether they want to be tracked online
@@ -43,6 +49,5 @@ entries:
     contentUrl: https://globalprivacycontrol.org/press-release/20201007
     title: "Announcing Global Privacy Control: Making it Easy for Consumers to Exercise Their Privacy Rights"
     source: Global Privacy Control
-    isFeaturedIndex: 1
     img: "/img/press-logos/gpc-white.svg"
 ---

@@ -5,6 +5,7 @@ entries:
   - name: Abine
     url: https://www.abine.com/
     img: /img/participating-logos/abine.svg
+    browser_img: /img/browser-logos/abine.svg
     type: Downloadable
     isFeaturedIndex: 1
   - name: Automattic
@@ -15,13 +16,14 @@ entries:
   - name: Brave
     url: https://brave.com/global-privacy-content/
     img: /img/participating-logos/brave.svg
+    browser_img: /img/browser-logos/brave.svg
     type: Downloadable
     isFeaturedIndex: 1
   - name: CafeMedia
     url: https://cafemedia.com/
     img: /img/participating-logos/cafemedia.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 12
   - name: Complianz
     url: https://complianz.io/
     img: /img/participating-logos/complianz.svg
@@ -34,6 +36,7 @@ entries:
   - name: Disconnect
     url: https://disconnect.me/
     img: /img/participating-logos/disconnect.svg
+    browser_img: /img/browser-logos/disconnect.svg
     type: Downloadable
     isFeaturedIndex: 1
   - name: Digital Content Next
@@ -43,6 +46,7 @@ entries:
   - name: DuckDuckGo
     url: https://spreadprivacy.com/announcing-global-privacy-control/
     img: /img/participating-logos/duckduckgo-vertical.svg
+    browser_img: /img/browser-logos/DDG.svg
     type: Downloadable
     isFeaturedIndex: 1
   - name: EFF
@@ -62,7 +66,7 @@ entries:
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 11
   - name: Mozilla
     url: https://mozilla.org/
     img: /img/participating-logos/mozilla.svg
@@ -76,7 +80,7 @@ entries:
     url: https://www.nytimes.com/
     img: /img/participating-logos/nyt.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 9
   - name: OneTrust
     url: https://www.onetrust.com/solutions/consent-management-platform/
     img: /img/participating-logos/onetrust.svg
@@ -84,10 +88,12 @@ entries:
   - name: OptMeowt by privacy-tech-lab
     url: https://www.privacytechlab.org/optmeowt/
     img: /img/participating-logos/optmeowt.svg
+    browser_img: /img/browser-logos/optmeowt.svg
     type: Downloadable
   - name: Privacy Badger by EFF
     url: https://privacybadger.org/
     img: /img/participating-logos/privacybadger.svg
+    browser_img: /img/browser-logos/privacybadger.svg
     type: Downloadable
   - name: SourcePoint
     url: https://www.sourcepoint.com/
@@ -101,7 +107,7 @@ entries:
     url: https://www.washingtonpost.com/
     img: /img/participating-logos/washington-post.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 10
   - name: WireWheel
     url: https://www.wirewheel.io
     img: /img/participating-logos/wirewheel.svg
