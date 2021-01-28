@@ -11,7 +11,7 @@ entries:
     url: https://disconnect.me/
     img: /img/download-logos/disconnect.png
   - name: DuckDuckGo Privacy Browser
-    url: https://spreadprivacy.com/announcing-global-privacy-control/
+    url: https://spreadprivacy.com/global-privacy-control-enabled-by-default/
     img: /img/download-logos/duckduckgo.png
   - name: OptMeowt by privacy-tech-lab
     url: https://privacytechlab.org/optmeowt
