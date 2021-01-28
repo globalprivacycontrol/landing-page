@@ -6,7 +6,7 @@ export default function PressRelease20210128Page() {
   return (
     <Layout title="Press Release | Global Privacy Control">
       <PressRelease>
-        
+
         <Article title="GPC Privacy Browser Signal Now Used by Millions and Honored By Major Publishers">
           <div className="col-10">
             <p>
@@ -71,7 +71,7 @@ export default function PressRelease20210128Page() {
             </h2>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/nyt.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/nyt.svg`}
                 alt="New York Times logo"
               />
               <p>
@@ -105,7 +105,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/meredith.svg`}
+                src={`${process.env.publicPrefix}/img/press-release-logos/meredith.svg`}
                 alt="Meredith Digital logo"
               />
               <p>
