@@ -142,9 +142,7 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
-<<<<<<< HEAD
-                src={`${process.env.publicPrefix}/img/press-release-logos/onetrust.svg`}
-=======
+              
                 src={`${process.env.publicPrefix}/img/participating-logos/duckduckgo-horizontal.svg`}
                 alt="DuckDuckGo logo"
               />
@@ -174,7 +172,6 @@ export default function PressRelease20210128Page() {
             <blockquote className="mb-5">
               <img
                 src={`${process.env.publicPrefix}/img/participating-logos/onetrust.svg`}
->>>>>>> 148477ef7fd44f2f0dbc1fba843d07f00df4402d
                 alt="One Trust logo"
               />
               <p>

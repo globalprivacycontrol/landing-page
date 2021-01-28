@@ -23,7 +23,7 @@ entries:
     url: https://cafemedia.com/
     img: /img/participating-logos/cafemedia.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 12
   - name: Complianz
     url: https://complianz.io/
     img: /img/participating-logos/complianz.svg
@@ -66,7 +66,7 @@ entries:
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 11
   - name: Mozilla
     url: https://mozilla.org/
     img: /img/participating-logos/mozilla.svg
@@ -80,7 +80,7 @@ entries:
     url: https://www.nytimes.com/
     img: /img/participating-logos/nyt.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 9
   - name: OneTrust
     url: https://www.onetrust.com/solutions/consent-management-platform/
     img: /img/participating-logos/onetrust.svg
@@ -107,7 +107,7 @@ entries:
     url: https://www.washingtonpost.com/
     img: /img/participating-logos/washington-post.svg
     type: Business
-    isFeaturedIndex: 1
+    isFeaturedIndex: 10
   - name: WireWheel
     url: https://www.wirewheel.io
     img: /img/participating-logos/wirewheel.svg
