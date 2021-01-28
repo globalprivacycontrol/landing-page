@@ -38,7 +38,7 @@ export default function PressRelease20210128Page() {
             , <a href="https://wirewheel.io">WireWheel</a>
             , and <a href="https://complianz.io">Complianz.io</a> also 
             now support GPC so we expect to see many more publishers and websites 
-            that will honor GPC in the coming months. 
+            that agree to honor GPC in the coming months. 
             </p>
             <p>
             The introduction of privacy regulations such as the CCPA and the newly 
@@ -70,25 +70,6 @@ export default function PressRelease20210128Page() {
             </h2>
             <blockquote className="mb-5">
               <img
-                src={`${process.env.publicPrefix}/img/participating-logos/meredith.svg`}
-                alt="Meredith Digital logo"
-              />
-              <p>
-              Meredith Digital is committed to providing consumers choice and 
-              respecting their privacy in order to maintain and strengthen their 
-              trusted relationships with our brands. We have already provided CCPA
-               rights nationally to consumers and are extremely supportive of GPC,
-                which is part of our evolving efforts to our digital audience of 
-                150 million consumers.
-              </p>
-              <footer>
-                <a href="linkedin.com/in/alysia-borsa-0911249/">Alysia Borsa</a>,
-                President @ <a href="https://www.meredith.com/">Meredith Digital</a>
-              </footer>
-            </blockquote>
-
-            <blockquote className="mb-5">
-              <img
                 src={`${process.env.publicPrefix}/img/participating-logos/nyt.svg`}
                 alt="New York Times logo"
               />
@@ -118,6 +99,25 @@ export default function PressRelease20210128Page() {
               <footer>
                 <a href="https://twitter.com/chronotope">Aram Zucker-Scharff</a>,
                 Senior Software Engineer @ <a href="https://www.washingtonpost.com">The Washington Post</a>
+              </footer>
+            </blockquote>
+
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/meredith.svg`}
+                alt="Meredith Digital logo"
+              />
+              <p>
+              Meredith Digital is committed to providing consumers choice and 
+              respecting their privacy in order to maintain and strengthen their 
+              trusted relationships with our brands. We have already provided CCPA
+               rights nationally to consumers and are extremely supportive of GPC,
+                which is part of our evolving efforts to our digital audience of 
+                150 million consumers.
+              </p>
+              <footer>
+                <a href="linkedin.com/in/alysia-borsa-0911249/">Alysia Borsa</a>,
+                President @ <a href="https://www.meredith.com/">Meredith Digital</a>
               </footer>
             </blockquote>
             
