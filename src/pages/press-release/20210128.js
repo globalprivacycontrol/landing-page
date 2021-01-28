@@ -142,6 +142,34 @@ export default function PressRelease20210128Page() {
 
             <blockquote className="mb-5">
               <img
+                src={`${process.env.publicPrefix}/img/participating-logos/duckduckgo-horizontal.svg`}
+                alt="DuckDuckGo logo"
+              />
+              <p>
+              DuckDuckGo delivers all-in-one privacy protection in our mobile browser and desktop browser extension. Today, we are thrilled to be enabling GPC by default so that DuckDuckGo users can easily exercise their legal privacy rights on the hundreds of thousands of websites soon to be respecting GPC. Since we don’t track our users, we are also respecting the GPC signal ourselves on our website and private search engine at duckduckgo.com.
+              </p>
+              <footer>
+                <a href="https://twitter.com/yegg">Gabriel Weinberg</a>,
+                CEO & Founder @ <a href="https://duckduckgo.com.com/">DuckDuckGo</a>
+              </footer>
+            </blockquote>
+
+            <blockquote className="mb-5">
+              <img
+                src={`${process.env.publicPrefix}/img/participating-logos/brave.svg`}
+                alt="Brave logo"
+              />
+              <p>
+              Privacy-by-default tools are necessary for a sustainable, trusted, user-focused Web, and this is why Brave implemented Global Privacy Control in our desktop and Android browsers last October, alongside our existing privacy protections. Today, we’re proud to say that GPC has been added to our iOS app as well, and is being rolled out across our websites, ensuring that all our users get the ultimate tracking protection they deserve.
+              </p>
+              <footer>
+                <a href="https://twitter.com/pes10k">Peter Snyder</a>,
+                Senior Privacy Researcher and Director of Privacy @ <a href="https://www.brave.com/">Brave</a>
+              </footer>
+            </blockquote>
+
+            <blockquote className="mb-5">
+              <img
                 src={`${process.env.publicPrefix}/img/participating-logos/onetrust.svg`}
                 alt="One Trust logo"
               />
@@ -158,6 +186,7 @@ export default function PressRelease20210128Page() {
                 Chief Technology Officer @ <a href="https://www.onetrust.com/solutions/consent-management-platform/">OneTrust</a>
               </footer>
             </blockquote>
+
             <blockquote className="mb-5">
               <img
                 src={`${process.env.publicPrefix}/img/participating-logos/sourcepoint.svg`}
