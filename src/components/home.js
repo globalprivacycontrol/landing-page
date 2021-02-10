@@ -313,7 +313,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                     </div>
                     <div className={styles.tableDesc}>{name}</div>
                     <div className={styles.tableLink}>
-                      <a className="stretched-link" href={url}>
+                      <a className={` ${styles.tableLink} stretched-link`} href={url}>
                         LEARN MORE <VisuallyHidden>about {name}</VisuallyHidden>
                       </a>
                     </div>
