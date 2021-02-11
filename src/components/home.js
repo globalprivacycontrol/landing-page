@@ -5,6 +5,7 @@ import Button from './button';
 import FaqList from './faq-list';
 import FeaturedArticles from './featured-articles';
 import VisuallyHidden from './visually-hidden';
+import Carousel from './carousel';
 import styles from './home.module.css';
 import FeaturedOrganizations from './featured-organizations';
 
@@ -108,6 +109,22 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* temporary example */}
+      <section className={styles.section}>
+        <h2>Carousel example</h2>
+        <div className={styles.carouselWrapper}>
+          <Carousel
+            items={Array.from({ length: 5 }, (_, i) => ({
+              name: `Person ${i}`,
+              url: `https://example.com/${i}`,
+              quote:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet suscipit orci, sit amet sodales risus. Aliquam tristique hendrerit hendrerit. Ut sit amet rhoncus ipsum. Donec semper, eros at volutpat facilisis, dolor mi aliquam tortor, nec vulputate nibh felis sit amet ipsum. Donec lacinia lacus ac nibh tempor sagittis. Suspendisse et elit ullamcorper, mattis orci et, suscipit eros. Suspendisse eget convallis libero. Phasellus mattis luctus ante, vitae sagittis risus tempor suscipit. Suspendisse at tempor felis. Sed id risus nec lectus congue luctus ut id ipsum.',
+              img: '/img/participating-logos/abine.svg'
+            }))}
+          />
         </div>
       </section>
 

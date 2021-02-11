@@ -1,0 +1,39 @@
+.carousel {
+  & figure {
+    text-align: center;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & li + li {
+      margin-left: 10px;
+    }
+
+    & button {
+      line-height: 0;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 2px solid red;
+      border-radius: 50%;
+      &.active, &:hover {
+        background: red;
+      }
+    }
+  }
+}
