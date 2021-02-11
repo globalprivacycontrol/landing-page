@@ -5,6 +5,7 @@ import Button from './button';
 import FaqList from './faq-list';
 import FeaturedArticles from './featured-articles';
 import VisuallyHidden from './visually-hidden';
+import Carousel from './carousel';
 import styles from './home.module.css';
 import FeaturedOrganizations from './featured-organizations';
 
@@ -101,6 +102,22 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* temporary example */}
+      <section className={styles.section}>
+        <h2>Carousel example</h2>
+        <div className={styles.carouselWrapper}>
+          <Carousel
+            items={Array.from({ length: 5 }, (_, i) => ({
+              name: `Person ${i}`,
+              url: `https://example.com/${i}`,
+              quote:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet suscipit orci, sit amet sodales risus. Aliquam tristique hendrerit hendrerit. Ut sit amet rhoncus ipsum. Donec semper, eros at volutpat facilisis, dolor mi aliquam tortor, nec vulputate nibh felis sit amet ipsum. Donec lacinia lacus ac nibh tempor sagittis. Suspendisse et elit ullamcorper, mattis orci et, suscipit eros. Suspendisse eget convallis libero. Phasellus mattis luctus ante, vitae sagittis risus tempor suscipit. Suspendisse at tempor felis. Sed id risus nec lectus congue luctus ut id ipsum.',
+              img: '/img/participating-logos/abine.svg'
+            }))}
+          />
         </div>
       </section>
 
@@ -273,12 +290,8 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
-
       {/* <!-- DOWNLOAD SECTION --> */}
-      <section
-        id="download"
-        className={`${styles.section} `}
-      >
+      <section id="download" className={`${styles.section} `}>
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5">
@@ -293,7 +306,11 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </div>
               <div className="d-flex mt-0 mb-4">
                 <Link href="/orgs" passHref>
-                  <Button as="a" variant="primary" className={styles.bottomButton}>
+                  <Button
+                    as="a"
+                    variant="primary"
+                    className={styles.bottomButton}
+                  >
                     View All
                   </Button>
                 </Link>
@@ -328,14 +345,16 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
       {/* <!-- PARTICIPATING ORGS SECTION --> */}
       <section id="orgs" className={` ${styles.section} ${styles.sectionDark}`}>
         <div className="container">
-          <h2 className={`${styles.sectionTitle} text-center`}>{orgsData.data.title}</h2>
+          <h2 className={`${styles.sectionTitle} text-center`}>
+            {orgsData.data.title}
+          </h2>
           <div
-                className={`${styles.sectionText} text-center mb-5`}
-                dangerouslySetInnerHTML={{ __html: orgsData.html }}
-              />
+            className={`${styles.sectionText} text-center mb-5`}
+            dangerouslySetInnerHTML={{ __html: orgsData.html }}
+          />
           <div className="row">
             <div className="col-12">
-            <FeaturedOrganizations entries={orgsData.data.entries}/>
+              <FeaturedOrganizations entries={orgsData.data.entries} />
             </div>
           </div>
           <div className="d-flex justify-content-center mt-5">
@@ -347,7 +366,6 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           </div>
         </div>
       </section>
-
 
       {/* <!-- PRESS SECTION --> */}
       <section className={styles.section}>
