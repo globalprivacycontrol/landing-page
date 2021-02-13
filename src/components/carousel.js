@@ -4,7 +4,7 @@ import Slider, { Slide } from './slider';
 import styles from './carousel.module.css';
 import VisuallyHidden from './visually-hidden';
 
-export default function Carousel({ initialStep = 0, items = [] }) {
+export default function Carousel({ initialStep = 0, items }) {
   const [step, setStep] = useState(initialStep);
 
   return (
@@ -14,12 +14,23 @@ export default function Carousel({ initialStep = 0, items = [] }) {
           <Slide key={item.name}>
             <figure>
               <blockquote cite={item.url}>
-                <p>{item.quote}</p>
+                <p className={styles.sectionTitle}>"{item.quote}"</p>
               </blockquote>
 
               <figcaption>
-                <img src={item.img} />
-                <p>{item.name}</p>
+                <img className="rounded-circle py-4" src={item.img} />
+                <a href="https://google.com">
+                  <p className="mb-0">
+                    <strong>
+                      <u>{item.name}</u>
+                    </strong>
+                  </p>
+                  <p>
+                    <i>
+                      <u>{item.position}</u>
+                    </i>
+                  </p>
+                </a>
               </figcaption>
             </figure>
           </Slide>
@@ -47,5 +58,13 @@ export default function Carousel({ initialStep = 0, items = [] }) {
 
 Carousel.propTypes = {
   initialStep: PropTypes.number,
-  items: PropTypes.array
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      position: PropTypes.string.isRequired,
+      quote: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };

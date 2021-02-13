@@ -2,6 +2,13 @@
   & figure {
     text-align: center;
   }
+
+  & a {
+    color: var(--text-dark);
+  }
+  & img {
+    width: 10rem;
+  }
 }
 
 .controls {
@@ -29,11 +36,29 @@
       width: 20px;
       height: 20px;
       background: white;
-      border: 2px solid red;
+      border: 2px solid var(--bg-light);
       border-radius: 50%;
-      &.active, &:hover {
-        background: red;
+      &.active,
+      &:hover {
+        background: var(--bg-light);
       }
     }
+  }
+}
+
+.sectionTitle {
+  font-weight: 900;
+  font-size: calc(30 * var(--px-in-rem));
+  line-height: calc(36 * var(--px-in-rem));
+  letter-spacing: -0.01em;
+}
+
+.sectionText {
+  font-size: calc(18 * var(--px-in-rem));
+  line-height: calc(28 * var(--px-in-rem));
+  margin-bottom: calc(97 * var(--px-in-rem));
+
+  & a {
+    color: var(--text-dark);
   }
 }
