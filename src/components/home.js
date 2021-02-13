@@ -9,7 +9,13 @@ import Carousel from './carousel';
 import styles from './home.module.css';
 import FeaturedOrganizations from './featured-organizations';
 
-export default function Home({ pressData, faqData, orgsData, downloadsData }) {
+export default function Home({
+  pressData,
+  faqData,
+  orgsData,
+  downloadsData,
+  testimonialsData,
+}) {
   return (
     <>
       {/* <!-- HERO SECTION --> */}
@@ -109,22 +115,6 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* temporary example */}
-      <section className={styles.section}>
-        <h2>Carousel example</h2>
-        <div className={styles.carouselWrapper}>
-          <Carousel
-            items={Array.from({ length: 5 }, (_, i) => ({
-              name: `Person ${i}`,
-              url: `https://example.com/${i}`,
-              quote:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet suscipit orci, sit amet sodales risus. Aliquam tristique hendrerit hendrerit. Ut sit amet rhoncus ipsum. Donec semper, eros at volutpat facilisis, dolor mi aliquam tortor, nec vulputate nibh felis sit amet ipsum. Donec lacinia lacus ac nibh tempor sagittis. Suspendisse et elit ullamcorper, mattis orci et, suscipit eros. Suspendisse eget convallis libero. Phasellus mattis luctus ante, vitae sagittis risus tempor suscipit. Suspendisse at tempor felis. Sed id risus nec lectus congue luctus ut id ipsum.',
-              img: '/img/participating-logos/abine.svg'
-            }))}
-          />
         </div>
       </section>
 
@@ -318,8 +308,29 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
+      {/* TESTIMONIALS */}
+      <section id="testimonials" className={styles.section}>
+        <div className={styles.carouselWrapper}>
+          <Carousel
+            items={testimonialsData.data.entries}
+
+            // {Array.from({ length: 5 }, (_, i) => ({
+            //   name: `Person ${i}`,
+            //   url: `https://example.com/${i}`,
+            //   quote:
+            //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet suscipit orci, sit amet sodales risus. Aliquam tristique hendrerit hendrerit. Ut sit amet rhoncus ipsum. Donec semper, eros at volutpat facilisis, dolor mi aliquam tortor, nec vulputate nibh felis sit amet ipsum. Donec lacinia lacus ac nibh tempor sagittis. Suspendisse et elit ullamcorper, mattis orci et, suscipit eros. Suspendisse eget convallis libero. Phasellus mattis luctus ante, vitae sagittis risus tempor suscipit. Suspendisse at tempor felis. Sed id risus nec lectus congue luctus ut id ipsum.',
+            //   img: '/img/participating-logos/abine.svg',
+            //   position: 'Former CA Attorney General',
+            // }))}
+          />
+        </div>
+      </section>
+
       {/* <!-- DOWNLOAD SECTION --> */}
-      <section id="download" className={`${styles.section} `}>
+      <section
+        id="download"
+        className={`${styles.section} ${styles.sectionDark}`}
+      >
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5">
@@ -358,7 +369,10 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                     </div>
                     <div className={styles.tableDesc}>{name}</div>
                     <div className={styles.tableLink}>
-                      <a className="stretched-link" href={url}>
+                      <a
+                        className={` ${styles.tableLink} stretched-link`}
+                        href={url}
+                      >
                         LEARN MORE <VisuallyHidden>about {name}</VisuallyHidden>
                       </a>
                     </div>
@@ -371,7 +385,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
       </section>
 
       {/* <!-- PARTICIPATING ORGS SECTION --> */}
-      <section id="orgs" className={` ${styles.section} ${styles.sectionDark}`}>
+      <section id="orgs" className={` ${styles.section} `}>
         <div className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>
             {orgsData.data.title}
@@ -396,7 +410,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
       </section>
 
       {/* <!-- PRESS SECTION --> */}
-      <section className={styles.section}>
+      <section className={` ${styles.section} ${styles.sectionDark}`}>
         <div id="press" className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>
             Featured Press & Announcements
@@ -419,7 +433,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
       </section>
 
       {/* <!-- FAQ SECTION --> */}
-      <section className={`${styles.section} ${styles.sectionDark}`}>
+      <section className={`${styles.section}`}>
         <div id="faq" className="container">
           <h2 className={`${styles.sectionTitle} text-center`}>
             {faqData.data.title}
@@ -461,25 +475,25 @@ Home.propTypes = {
           title: PropTypes.string.isRequired,
           source: PropTypes.string.isRequired,
           isFeaturedIndex: PropTypes.number,
-          img: PropTypes.string
+          img: PropTypes.string,
         })
-      ).isRequired
-    }).isRequired
+      ).isRequired,
+    }).isRequired,
   }).isRequired,
   faqData: PropTypes.shape({
     data: PropTypes.shape({
-      title: PropTypes.string.isRequired
+      title: PropTypes.string.isRequired,
     }),
     html: PropTypes.string,
     sections: PropTypes.arrayOf(
       PropTypes.shape({
         key: PropTypes.string.isRequired,
         data: PropTypes.shape({
-          title: PropTypes.string.isRequired
+          title: PropTypes.string.isRequired,
         }),
-        html: PropTypes.string.isRequired
+        html: PropTypes.string.isRequired,
       })
-    ).isRequired
+    ).isRequired,
   }).isRequired,
   orgsData: PropTypes.shape({
     data: PropTypes.shape({
@@ -488,11 +502,11 @@ Home.propTypes = {
         PropTypes.shape({
           name: PropTypes.string.isRequired,
           url: PropTypes.string.isRequired,
-          img: PropTypes.string.isRequired
+          img: PropTypes.string.isRequired,
         })
-      ).isRequired
+      ).isRequired,
     }).isRequired,
-    html: PropTypes.string.isRequired
+    html: PropTypes.string.isRequired,
   }).isRequired,
   downloadsData: PropTypes.shape({
     data: PropTypes.shape({
@@ -501,10 +515,24 @@ Home.propTypes = {
         PropTypes.shape({
           name: PropTypes.string.isRequired,
           url: PropTypes.string.isRequired,
-          img: PropTypes.string.isRequired
+          img: PropTypes.string.isRequired,
         })
-      ).isRequired
+      ).isRequired,
     }).isRequired,
-    html: PropTypes.string.isRequired
-  }).isRequired
+    html: PropTypes.string.isRequired,
+  }).isRequired,
+  testimonialsData: PropTypes.shape({
+    data: PropTypes.shape({
+      entries: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          position: PropTypes.string.isRequired,
+          quote: PropTypes.string.isRequired,
+          url: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired,
+        })
+      ).isRequired,
+    }).isRequired,
+    html: PropTypes.string.isRequired,
+  }).isRequired,
 };
