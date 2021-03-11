@@ -51,6 +51,10 @@
   font-size: calc(30 * var(--px-in-rem));
   line-height: calc(36 * var(--px-in-rem));
   letter-spacing: -0.01em;
+  @media (--media-breakpoint-down-sm) {
+    font-size: calc(20 * var(--px-in-rem));
+    line-height: calc(26 * var(--px-in-rem));
+  }
 }
 
 .sectionText {

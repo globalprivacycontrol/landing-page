@@ -14,21 +14,17 @@ export default function Carousel({ initialStep = 0, items }) {
           <Slide key={item.name}>
             <figure>
               <blockquote cite={item.url}>
-                <p className={styles.sectionTitle}>"{item.quote}"</p>
+                <p className={` ${styles.sectionTitle}`}>"{item.quote}"</p>
               </blockquote>
 
               <figcaption>
-                <img className="rounded-circle py-4" src={item.img} />
-                <a href="https://google.com">
+                <a href={item.url}>
+                  <img className="rounded-circle py-5" src={item.img} />
                   <p className="mb-0">
-                    <strong>
-                      <u>{item.name}</u>
-                    </strong>
+                    <strong>{item.name}</strong>
                   </p>
                   <p>
-                    <i>
-                      <u>{item.position}</u>
-                    </i>
+                    <i>{item.position}</i>
                   </p>
                 </a>
               </figcaption>
