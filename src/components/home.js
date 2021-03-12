@@ -187,7 +187,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                     exercise your rights in one step via the “Global Privacy
                     Control” (GPC) signal, which is required under the
                     California Consumer Protection Act (CCPA) and Europe’s
-                    Global Data Protection Regulation (GDPR).
+                    General Data Protection Regulation (GDPR).
                   </p>
                   <br />
                   <p className="font-weight-bolder">
