@@ -90,9 +90,9 @@ export default function Layout({
               </p>
               <a
                 className="d-block"
-                href="mailto:info@globalprivacycontrol.org"
+                href="mailto:info[at]globalprivacycontrol.org"
               >
-                info@globalprivacycontrol.org
+                info[at]globalprivacycontrol.org
               </a>
             </div>
           </div>
