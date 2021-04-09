@@ -10,41 +10,41 @@ import OrgList from '../components/org-list';
 import OrgsHeader from '../components/orgs-header';
 import styles from './orgs.module.css';
 
-export default function OrgsPage({ data: { title, headerText, entries}= {}, sections }) {
-  const partners = entries
-    .filter(e => e.type == 'Partner');
-  const Business = entries
-    .filter(e => e.type == 'Business'); 
+export default function OrgsPage({
+  data: { title, headerText, entries } = {},
+  sections
+}) {
+  const partners = entries.filter((e) => e.type == 'Partner');
+  const Business = entries.filter((e) => e.type == 'Business');
   return (
-
     <Layout title="Participating Organizations | Global Privacy Control">
       <Article title={title}>
-          <section >
-            <div className="row justify-content-center text-center">
-              <div className="col-10">
-                <p className={` ${styles.sectionText} mb-5`}>
-                    {headerText}
-                </p>
-                </div>
-              </div>
-          </section>
-          
-        <OrgsHeader section={sections.filter(e => e.key == 'Browsers')[0].data}/>
+        <section>
+          <div className="row justify-content-center text-center">
+            <div className="col-10">
+              <p className={` ${styles.sectionText} mb-5`}>{headerText}</p>
+            </div>
+          </div>
+        </section>
+
+        <OrgsHeader
+          section={sections.filter((e) => e.key == 'Browsers')[0].data}
+        />
         <section className={`${styles.featured} col-9 pb-3`}>
           <BrowsersPlugins entries={entries} />
         </section>
 
-        <OrgsHeader section={sections.filter(e => e.key == 'Business')[0].data}/>
+        <OrgsHeader
+          section={sections.filter((e) => e.key == 'Business')[0].data}
+        />
         <section className="col-9 pb-3" id="Business">
-          <OrgList entries={Business} type="Business"/>
+          <OrgList entries={Business} type="Business" />
         </section>
-
 
         {/* <OrgsHeader section={sections.filter(e => e.key == 'Partners')[0].data}/>
         <section className="col-9 pb-3" >
           <OrgList entries={partners} type="Partners"/>
         </section> */}
-
       </Article>
     </Layout>
   );
@@ -59,7 +59,7 @@ OrgsPage.propTypes = {
         url: PropTypes.string.isRequired,
         img: PropTypes.string,
         browser_img: PropTypes.string,
-        type: PropTypes.string.isRequired,
+        type: PropTypes.string.isRequired
       })
     ).isRequired
   }).isRequired

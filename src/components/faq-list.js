@@ -76,7 +76,7 @@ function FaqSection({
           <a
             className={classNames('px-4', { [styles.active]: isOpened })}
             href={`#${id}`}
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
               setIsOpened(!isOpened);
             }}

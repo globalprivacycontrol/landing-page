@@ -38,7 +38,7 @@ export default function Collapse({
           setIsClosing(false);
         }
 
-        const handleTransitionEnd = e => {
+        const handleTransitionEnd = (e) => {
           // remove "height" from the element's inline styles, so it can return to its initial value
           setHeight('auto');
         };
@@ -73,7 +73,7 @@ export default function Collapse({
           };
         } else if (isClosing) {
           // the closing transition
-          const handleTransitionEnd = e => {
+          const handleTransitionEnd = (e) => {
             setIsClosing(false);
           };
           $el.addEventListener('transitionend', handleTransitionEnd);

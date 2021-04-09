@@ -2,11 +2,10 @@ import PropTypes from 'prop-types';
 import styles from './browsers-plugins.module.css';
 
 export default function BrowsersPlugins({ entries }) {
-  const browsersPlugins = entries
-    .filter(e => e.type == 'Downloadable')
-    // .sort((a, b) => {
-    //   return a.isFeaturedIndex - b.isFeaturedIndex;
-    // });
+  const browsersPlugins = entries.filter((e) => e.type == 'Downloadable');
+  // .sort((a, b) => {
+  //   return a.isFeaturedIndex - b.isFeaturedIndex;
+  // });
 
   return (
     <ul className={styles.list}>
@@ -32,11 +31,11 @@ export default function BrowsersPlugins({ entries }) {
 BrowsersPlugins.propTypes = {
   entries: PropTypes.arrayOf(
     PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        url: PropTypes.string.isRequired,
-        img: PropTypes.string,
-        browser_img: PropTypes.string,
-        type: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired,
+      img: PropTypes.string,
+      browser_img: PropTypes.string,
+      type: PropTypes.string.isRequired
     })
   ).isRequired
 };

@@ -273,12 +273,8 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         </div>
       </section>
 
-
       {/* <!-- DOWNLOAD SECTION --> */}
-      <section
-        id="download"
-        className={`${styles.section} `}
-      >
+      <section id="download" className={`${styles.section} `}>
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5">
@@ -293,7 +289,11 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               </div>
               <div className="d-flex mt-0 mb-4">
                 <Link href="/orgs" passHref>
-                  <Button as="a" variant="primary" className={styles.bottomButton}>
+                  <Button
+                    as="a"
+                    variant="primary"
+                    className={styles.bottomButton}
+                  >
                     View All
                   </Button>
                 </Link>
@@ -328,14 +328,16 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
       {/* <!-- PARTICIPATING ORGS SECTION --> */}
       <section id="orgs" className={` ${styles.section} ${styles.sectionDark}`}>
         <div className="container">
-          <h2 className={`${styles.sectionTitle} text-center`}>{orgsData.data.title}</h2>
+          <h2 className={`${styles.sectionTitle} text-center`}>
+            {orgsData.data.title}
+          </h2>
           <div
-                className={`${styles.sectionText} text-center mb-5`}
-                dangerouslySetInnerHTML={{ __html: orgsData.html }}
-              />
+            className={`${styles.sectionText} text-center mb-5`}
+            dangerouslySetInnerHTML={{ __html: orgsData.html }}
+          />
           <div className="row">
             <div className="col-12">
-            <FeaturedOrganizations entries={orgsData.data.entries}/>
+              <FeaturedOrganizations entries={orgsData.data.entries} />
             </div>
           </div>
           <div className="d-flex justify-content-center mt-5">
@@ -347,7 +349,6 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           </div>
         </div>
       </section>
-
 
       {/* <!-- PRESS SECTION --> */}
       <section className={styles.section}>

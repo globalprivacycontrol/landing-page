@@ -3,7 +3,7 @@ import styles from './featured-articles.module.css';
 
 export default function FeaturedArticles({ entries }) {
   const featured = entries
-    .filter(e => e.isFeaturedIndex != null)
+    .filter((e) => e.isFeaturedIndex != null)
     .slice(0, 4)
     .sort((a, b) => {
       return a.isFeaturedIndex - b.isFeaturedIndex;
