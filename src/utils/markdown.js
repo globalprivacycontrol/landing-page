@@ -12,7 +12,7 @@ export async function parseMarkdown(filePath) {
   const { data, content, sections } = matter(markdown, {
     section: function (section) {
       if (typeof section.data === 'string' && section.data.trim() !== '') {
-        section.data = yaml.safeLoad(section.data);
+        section.data = yaml.load(section.data);
       }
       section.content = section.content.trim();
     },
