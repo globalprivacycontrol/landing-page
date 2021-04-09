@@ -22,7 +22,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
             <div className="row">
               <div className="col-12 col-lg-7">
                 <h1 className={styles.heroTitle}>
-                  Take Control Of Your Privacy
+                  Take Control Of Your Privacy.
                 </h1>
                 <p className={styles.heroText}>
                   Online privacy should be accessible to everyone. It starts
@@ -94,10 +94,17 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
 
               <p className="mb-0 py-3 text-center">
                 <Link href="/press-release/20210128">
-                  <a>
-                    <u>Read the latest press release.</u>
-                  </a>
-                </Link>
+                  <a>Read the Latest Press Release</a>
+                </Link>{' '}
+                — Follow{' '}
+                <a
+                  href="https://twitter.com/globalprivctrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  @globalprivctrl
+                </a>{' '}
+                on Twitter.
               </p>
             </div>
           </div>
@@ -118,10 +125,12 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   alt="Turn On GPC placeholder"
                 />
                 <div className="card-body">
-                  <h2 className="card-title">Turn On GPC</h2>
+                  <h2 className="card-title">
+                    Turn On <abbr title="Global Privacy Control">GPC</abbr>
+                  </h2>
                   <p className="card-text">
                     Enable Global Privacy Control to communicate your privacy
-                    preferences.
+                    preference.
                   </p>
                 </div>
               </div>
@@ -139,7 +148,9 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                 <div className="card-body">
                   <h2 className="card-title">Send the Signal</h2>
                   <p className="card-text">
-                    Your browser will send the GPC signal to websites you visit.
+                    Your browser will send the{' '}
+                    <abbr title="Global Privacy Control">GPC</abbr> signal to
+                    websites you visit.
                   </p>
                 </div>
               </div>
@@ -157,8 +168,8 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                 <div className="card-body">
                   <h2 className="card-title">Exercise Your Rights</h2>
                   <p className="card-text">
-                    Participating websites that adopt this mechanism can then
-                    respect your privacy rights accordingly.
+                    Participating websites can respect your privacy rights
+                    accordingly.
                   </p>
                 </div>
               </div>
@@ -180,18 +191,23 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
               <div className="col-lg-8">
                 <div className={`${styles.aboutText} ${styles.sectionText}`}>
                   <p>
-                    You might have noticed “Do Not Sell” and “Object To
+                    You may have noticed “Do Not Sell” and “Object To
                     Processing” links around the web from companies complying
-                    with privacy regulations. Rather than clicking on each of
-                    these links individually across many websites, you can
-                    exercise your rights in one step via the “Global Privacy
-                    Control” (GPC) signal, which is required under the
-                    California Consumer Protection Act (CCPA) and Europe’s
-                    General Data Protection Regulation (GDPR).
+                    with privacy regulations. To opt out of websites selling or
+                    sharing your personal information, you need to click these
+                    links for every site you visit.
                   </p>
-                  <br />
+                  <p>
+                    Now you can exercise your legal privacy rights in one step
+                    via Global Privacy Control (
+                    <abbr title="Global Privacy Control">GPC</abbr>), required
+                    under the California Consumer Protection Act (CCPA) and
+                    Europe’s Global Data Protection Regulation (GDPR).
+                  </p>
+
                   <p className="font-weight-bolder">
-                    Together, over a dozen organizations are developing the GPC
+                    Together, over a dozen organizations are developing the{' '}
+                    <abbr title="Global Privacy Control">GPC</abbr>
                     specification.{' '}
                     <a href="#contact">
                       <u>Get Involved</u>
@@ -212,36 +228,48 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
         <div className="container">
           <div className="row">
             <div className="col-12 col-lg-5">
-              <p className={styles.sectionTitle}>
-                The Global Privacy Control (GPC) helps users signal their
-                desired privacy to websites and services, just by using their
-                browser.
-              </p>
-              <p className={styles.sectionText}>
-                While the GPC signal is not a finalized standard, it’s already
-                available to users as part of several major browsers and
-                extensions and is respected by major websites. The GPC signal
-                will be intended to communicate a Do Not Sell request from a
-                global privacy control, as per{' '}
-                <a
-                  className="font-weight-bold"
-                  href="https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf"
-                >
-                  <u>CCPA-REGULATIONS §999.315</u>
-                </a>{' '}
-                for that browser or device, or, if known, the consumer. Under
-                the GDPR, the intent of the GPC signal is to convey a general
-                request that data controllers limit the sale or sharing of the
-                user’s personal data to other data controllers (
-                <a
-                  className="font-weight-bold"
-                  href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679"
-                >
-                  <u>GDPR Articles 7 & 21</u>
-                </a>
-                ). Over time, the GPC signal may be intended to communicate
-                rights in other jurisdictions.
-              </p>
+              <h2 className={styles.sectionTitle}>
+                <abbr title="Global Privacy Control">GPC</abbr> lets users
+                signal their desired privacy, just by browsing.
+              </h2>
+
+              <div className={styles.sectionText}>
+                <p>
+                  While <abbr title="Global Privacy Control">GPC</abbr> isn’t a
+                  finalized standard yet, it’s already available as part of
+                  several major browsers, extensions, and websites.
+                </p>
+
+                <p>
+                  <small>
+                    The <abbr title="Global Privacy Control">GPC</abbr> signal
+                    will be intended to communicate a Do Not Sell request from a
+                    global privacy control, as per{' '}
+                    <a
+                      className="font-weight-bold"
+                      href="https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf"
+                    >
+                      <u>CCPA-REGULATIONS §999.315</u>
+                    </a>{' '}
+                    for that browser or device, or, if known, the consumer.
+                    Under the GDPR, the intent of the{' '}
+                    <abbr title="Global Privacy Control">GPC</abbr> signal is to
+                    convey a general request that data controllers limit the
+                    sale or sharing of the user’s personal data to other data
+                    controllers (
+                    <a
+                      className="font-weight-bold"
+                      href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679"
+                    >
+                      <u>GDPR Articles 7 & 21</u>
+                    </a>
+                    ). Over time, the{' '}
+                    <abbr title="Global Privacy Control">GPC</abbr> signal may
+                    be intended to communicate rights in other jurisdictions.
+                  </small>
+                </p>
+              </div>
+
               <div>
                 <Button
                   as="a"
@@ -294,7 +322,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                     variant="primary"
                     className={styles.bottomButton}
                   >
-                    View All
+                    View All Downloads
                   </Button>
                 </Link>
               </div>
@@ -343,7 +371,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           <div className="d-flex justify-content-center mt-5">
             <Link href="/orgs#Business" passHref>
               <Button as="a" variant="primary" className={styles.bottomButton}>
-                View All
+                View All Organizations
               </Button>
             </Link>
           </div>
@@ -366,7 +394,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           <div className="d-flex justify-content-center mt-5">
             <Link href="/press" passHref>
               <Button as="a" variant="primary" className={styles.bottomButton}>
-                View All
+                View More Press
               </Button>
             </Link>
           </div>
@@ -394,7 +422,8 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
           <div className="d-flex justify-content-center mt-5">
             <Link href="/faq" passHref>
               <Button as="a" variant="primary" className={styles.bottomButton}>
-                View All
+                View All <abbr title="frequently asked questions">FAQ</abbr>
+                <span style={{ textTransform: 'lowercase' }}>s</span>
               </Button>
             </Link>
           </div>
