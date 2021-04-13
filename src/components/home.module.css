@@ -34,9 +34,7 @@
 .tableLink,
 .tableDate {
   @media (--media-breakpoint-down-sm) {
-    width: 0px;
-    overflow: hidden;
-    padding: 0 !important;
+    display: none !important;
   }
 }
 
