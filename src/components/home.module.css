@@ -70,12 +70,16 @@
   }
 }
 
+.finePrint {
+  margin-top: 2em;
+}
+
 /* ------------ */
 /* hero section */
 /* ------------ */
 
 .heroBackground {
-  background-image: url("/img/hero-bg.svg");
+  background-image: url('/img/hero-bg.svg');
   background-size: cover;
 }
 
@@ -111,7 +115,6 @@
   margin-top: calc(95 * var(--px-in-rem));
 }
 
-
 /* ------------ */
 /* news section */
 /* ------------ */
@@ -136,7 +139,6 @@
     }
   }
 }
-
 
 /* ------------- */
 /* about section */
@@ -199,7 +201,6 @@
     height: auto;
   }
 }
-
 
 /* ------------ */
 /* orgs section */
@@ -275,14 +276,13 @@
   }
 }
 
-
 /* ----- */
 /* misc. */
 /* ----- */
 
 .bottomButton {
   min-width: 200px;
-  @media(--media-breakpoint-down-md) {
+  @media (--media-breakpoint-down-md) {
     width: 100%;
   }
 }

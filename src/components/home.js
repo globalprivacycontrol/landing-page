@@ -22,7 +22,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
             <div className="row">
               <div className="col-12 col-lg-7">
                 <h1 className={styles.heroTitle}>
-                  Take Control Of Your Privacy.
+                  Take control of your privacy.
                 </h1>
                 <p className={styles.heroText}>
                   Online privacy should be accessible to everyone. It starts
@@ -96,15 +96,15 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                 <Link href="/press-release/20210128">
                   <a>Read the Latest Press Release</a>
                 </Link>{' '}
-                — Follow{' '}
+                and{' '}
                 <a
                   href="https://twitter.com/globalprivctrl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  @globalprivctrl
-                </a>{' '}
-                on Twitter.
+                  Follow @globalprivctrl on Twitter
+                </a>
+                .
               </p>
             </div>
           </div>
@@ -207,7 +207,7 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
 
                   <p className="font-weight-bolder">
                     Together, over a dozen organizations are developing the{' '}
-                    <abbr title="Global Privacy Control">GPC</abbr>
+                    <abbr title="Global Privacy Control">GPC</abbr>{' '}
                     specification.{' '}
                     <a href="#contact">
                       <u>Get Involved</u>
@@ -239,35 +239,6 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   finalized standard yet, it’s already available as part of
                   several major browsers, extensions, and websites.
                 </p>
-
-                <p>
-                  <small>
-                    The <abbr title="Global Privacy Control">GPC</abbr> signal
-                    will be intended to communicate a Do Not Sell request from a
-                    global privacy control, as per{' '}
-                    <a
-                      className="font-weight-bold"
-                      href="https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf"
-                    >
-                      <u>CCPA-REGULATIONS §999.315</u>
-                    </a>{' '}
-                    for that browser or device, or, if known, the consumer.
-                    Under the GDPR, the intent of the{' '}
-                    <abbr title="Global Privacy Control">GPC</abbr> signal is to
-                    convey a general request that data controllers limit the
-                    sale or sharing of the user’s personal data to other data
-                    controllers (
-                    <a
-                      className="font-weight-bold"
-                      href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679"
-                    >
-                      <u>GDPR Articles 7 & 21</u>
-                    </a>
-                    ). Over time, the{' '}
-                    <abbr title="Global Privacy Control">GPC</abbr> signal may
-                    be intended to communicate rights in other jurisdictions.
-                  </small>
-                </p>
               </div>
 
               <div>
@@ -289,6 +260,35 @@ export default function Home({ pressData, faqData, orgsData, downloadsData }) {
                   Test against the reference server
                 </Button>
               </div>
+
+              <p className={styles.finePrint}>
+                <small>
+                  The <abbr title="Global Privacy Control">GPC</abbr> signal
+                  will be intended to communicate a Do Not Sell request from a
+                  global privacy control, as per{' '}
+                  <a
+                    className="font-weight-bold"
+                    href="https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/oal-sub-final-text-of-regs.pdf"
+                  >
+                    <u>CCPA-REGULATIONS §999.315</u>
+                  </a>{' '}
+                  for that browser or device, or, if known, the consumer. Under
+                  the GDPR, the intent of the{' '}
+                  <abbr title="Global Privacy Control">GPC</abbr> signal is to
+                  convey a general request that data controllers limit the sale
+                  or sharing of the user’s personal data to other data
+                  controllers (
+                  <a
+                    className="font-weight-bold"
+                    href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679"
+                  >
+                    <u>GDPR Articles 7 & 21</u>
+                  </a>
+                  ). Over time, the{' '}
+                  <abbr title="Global Privacy Control">GPC</abbr> signal may be
+                  intended to communicate rights in other jurisdictions.
+                </small>
+              </p>
             </div>
             <div className="d-none d-lg-block offset-lg-1 col">
               <img
