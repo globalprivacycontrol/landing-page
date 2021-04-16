@@ -8,7 +8,7 @@
 Landing page for Global Privacy Control at https://globalprivacycontrol.org/
 
 This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
-By participating, you are expected to uphold this code. Please report unacceptable behavior to info@globalprivacycontrol.org.
+By participating, you are expected to uphold this code. Please report unacceptable behavior to info[at]globalprivacycontrol.org.
 
 ## Getting Involved
 We appreciate offers to help but are not currently accepting pull requests for non-essential or design-related updates.

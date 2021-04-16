@@ -59,7 +59,7 @@ The GPC spec is easy to implement on a wide variety of websites and other
 services. The proposed specification and back-end implementation reference
 documentation are available [here](https://global-privacy-control.glitch.me/).
 For additional information, please feel free to reach out by
-[email](mailto:info@globalprivacycontrol.org) or Twitter
+[email](mailto:info[at]globalprivacycontrol.org) or Twitter
 ([@globablprivctrl](https://twitter.com/globalprivctrl)).
 
 ---Policymaker
@@ -70,7 +70,7 @@ As it is intended to invoke users’ privacy rights, we encourage policymakers
 from around the world to engage in the development of this specification. If you
 would like to learn more about how GPC could work in your jurisdiction, please
 contact us via email at
-[info@globalprivacycontrol.org](mailto:info@globalprivacycontrol.org).
+[info[at]globalprivacycontrol.org](mailto:info[at]globalprivacycontrol.org).
 
 
 ---GetInvolved
