@@ -2,7 +2,7 @@
 <svg width="260px" height="100px" viewBox="0 0 260 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>eff</title>
     <g id="eff" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="260" height="100"></rect>
+        <rect fill="#F8F8F8" x="0" y="0" width="260" height="100"></rect>
         <g transform="translate(55.000000, 32.000000)" fill="#000000" fill-rule="nonzero" id="Group">
             <g transform="translate(75.000000, 18.250000) scale(-1, 1) rotate(-180.000000) translate(-75.000000, -18.250000) ">
                 <polygon id="Path" points="0 18.25 0 0 24.125 0 48.25 0 48.25 5.125 48.25 10.25 32 10.25 15.75 10.25 15.75 11.5 15.75 12.75 32 12.75 48.25 12.75 48.25 18.125 48.25 23.5 32 23.5 15.75 23.5 15.75 24.75 15.75 26 32 26 48.25 26 48.25 31.25 48.25 36.5 24.125 36.5 0 36.5"></polygon>
