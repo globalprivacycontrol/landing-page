@@ -11,7 +11,7 @@ export default function Carousel({ initialStep = 0, items }) {
     <div className={styles.carousel}>
       <Slider step={step} onChange={setStep}>
         {items.map((item) => (
-          <Slide key={item.name}>
+          <Slide key={item.url}>
             <figure>
               <blockquote cite={item.url}>
                 <p className={` ${styles.sectionTitle}`}>"{item.quote}"</p>
@@ -37,7 +37,7 @@ export default function Carousel({ initialStep = 0, items }) {
       <div className={styles.controls}>
         <ul>
           {items.map((item, i) => (
-            <li key={item.name}>
+            <li key={item.url}>
               <button
                 className={step === i ? styles.active : undefined}
                 onClick={() => setStep(i)}
