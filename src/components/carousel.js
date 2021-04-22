@@ -60,7 +60,7 @@ Carousel.propTypes = {
       position: PropTypes.string.isRequired,
       quote: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
-      img: PropTypes.string.isRequired,
+      img: PropTypes.string.isRequired
     })
-  ).isRequired,
+  ).isRequired
 };

@@ -14,7 +14,7 @@ export default function Home({
   faqData,
   orgsData,
   downloadsData,
-  testimonialsData,
+  testimonialsData
 }) {
   return (
     <>
@@ -481,25 +481,25 @@ Home.propTypes = {
           title: PropTypes.string.isRequired,
           source: PropTypes.string.isRequired,
           isFeaturedIndex: PropTypes.number,
-          img: PropTypes.string,
+          img: PropTypes.string
         })
-      ).isRequired,
-    }).isRequired,
+      ).isRequired
+    }).isRequired
   }).isRequired,
   faqData: PropTypes.shape({
     data: PropTypes.shape({
-      title: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired
     }),
     html: PropTypes.string,
     sections: PropTypes.arrayOf(
       PropTypes.shape({
         key: PropTypes.string.isRequired,
         data: PropTypes.shape({
-          title: PropTypes.string.isRequired,
+          title: PropTypes.string.isRequired
         }),
-        html: PropTypes.string.isRequired,
+        html: PropTypes.string.isRequired
       })
-    ).isRequired,
+    ).isRequired
   }).isRequired,
   orgsData: PropTypes.shape({
     data: PropTypes.shape({
@@ -508,11 +508,11 @@ Home.propTypes = {
         PropTypes.shape({
           name: PropTypes.string.isRequired,
           url: PropTypes.string.isRequired,
-          img: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
         })
-      ).isRequired,
+      ).isRequired
     }).isRequired,
-    html: PropTypes.string.isRequired,
+    html: PropTypes.string.isRequired
   }).isRequired,
   downloadsData: PropTypes.shape({
     data: PropTypes.shape({
@@ -521,11 +521,11 @@ Home.propTypes = {
         PropTypes.shape({
           name: PropTypes.string.isRequired,
           url: PropTypes.string.isRequired,
-          img: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
         })
-      ).isRequired,
+      ).isRequired
     }).isRequired,
-    html: PropTypes.string.isRequired,
+    html: PropTypes.string.isRequired
   }).isRequired,
   testimonialsData: PropTypes.shape({
     data: PropTypes.shape({
@@ -535,10 +535,10 @@ Home.propTypes = {
           position: PropTypes.string.isRequired,
           quote: PropTypes.string.isRequired,
           url: PropTypes.string.isRequired,
-          img: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
         })
-      ).isRequired,
+      ).isRequired
     }).isRequired,
-    html: PropTypes.string.isRequired,
-  }).isRequired,
+    html: PropTypes.string.isRequired
+  }).isRequired
 };
