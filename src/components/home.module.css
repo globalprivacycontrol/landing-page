@@ -34,9 +34,7 @@
 .tableLink,
 .tableDate {
   @media (--media-breakpoint-down-sm) {
-    width: 0px;
-    overflow: hidden;
-    padding: 0 !important;
+    display: none !important;
   }
 }
 
@@ -70,12 +68,16 @@
   }
 }
 
+.finePrint {
+  margin-top: 2em;
+}
+
 /* ------------ */
 /* hero section */
 /* ------------ */
 
 .heroBackground {
-  background-image: url("/img/hero-bg.svg");
+  background-image: url('/img/hero-bg.svg');
   background-size: cover;
 }
 
@@ -111,7 +113,6 @@
   margin-top: calc(95 * var(--px-in-rem));
 }
 
-
 /* ------------ */
 /* news section */
 /* ------------ */
@@ -125,16 +126,17 @@
   & p {
     font-size: calc(16 * var(--px-in-rem));
     line-height: calc(28 * var(--px-in-rem));
+    color: white;
   }
 
   & a {
     color: white;
+    text-decoration: underline;
     &:hover {
       color: #849f96;
     }
   }
 }
-
 
 /* ------------- */
 /* about section */
@@ -197,7 +199,6 @@
     height: auto;
   }
 }
-
 
 /* ------------ */
 /* orgs section */
@@ -273,14 +274,13 @@
   }
 }
 
-
 /* ----- */
 /* misc. */
 /* ----- */
 
 .bottomButton {
   min-width: 200px;
-  @media(--media-breakpoint-down-md) {
+  @media (--media-breakpoint-down-md) {
     width: 100%;
   }
 }

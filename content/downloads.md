@@ -1,5 +1,5 @@
 ---
-title: Get your privacy rights under control.
+title: Join over 40 million users.
 entries:
   - name: Abine
     url: https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/
@@ -21,4 +21,4 @@ entries:
     img: /img/download-logos/badger.png
 ---
 
-Join the more than **40 million people** using one of these supported browsers or extensions to start exercising your privacy rights on participating websites. 
+Download a supported browser or extension and start exercising your privacy rights with GPC.

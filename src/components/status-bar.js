@@ -31,14 +31,18 @@ export default function StatusBar() {
                 <>
                   GPC signal detected.
                   <br />
-                  <a href="https://global-privacy-control.glitch.me">Test against the reference server.</a>
+                  <a href="https://global-privacy-control.glitch.me">
+                    Test against the reference server.
+                  </a>
                 </>
               ) : (
                 <>
                   GPC signal not detected.
                   <br />
                   <Link href="/#download">
-                    <a>Please download a browser or extension that supports it.</a>
+                    <a>
+                      Please download a browser or extension that supports it.
+                    </a>
                   </Link>
                 </>
               )}

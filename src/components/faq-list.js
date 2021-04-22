@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Collapse from './collapse';
 import styles from './faq-list.module.css';
 
@@ -13,6 +13,17 @@ export default function FaqList({
 }) {
   const rendered = nRendered ? sections.slice(0, nRendered) : sections;
 
+  const [openedIndex, setOpenedIndex] = useState(null);
+
+  useEffect(() => {
+    setOpenedIndex(
+      Math.max(
+        rendered.findIndex((r) => r.key === window.location.hash.substring(1)),
+        0
+      )
+    );
+  }, [rendered]);
+
   return (
     <div
       vocab={rdfa ? 'https://schema.org/' : undefined}
@@ -21,13 +32,13 @@ export default function FaqList({
       {rendered.map(({ key, data: { title }, html }, i) => (
         <FaqSection
           rdfa={rdfa}
-          key={key}
+          key={`${key}-${openedIndex}`}
           id={key}
           title={title}
           html={html}
           hx={hx}
           isDark={isDark}
-          isOpened={i === 0}
+          isOpened={openedIndex === i}
         />
       ))}
     </div>
@@ -76,7 +87,7 @@ function FaqSection({
           <a
             className={classNames('px-4', { [styles.active]: isOpened })}
             href={`#${id}`}
-            onClick={e => {
+            onClick={(e) => {
               e.preventDefault();
               setIsOpened(!isOpened);
             }}

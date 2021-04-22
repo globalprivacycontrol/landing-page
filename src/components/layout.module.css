@@ -34,6 +34,9 @@
 
     @media(--media-breakpoint-up-md) {
       font-size: calc(30 * var(--px-in-rem));
+      &[href*="twitter.com"] {
+        font-size: calc(26 * var(--px-in-rem));
+      }
     }
 
     &:hover {
