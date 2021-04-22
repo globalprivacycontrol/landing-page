@@ -8,7 +8,8 @@ export default function HomePage({
   pressData,
   faqData,
   orgsData,
-  downloadsData
+  downloadsData,
+  testimonialsData
 }) {
   return (
     <Layout header={false}>
@@ -17,6 +18,7 @@ export default function HomePage({
         faqData={faqData}
         orgsData={orgsData}
         downloadsData={downloadsData}
+        testimonialsData={testimonialsData}
       />
     </Layout>
   );
@@ -78,6 +80,20 @@ HomePage.propTypes = {
       ).isRequired
     }).isRequired,
     html: PropTypes.string.isRequired
+  }).isRequired,
+  testimonialsData: PropTypes.shape({
+    data: PropTypes.shape({
+      entries: PropTypes.arrayOf(
+        PropTypes.shape({
+          name: PropTypes.string.isRequired,
+          position: PropTypes.string.isRequired,
+          quote: PropTypes.string.isRequired,
+          url: PropTypes.string.isRequired,
+          img: PropTypes.string.isRequired
+        })
+      ).isRequired
+    }).isRequired,
+    html: PropTypes.string.isRequired
   }).isRequired
 };
 
@@ -95,6 +111,11 @@ export async function getStaticProps(context) {
   const downloadsData = await parseMarkdown(
     path.join(process.cwd(), 'content', 'downloads.md')
   );
+  const testimonialsData = await parseMarkdown(
+    path.join(process.cwd(), 'content', 'testimonials.md')
+  );
 
-  return { props: { faqData, pressData, orgsData, downloadsData } };
+  return {
+    props: { faqData, pressData, orgsData, downloadsData, testimonialsData }
+  };
 }

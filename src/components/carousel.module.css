@@ -1,0 +1,68 @@
+.carousel {
+  & figure {
+    text-align: center;
+  }
+
+  & a {
+    color: var(--text-dark);
+  }
+  & img {
+    width: 10rem;
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & li + li {
+      margin-left: 10px;
+    }
+
+    & button {
+      line-height: 0;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 2px solid var(--bg-light);
+      border-radius: 50%;
+      &.active,
+      &:hover {
+        background: var(--bg-light);
+      }
+    }
+  }
+}
+
+.sectionTitle {
+  font-weight: 900;
+  font-size: calc(30 * var(--px-in-rem));
+  line-height: calc(36 * var(--px-in-rem));
+  letter-spacing: -0.01em;
+  @media (--media-breakpoint-down-sm) {
+    font-size: calc(20 * var(--px-in-rem));
+    line-height: calc(26 * var(--px-in-rem));
+  }
+}
+
+.sectionText {
+  font-size: calc(18 * var(--px-in-rem));
+  line-height: calc(28 * var(--px-in-rem));
+  margin-bottom: calc(97 * var(--px-in-rem));
+
+  & a {
+    color: var(--text-dark);
+  }
+}
