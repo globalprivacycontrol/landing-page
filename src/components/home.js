@@ -242,8 +242,7 @@ export default function Home({
 
               <div className={styles.sectionText}>
                 <p>
-                  While <abbr title="Global Privacy Control">GPC</abbr> isn’t a
-                  finalized standard yet, it’s already available as part of
+                  <abbr title="Global Privacy Control">GPC</abbr> is available as part of
                   several major browsers, extensions, and websites.
                 </p>
               </div>
