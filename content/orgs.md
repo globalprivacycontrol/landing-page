@@ -1,5 +1,5 @@
 ---
-title: Participating Organizations
+title: Founding Organizations
 headerText: Global Privacy Control has broad industry support. Below, you’ll find browsers and extensions which send the GPC signal, businesses that honor GPC and other supporting partners involved in the creating the specification.
 entries:
   - name: Abine
@@ -123,7 +123,7 @@ gray:  / (Collectively Over ~40million Users)
 ---
 
 ---Business
-green: Participating Organizations
+green: Founding Organizations
 gray:  / (Collectively Over Hundreds of Thousands of Websites and Blogs)
 ---
 

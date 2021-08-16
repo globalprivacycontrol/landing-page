@@ -15,7 +15,7 @@ export default function OrgsPage({
   //const partners = entries.filter((e) => e.type == 'Partner');
   const Business = entries.filter((e) => e.type == 'Business');
   return (
-    <Layout title="Participating Organizations | Global Privacy Control">
+    <Layout title="Founding Organizations | Global Privacy Control">
       <Article title={title}>
         <div className="container">
           <section className="row justify-content-center text-center">
