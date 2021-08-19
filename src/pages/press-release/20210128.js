@@ -78,7 +78,7 @@ export default function PressRelease20210128Page() {
             <p>
               With millions of people exercising their rights and a common
               implementation across multiple technology providers, we believe
-              GPC answers California Attorney General Xavier Becerra's{' '}
+              GPC answers California Attorney General Xavier Becerra’s{' '}
               <a href="https://www.commerce.senate.gov/services/files/8AF136EE-DE50-4258-98C6-249F5BCECFA4">
                 call
               </a>{' '}
@@ -88,7 +88,7 @@ export default function PressRelease20210128Page() {
             <p>
               We invite other browsers, publishers, and online businesses to
               meet the growing demand for online privacy by respecting their
-              customers' preferences and{' '}
+              customers’ preferences and{' '}
               <a href="https://globalprivacycontrol.org/faq#Publisher">
                 supporting GPC
               </a>
@@ -109,7 +109,7 @@ export default function PressRelease20210128Page() {
               <p>
                 The trust of our readers is essential, and privacy is about
                 trust. Supporting Global Privacy Control on nytimes.com is a
-                powerful way for us to meet more of our readers' expectations of
+                powerful way for us to meet more of our readers’ expectations of
                 privacy in relevant jurisdictions by providing them with a
                 simple, easy-to-use way to convey their preference once across
                 all sites.
@@ -147,10 +147,10 @@ export default function PressRelease20210128Page() {
               <p>
                 Meredith Digital is committed to providing consumers choice and
                 respecting their privacy in order to maintain and strengthen
-                their  trusted relationships with our brands. We have already
+                their trusted relationships with our brands. We have already
                 provided CCPA rights nationally to consumers and are extremely
-                supportive of GPC, which is part of our evolving efforts to
-                our digital audience of  150 million consumers.
+                supportive of GPC, which is part of our evolving efforts to our
+                digital audience of 150 million consumers.
               </p>
               <footer>
                 <a href="linkedin.com/in/alysia-borsa-0911249/">Alysia Borsa</a>

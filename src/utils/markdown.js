@@ -1,7 +1,7 @@
 import { readFile } from 'fs/promises';
 import yaml from 'js-yaml';
 import matter from 'gray-matter';
-import remark from 'remark';
+import { remark } from 'remark';
 import remarkHtml from 'remark-html';
 
 const mdProcessor = remark().use(remarkHtml);

@@ -14,12 +14,16 @@ export default function Carousel({ initialStep = 0, items }) {
           <Slide key={item.url}>
             <figure>
               <blockquote cite={item.url}>
-                <p className={` ${styles.sectionTitle}`}>"{item.quote}"</p>
+                <p className={` ${styles.sectionTitle}`}>“{item.quote}”</p>
               </blockquote>
 
               <figcaption>
                 <a href={item.url}>
-                  <img className="rounded-circle py-5" src={item.img} />
+                  <img
+                    className="rounded-circle py-5"
+                    src={item.img}
+                    alt={item.imgAlt}
+                  />
                   <p className="mb-0">
                     <strong>{item.name}</strong>
                   </p>
@@ -60,7 +64,8 @@ Carousel.propTypes = {
       position: PropTypes.string.isRequired,
       quote: PropTypes.string.isRequired,
       url: PropTypes.string.isRequired,
-      img: PropTypes.string.isRequired
+      img: PropTypes.string.isRequired,
+      imgAlt: PropTypes.string
     })
   ).isRequired
 };
