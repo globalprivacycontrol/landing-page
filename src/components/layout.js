@@ -88,14 +88,7 @@ export default function Layout({
                 <abbr title="Global Privacy Control">GPC</abbr> in your browser,
                 app, or website.
               </p>
-              <a
-                className="d-block"
-                href="mailto:info[at]globalprivacycontrol.org"
-              >
-                info[at]globalprivacycontrol.org
-              </a>
-
-              <p>
+               <p>
                 <a
                   href="https://twitter.com/globalprivctrl"
                   target="_blank"
