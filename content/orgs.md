@@ -99,6 +99,10 @@ entries:
     url: https://www.sourcepoint.com/
     img: /img/participating-logos/sourcepoint.svg
     type: Business
+	- name: TrustArc
+		url: https://trustarc.com/blog/2021/09/10/what-is-global-privacy-control-and-why-do-you-keep-hearing-about-it/
+		img: 
+		type: Business
   - name: Wesleyan University
     url: https://wesleyan.edu/
     img: /img/participating-logos/wesleyan.svg
