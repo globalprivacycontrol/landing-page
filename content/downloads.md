@@ -1,5 +1,5 @@
 ---
-title: Join over 40 million users.
+title: Join over 50 million users.
 entries:
   - name: Abine
     url: https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/
@@ -13,6 +13,9 @@ entries:
   - name: DuckDuckGo Privacy Browser
     url: https://spreadprivacy.com/global-privacy-control-enabled-by-default/
     img: /img/download-logos/duckduckgo.png
+  - name: Firefox
+    url: https://blog.mozilla.org/netpolicy/2021/10/28/implementing-global-privacy-control/
+    img: /img/download-logos/firefox.png
   - name: OptMeowt by privacy-tech-lab
     url: https://privacytechlab.org/optmeowt
     img: /img/download-logos/optmeowt.png
