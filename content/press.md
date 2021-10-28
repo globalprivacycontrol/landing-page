@@ -1,6 +1,12 @@
 ---
 title: Press & Announcements
 entries:
+  - datePublished: Oct. 26, 2021
+    contentUrl: https://www.washingtonpost.com/technology/2021/10/26/global-privacy-control-firefox/
+    title: "Your browser can tell websites how to treat your data. But companies didn’t have to listen — until now"
+    source: The Washington Post 
+    isFeaturedIndex: 2
+    img: "/img/press-logos/washpo-white.svg"
   - datePublished: Jan. 28, 2021
     contentUrl: https://globalprivacycontrol.org/press-release/20210128
     title: "GPC Privacy Browser Signal Now Used by Millions and Honored By Major Publishers"
@@ -27,8 +33,6 @@ entries:
     contentUrl: https://www.cnet.com/news/privacy-effort-could-stop-some-annoying-website-popups-and-online-tracking/
     title: Privacy push could stop some annoying website pop-ups and online tracking
     source: CNET
-    isFeaturedIndex: 4
-    img: "/img/press-logos/cnet-white.svg"
   - datePublished: Oct 7th, 2020
     contentUrl: https://duo.com/decipher/global-privacy-control-protocol-aims-to-pick-up-where-do-not-track-left-off
     title: Global Privacy Control Protocol Aims to Pick Up Where Do Not Track Left Off
@@ -37,13 +41,13 @@ entries:
     contentUrl: https://techcrunch.com/2020/10/07/tech-publisher-coalition-backs-new-push-for-browser-level-privacy-controls/
     title: Tech-publisher coalition backs new push for browser-level privacy controls
     source: TechCrunch
-    isFeaturedIndex: 3
+    isFeaturedIndex: 4
     img: "/img/press-logos/techcrunch-white.svg"
   - datePublished: Oct 7th, 2020
     contentUrl: https://www.wired.com/story/global-privacy-control-launches-do-not-track-is-back/
     title: ‘Do Not Track’ Is Back, and This Time It Might Work
     source: Wired
-    isFeaturedIndex: 2
+    isFeaturedIndex: 3
     img: "/img/press-logos/wired-white.svg"
   - datePublished: Oct 7th, 2020
     contentUrl: https://globalprivacycontrol.org/press-release/20201007

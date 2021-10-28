@@ -62,6 +62,11 @@ entries:
     url: https://glitch.com/
     img: /img/participating-logos/glitch.svg
     type: Business
+  - name: Firefox
+    url: https://blog.mozilla.org/netpolicy/2021/10/28/implementing-global-privacy-control/
+    img: /img/participating-logos/firefox.svg
+    browser_img: /img/browser-logos/firefox.svg
+    type: Downloadable
   - name: Meredith Digital
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
@@ -119,11 +124,11 @@ entries:
 
 ---
 
-The following organizations, representing 40 million users and hundreds of thousands of websites, are in support of GPC.
+The following organizations, representing 50 million users and hundreds of thousands of websites, are in support of GPC.
 
 ---Browsers
 green: Browsers + Extensions
-gray:  / (Collectively Over ~40million Users)
+gray:  / (Collectively Over ~50million Users)
 ---
 
 ---Business
