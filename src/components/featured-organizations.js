@@ -32,7 +32,7 @@ FeaturedOrganizations.propTypes = {
       img: PropTypes.string,
       browser_img: PropTypes.string,
       type: PropTypes.string.isRequired,
-      isFeaturedIndex: PropTypes.int
+      isFeaturedIndex: PropTypes.number
     })
   ).isRequired
 };
