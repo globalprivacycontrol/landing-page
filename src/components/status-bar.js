@@ -6,7 +6,12 @@ export default function StatusBar() {
   const [hasGpc, setHasGpc] = useState(undefined);
 
   useEffect(() => {
-    setHasGpc(!!navigator.globalPrivacyControl);
+    const timeoutId = setTimeout(() => {
+      setHasGpc(!!navigator.globalPrivacyControl);
+    }, 50);
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   if (hasGpc === undefined) {
