@@ -19,7 +19,7 @@ export default function Navbar({ isLarge = false }) {
               id="hero-logo"
             />
             <img
-              className="d-none d-lg-block"
+              className={`d-none d-lg-block ${styles.headerLogo}`}
               src={`${process.env.publicPrefix}/img/${
                 isLarge ? 'gpc-logo.svg' : 'gpc-logo-small.svg'
               }`}
@@ -58,8 +58,9 @@ export default function Navbar({ isLarge = false }) {
       </button>
 
       {/* <!-- DESKTOP NAV LINKS --> */}
-      <div className="d-none d-md-block ml-auto text-nowrap">
+      <div className={`d-none d-md-block ml-auto text-nowrap ${styles.linkWrapper}`}>
         <Links />
+        <DownloadMenu />
       </div>
 
       {/* <!-- MOBILE NAV LINKS --> */}
@@ -71,50 +72,125 @@ export default function Navbar({ isLarge = false }) {
       >
         <div className="mt-4 d-flex">
           <Links />
+          <DownloadMenu />
         </div>
       </div>
+
     </nav>
   );
 }
 
 function Links() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <ul className={`navbar-nav ${styles.linkList}`}>
       <li className="nav-item">
-        <Link href="/#about">
-          <a className="nav-link text-uppercase">About</a>
+        <Link href="/about">
+          <a className="nav-link text-uppercase">About the Spec</a>
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#gpc-spec">
-          <a className="nav-link text-uppercase">Spec</a>
+        <Link href="/implementation">
+          <a className="nav-link text-uppercase">Implementation</a>
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#download">
-          <a className="nav-link text-uppercase">Download</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="/#orgs">
+        <Link href="/orgs">
           <a className="nav-link text-uppercase">Organizations</a>
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#contact">
-          <a className="nav-link text-uppercase">Get Involved</a>
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link href="/#press">
+        <Link href="/press">
           <a className="nav-link text-uppercase">Press</a>
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#faq">
+        <Link href="/faq">
           <a className="nav-link text-uppercase">FAQ</a>
         </Link>
       </li>
     </ul>
   );
+}
+
+function DownloadMenu() {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <>
+    <button
+      className={`nav-link text-uppercase bg-transparent ${styles.downloadLink}`}
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarDownloads"
+      aria-controls="navbarDownloads"
+      aria-label={isOpen ? 'Close download menu' : 'Download menu'}
+      aria-expanded={isOpen}
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      Download
+      <svg
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+      </svg>
+    </button>
+
+    <div
+      className={`overflow-hidden ${styles.downloadMenu} ${
+        isOpen ? styles.open : ''
+      }`}
+      id="navbarDownloads"
+    >
+      <div className="d-flex">
+        <DownloadLinks />
+      </div>
+    </div>
+    </>
+  );
+}
+
+function DownloadLinks() {
+  return (
+    <ul className={`${styles.downloadList}`}>
+      <li>
+        <Link href="/about">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/implementation">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/orgs">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/press">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/faq">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/faq">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/faq">
+          <a className="nav-link text-uppercase">Download</a>
+        </Link>
+      </li>
+    </ul>
+  )
 }

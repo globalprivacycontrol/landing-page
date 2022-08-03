@@ -4,7 +4,7 @@
 }
 
 .navWrapper {
-  padding-bottom: calc(40 * var(--px-in-rem));
+  padding-bottom: calc(30 * var(--px-in-rem));
 }
 
 .contact {

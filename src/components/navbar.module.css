@@ -1,5 +1,9 @@
 .navbar {
-   padding: calc(40 * var(--px-in-rem)) 0 0;
+   padding: calc(30 * var(--px-in-rem)) 0 0;
+}
+
+.headerLogo {
+  width: 330px;
 }
 
 .mobileMenu {
@@ -10,16 +14,102 @@
   }
 }
 
+.linkWrapper {
+  @media(--media-breakpoint-up-sm) {
+    display: flex!important;
+    flex-direction: row;
+  }
+}
+
 .linkList {
   & a {
     font-size: calc(12 * var(--px-in-rem));
     font-weight: 900;
     line-height: calc(28 * var(--px-in-rem));
     color: white;
+    padding: 0.1rem 0.75rem!important;
 
     &:hover {
       color: white;
       text-decoration: underline;
+    }
+
+    @media(--media-breakpoint-down-lg) {
+      padding: 0.1rem 0.5rem!important;
+    }
+  }
+}
+
+.downloadLink {
+  margin-left: 1rem;
+
+  @media(--media-breakpoint-down-sm) {
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: calc(12 * var(--px-in-rem));
+    font-weight: 900;
+    line-height: calc(28 * var(--px-in-rem));
+    color: white;
+    padding: 0.1rem 0.9rem 0.1rem 1rem!important;
+
+    &:hover {
+      text-decoration: none!important;
+      background: white!important;
+      color: #35AB85;
+    }
+    & svg {
+      margin-left: 0.45rem;
+      margin-top: -0.26rem;
+      transform: rotate(90deg);
+    }
+}
+
+.downloadMenu {
+  display: none;
+  position: absolute;
+  right: -30px;
+  left: 0px;
+  top: 5rem;
+  background: #0A3E2D;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  height: 200px;
+  z-index: 2;
+
+  &.open {
+    display: block;
+  }
+}
+
+.downloadList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 25px 30px;
+  width: 100%;
+  flex-wrap: wrap;
+
+  & li + li {
+    margin-left: 24px;
+  }
+  & li {
+    height: 150px;
+    flex: 1 1;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.4);
+
+    & a {
+      border-radius: 4px;
+      overflow: hidden;
+      text-decoration: none;
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

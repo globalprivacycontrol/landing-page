@@ -6,7 +6,6 @@ import { parseMarkdown } from '../utils/markdown';
 
 export default function HomePage({
   pressData,
-  faqData,
   orgsData,
   downloadsData,
   testimonialsData
@@ -15,7 +14,6 @@ export default function HomePage({
     <Layout header={false}>
       <Home
         pressData={pressData}
-        faqData={faqData}
         orgsData={orgsData}
         downloadsData={downloadsData}
         testimonialsData={testimonialsData}
@@ -39,21 +37,6 @@ HomePage.propTypes = {
         })
       ).isRequired
     }).isRequired
-  }).isRequired,
-  faqData: PropTypes.shape({
-    data: PropTypes.shape({
-      title: PropTypes.string.isRequired
-    }),
-    html: PropTypes.string,
-    sections: PropTypes.arrayOf(
-      PropTypes.shape({
-        key: PropTypes.string.isRequired,
-        data: PropTypes.shape({
-          title: PropTypes.string.isRequired
-        }),
-        html: PropTypes.string.isRequired
-      })
-    ).isRequired
   }).isRequired,
   orgsData: PropTypes.shape({
     data: PropTypes.shape({
@@ -98,9 +81,6 @@ HomePage.propTypes = {
 };
 
 export async function getStaticProps(context) {
-  const faqData = await parseMarkdown(
-    path.join(process.cwd(), 'content', 'faq.md')
-  );
   const pressData = await parseMarkdown(
     path.join(process.cwd(), 'content', 'press.md')
   );
@@ -116,6 +96,6 @@ export async function getStaticProps(context) {
   );
 
   return {
-    props: { faqData, pressData, orgsData, downloadsData, testimonialsData }
+    props: { pressData, orgsData, downloadsData, testimonialsData }
   };
 }

@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Navbar from './navbar';
 import Button from './button';
-import FaqList from './faq-list';
 import FeaturedArticles from './featured-articles';
 import VisuallyHidden from './visually-hidden';
 import Carousel from './carousel';
@@ -11,7 +10,6 @@ import FeaturedOrganizations from './featured-organizations';
 
 export default function Home({
   pressData,
-  faqData,
   orgsData,
   downloadsData,
   testimonialsData
@@ -77,7 +75,7 @@ export default function Home({
       </section>
 
       {/* <!-- NEWS SECTION --> */}
-      <section className={`${styles.news} py-5 px-3 px-sm-4`}>
+      <section className={`${styles.news} py-3 px-3 px-sm-4`}>
         <div className={styles.newsAnnouncement}>
           <div className="container">
             <div className="row justify-content-center align-items-center">
@@ -436,35 +434,6 @@ export default function Home({
           </div>
         </div>
       </section>
-
-      {/* <!-- FAQ SECTION --> */}
-      <section className={`${styles.section}`}>
-        <div id="faq" className="container">
-          <h2 className={`${styles.sectionTitle} text-center`}>
-            {faqData.data.title}
-          </h2>
-
-          <div className="row justify-content-center mt-5">
-            <div className="col-12 col-lg-8">
-              <FaqList
-                hx="h3"
-                sections={faqData.sections}
-                isDark={true}
-                nRendered={6}
-              />
-            </div>
-          </div>
-
-          <div className="d-flex justify-content-center mt-5">
-            <Link href="/faq" passHref>
-              <Button as="a" variant="primary" className={styles.bottomButton}>
-                View All <abbr title="frequently asked questions">FAQ</abbr>
-                <span style={{ textTransform: 'lowercase' }}>s</span>
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
@@ -484,21 +453,6 @@ Home.propTypes = {
         })
       ).isRequired
     }).isRequired
-  }).isRequired,
-  faqData: PropTypes.shape({
-    data: PropTypes.shape({
-      title: PropTypes.string.isRequired
-    }),
-    html: PropTypes.string,
-    sections: PropTypes.arrayOf(
-      PropTypes.shape({
-        key: PropTypes.string.isRequired,
-        data: PropTypes.shape({
-          title: PropTypes.string.isRequired
-        }),
-        html: PropTypes.string.isRequired
-      })
-    ).isRequired
   }).isRequired,
   orgsData: PropTypes.shape({
     data: PropTypes.shape({
