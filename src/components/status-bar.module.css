@@ -1,12 +1,18 @@
 .statusBar {
   background-color: #172a24;
-  color: #849f96;
+  color: white;
 
   font-size: calc(14 * var(--px-in-rem));
   line-height: calc(28 * var(--px-in-rem));
 
   & a {
     color: white;
+    font-weight: 800;
+    padding: 0 0.2rem;
+
+    @media(--media-breakpoint-down-sm) {
+      font-size: calc(13 * var(--px-in-rem));
+    }
   }
 }
 
@@ -21,4 +27,15 @@
 
 .dotRed {
   background-color: #de0000;
+}
+
+.statusText {
+  font-weight: 400;
+  padding-right: 0.2rem;
+}
+
+.statusCheck {
+  @media(--media-breakpoint-down-sm) {
+    display: block;
+  }
 }

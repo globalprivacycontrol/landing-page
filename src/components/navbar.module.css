@@ -1,5 +1,13 @@
 .navbar {
-   padding: calc(40 * var(--px-in-rem)) 0 0;
+  padding: calc(30 * var(--px-in-rem)) 0 0;
+}
+
+.headerLogoLarge {
+  width: 330px;
+}
+
+.headerLogoSmall {
+  width: 120px;
 }
 
 .mobileMenu {
@@ -16,10 +24,15 @@
     font-weight: 900;
     line-height: calc(28 * var(--px-in-rem));
     color: white;
+    padding: 0.1rem 0.75rem!important;
 
     &:hover {
       color: white;
       text-decoration: underline;
+    }
+
+    @media(--media-breakpoint-down-lg) {
+      padding: 0.1rem 0.5rem!important;
     }
   }
 }

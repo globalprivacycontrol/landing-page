@@ -19,7 +19,7 @@ export default function Navbar({ isLarge = false }) {
               id="hero-logo"
             />
             <img
-              className="d-none d-lg-block"
+              className={`d-none d-lg-block ${isLarge ? styles.headerLogoLarge : styles.headerLogoSmall}`}
               src={`${process.env.publicPrefix}/img/${
                 isLarge ? 'gpc-logo.svg' : 'gpc-logo-small.svg'
               }`}
@@ -88,6 +88,11 @@ function Links() {
       <li className="nav-item">
         <Link href="/#gpc-spec">
           <a className="nav-link text-uppercase">Spec</a>
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link href="/implementation">
+          <a className="nav-link text-uppercase">Implementation</a>
         </Link>
       </li>
       <li className="nav-item">
