@@ -119,7 +119,7 @@ export default function ImplementationPage({ data, html, sections }) {
         <div className="container">
           <div className="row">
             <div className="offset-lg-1 col-lg-10 col-sm-12">
-              <h2>What's going on?</h2>
+              <h2>What&apos;s going on?</h2>
               <p className={styles.introText}>
                 The California Attorney General’s Office has <a href="https://www.loeb.com/en/insights/publications/2021/07/global-privacy-control-consumer-led-enforcement">begun to enforce</a> the California Consumer Privacy Act (CCPA) and stated that sites need to comply with the <a href="https://globalprivacycontrol.org/">Global Privacy Control (GPC)</a> when it is used to state a Do Not Sell preference. According to <a href="https://oag.ca.gov/privacy/ccpa">the CA Attorney General’s website</a>: 
               </p>
@@ -136,7 +136,7 @@ export default function ImplementationPage({ data, html, sections }) {
             <div className={`col-sm-12 col-md-7 col-lg-8 ${styles.agQuoteWrapper}`}>
               <div className={`${styles.agQuote}`}>
                 <p>
-                  "Opting out of the sale of personal information should be easy for consumers, and the GPC is one option for consumers who want to submit requests to opt-out of the sale of personal information via a user-enabled global privacy control. <b>Under law, it must be honored by covered businesses as a valid consumer request to stop the sale of personal information.</b>"
+                  &ldquo;Opting out of the sale of personal information should be easy for consumers, and the GPC is one option for consumers who want to submit requests to opt-out of the sale of personal information via a user-enabled global privacy control. <b>Under law, it must be honored by covered businesses as a valid consumer request to stop the sale of personal information.</b>&rdquo;
                 </p>
               </div>
             </div>
