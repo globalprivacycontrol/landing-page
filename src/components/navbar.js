@@ -106,11 +106,6 @@ function Links() {
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#contact">
-          <a className="nav-link text-uppercase">Get Involved</a>
-        </Link>
-      </li>
-      <li className="nav-item">
         <Link href="/#press">
           <a className="nav-link text-uppercase">Press</a>
         </Link>

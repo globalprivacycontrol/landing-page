@@ -19,6 +19,8 @@
 .dot {
   width: calc(12 * var(--px-in-rem));
   height: calc(12 * var(--px-in-rem));
+  position: relative;
+  top: 1px;
 }
 
 .dotGreen {
