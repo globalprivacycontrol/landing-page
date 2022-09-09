@@ -158,6 +158,12 @@
     @media (--media-breakpoint-down-sm) {
       margin-top: 1.2rem;
     }
+
+    & a {
+      @media (--media-breakpoint-down-sm) {
+        margin-bottom: 0;
+      }
+    }
   }
   & p {
     margin-bottom: 0.15rem;
@@ -195,6 +201,136 @@
     height: 150px;
     margin: 0px auto;
   }
+}
+
+/* ------------- */
+/* what's going on section */
+/* ------------- */
+.whatsGoingOn {
+  color: rgb(73, 80, 78);
+  text-align: center;
+  padding: 80px 0 50px;
+
+  @media (--media-breakpoint-down-sm) {
+    padding: 60px 0 50px;
+  }
+
+  & h2 {
+    font-weight: 900;
+    font-size: 2.3rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.introText {
+  @media (--media-breakpoint-up-lg) {
+    padding: 0 35px;
+  }
+
+  @media (--media-breakpoint-down-lg) {
+    padding: 0px;
+    margin: 0 -30px;
+  }
+
+  @media (--media-breakpoint-down-md) {
+    padding: 0 55px;
+    margin: 0;
+  }
+
+  @media (--media-breakpoint-down-sm) {
+    padding: 0;
+    margin: 0;
+  }
+
+  & a {
+    color: var(--text-bright-green);
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
+
+.agRow {
+  padding: 50px 0 60px;
+
+  @media (--media-breakpoint-down-sm) {
+    padding: 40px 0;
+  }
+}
+
+.agImage {
+  max-width: 100%;
+  padding-left: 30px;
+
+  @media (--media-breakpoint-down-md) {
+    padding-left: 0;
+    margin-top: 50px;
+  }
+
+  @media (--media-breakpoint-down-sm) {
+    display: none;
+  }
+}
+
+.agQuoteWrapper {
+  padding: 0 40px 0 50px;
+
+  @media (--media-breakpoint-down-sm) {
+    padding: 0 20px;
+  }
+}
+
+.agQuote {
+  border-radius: 15px;
+  background-color: var(--bg-light);
+  padding: 30px 40px;
+  margin-top: 95px;
+  color: white;
+  font-size: 1.2rem;
+  position: relative;
+  text-align: left;
+
+  @media (--media-breakpoint-down-lg) {
+    margin-top: 50px;
+  }
+
+  @media (--media-breakpoint-down-md) {
+    margin-top: 10px;
+  }
+
+  @media (--media-breakpoint-down-sm) {
+    padding: 20px 30px;
+    margin-top: 0;
+  }
+
+  &:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: var(--bg-light);
+    position: absolute;
+    left: -15px;
+    top: calc(50% - 20px);
+    border-radius: 0 0 0 15px;
+    transform: rotate(30deg) skewX(-30deg) scale(1, 0.866);
+
+    @media (--media-breakpoint-down-sm) {
+      display: none;
+    }
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+
+  & b {
+    font-weight: 900;
+  }
+}
+
+/* ------------- */
+/* accordion section */
+/* ------------- */
+.implementationAccordion {
 }
 
 /* ----- */

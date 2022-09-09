@@ -43,4 +43,22 @@
 .content {
   color: var(--text-dark);
   line-height: calc(30 * var(--px-in-rem));
+
+  & code {
+    font-weight: 700;
+  }
+
+  & pre {
+    line-height: calc(20 * var(--px-in-rem));
+    & code {
+      font-weight: 400;
+    }
+  }
+
+  & blockquote {
+    font-style: italic;
+    margin-left: 3rem;
+  }
 }
+
+

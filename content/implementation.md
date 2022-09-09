@@ -24,221 +24,144 @@ also have legal effects under other legal regimes, including in Europe under the
 GDPR. However, this document focuses on its relevance under the CCPA.
 
 
----WhoIsGPC
-title: Who is supporting the development of GPC?
+---WhatDoesEnforcementMean
+title: What does the enforcement of GPC mean for site maintainers?
 ---
+Websites that employ third party systems for the tracking of users for ad targeting 
+or other commercial purposes will now need to take steps to honor GPC choices, 
+creating an automated flow that takes the signal and uses it to mark the session 
+as Do Not Sell as defined under CCPA, potentially through using compatible systems 
+like the IAB’s [USP API](https://github.com/InteractiveAdvertisingBureau/USPrivacy/blob/master/CCPA/USP%20API.md). 
+If the business knows the identity of the user, the “Do Not Sell” applies to all 
+uses of the person’s information, not just the web session.
 
-GPC is being developed by a broad coalition of stakeholders:
-technologists, web publishers, technology companies,
-browser vendors, extension developers, academics, and
-civil rights organizations.
+Because the GPC is on a window-level object and on request headers, its presence is 
+the fastest way to handle decision-making around user privacy. GPC has been adopted 
+by The Washington Post, The New York Times, and a variety of other publishers. It 
+also is supported by a number of major Consent Management Platforms (CMPs), 
+including OneTrust, SourcePoint, and WireWheel. GPC simplifies the process of user 
+opt out. It does so without adding technical complexity that could slow ad execution. 
+The ease of execution means that GPC is a positive development for helping sites 
+follow CCPA regulations.
 
-The GPC was initially spearheaded by [Ashkan
-Soltani](https://twitter.com/ashk4n) [Georgetown
-Law](https://www.georgetowntech.org/) and [Sebastian
-Zimmeck](https://twitter.com/SZimmeck) ([Wesleyan
-University](https://www.wesleyan.edu/)) in collaboration with [The New York
-Times](https://www.nytimes.com), [The Washington
-Post](https://www.washingtonpost.com/), [Financial Times](https://www.ft.com/),
-[Automattic (Wordpress.com & Tumblr)](https://automattic.com/),
-[Glitch](https://glitch.com/),
-[DuckDuckGo](https://spreadprivacy.com/announcing-global-privacy-control/),
-[Brave](https://brave.com/global-privacy-control/),
-[Mozilla](https://www.mozilla.org/en-US/), [Disconnect](https://disconnect.me/),
-[Abine](https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/),
-[Digital Content Next (DCN)](https://digitalcontentnext.org/), [Consumer
-Reports](https://advocacy.consumerreports.org/issue/tech-privacy/), and the
-[Electronic Frontier Foundation (EFF)](https://www.eff.org/).
-
-
----HowToSignal
-title: I’m a web user. How can I use GPC to signal my privacy preferences to websites?
+---ExpectedImpact
+title: Expected Impact
 ---
+As of the writing of this document over 40 million users are utilizing a browser or 
+extension with GPC support. Some systems that allow the user to express their 
+privacy preference with GPC are Abine, Brave, DuckDuckGo, OptMeowt, and Privacy Badger.
 
-GPC is available for an increasing number of browsers and browser extensions,
-listed [here](https://globalprivacycontrol.org/#download). If you want to use
-GPC, you can download and enable it via a participating browser or browser
-extension. More information about downloading GPC is available
-[here](https://globalprivacycontrol.org/).
+Impact on your site will depend on your interpretation of the CCPA and CPRA. There 
+are open questions about what specific processing activities are covered by an opt-out 
+request under those laws; the California Privacy Protection Agency is currently 
+drafting rules to provide more clarity to implementers, but those rules have not been 
+finalized. Not all of those 40 million users are in California, and if you limit your 
+processing of GPC to California, the percentage of users using it will depend on how 
+much of your traffic you get from California. However, if you accept GPC beyond 
+California, it may result in a larger impact.
 
----Publisher
-title: I’m a publisher, developer, or other service. How can I support GPC?
+To understand the impact on your individual site, we generally recommend tracking the 
+percentage of users activating a GPC signal as a non-user-identified metric in your 
+site’s analytics.
+
+---ImplementationGuidance
+title: Implementation Guidance
 ---
+What follows are known best-practices for site-owners and publishers to implement GPC 
+parsing in a way that brings them in compliance with the CCPA. A site may choose to 
+further implement GPC by using the signal for other regions’ regulations, or as a 
+general user preference to be used across all sessions, but that functionality is 
+highly varied from site to site and not described here.
 
-The GPC spec is easy to implement on a wide variety of websites and other
-services. The proposed specification and back-end implementation reference
-documentation are available [here](https://global-privacy-control.glitch.me/).
-For additional information, please feel free to reach out on Github or Twitter
-([@globablprivctrl](https://twitter.com/globalprivctrl)).
+Importantly, GPC is convenient to implement as a stateless protocol. Sites do not need 
+to keep track of a user’s status being opted out as every request will contain it.
 
----Policymaker
-title: I’m a policymaker. How can I support GPC or learn more about how it could apply in my jurisdiction?
+---Transparency
+title: "Transparency: Implementing .well-known/gpc.json and Privacy Policy Update"
 ---
+GPC makes use of [_.well-known_ identifiers](https://datatracker.ietf.org/doc/html/rfc5785) 
+for sites to signal compliance with the [GPC specification](https://globalprivacycontrol.github.io/gpc-spec/). 
+The existence of this file indicates you are using GPC as part of your compliance with 
+privacy laws. There may be a variety of tools for implementing _.well-known_ files in 
+your Content Management System (CMS) or website. Here is an [example for WordPress](https://github.com/pfefferle/wordpress-well-known) 
+and another [for Gatsby](https://www.npmjs.com/package/gatsby-plugin-well-known). If 
+you can find a method of implementing `.well-known/gpc.json` that is native to your 
+CMS, we recommend you do so. What follows is a basic example assuming you have the 
+capability to designate a static folder and files for your site.
 
-As it is intended to invoke users’ privacy rights, we encourage policymakers
-from around the world to engage in the development of this specification. If you
-would like to learn more about how GPC could work in your jurisdiction, please
-contact us via email at
-[info[at]globalprivacycontrol.org](mailto:info[at]globalprivacycontrol.org).
+First create a folder named `.well-known` at the base of your site, so it would have 
+a path of `yoursite.com/.well-known/`. In that folder create a file with the name of 
+`gpc.json`. The file’s value should then look something like this with `lastUpdate` 
+set to the date you have last updated the file.
 
+    {
+        "gpc": true,
+        "lastUpdate": "2022-04-20"
+    }
 
----GetInvolved
-title: How can I get involved in developing the proposed specification?
+This will give you a valid GPC file that states you comply with GPC within the 
+context you understand it to apply.
+
+Adopters will usually supplement the _.well-known_ file with a statement in their 
+Privacy Policy that states exactly how they interpret GPC within their own systems. 
+The exact message in your privacy policy is up to you and may require review by your 
+legal team. A suggested addition, similar to the [privacy policy of The New York Times](https://www.nytimes.com/privacy/california-notice):
+
+>“Finally, if your browser supports it, you can turn on the Global Privacy Control to opt-out of the “sale” of your personal information under California’s CCPA.”
+
+---USPAPI
+title: "Changing Data Sharing Practices: Implementing the GPC signal with the IAB’s USP API"
 ---
+The USP API is a method of compliance recommended by the IAB. While there are other 
+ways to comply with CCPA, the USP API is the most commonly used so instructions for 
+syncing GPC with the USP API follow. If you use a CMP, it is highly likely that 
+your use of the USP API is dependent on their system. Before moving forward with 
+the guidance below, check with your CMP to see if they support GPC and if they 
+provide a way to turn that support on. [If you are using OneTrust, here is a link to how you can turn on GPC support](https://wecomply.noyb.eu/static/app/pdf/OneTrustGuide.766f4ff956c0.pdf). 
+Your CMS may also include tools to comply with GPC. [Here’s an example for Express-based NodeJS applications](https://www.npmjs.com/package/express-gpc).
 
-GPC was initially introduced at the World Wide Web Consortium (W3C) [Privacy
-Community Group](https://privacycg.github.io/) (Privacy CG) in April 2020. A
-number of stakeholders are part of that community.  There are ongoing
-discussions in the Privacy CG. Interested parties are encouraged to engage with
-the proposal [here](https://github.com/privacycg/proposals/issues/10/).
+The following example relies on the assumption that the page accepting the signal 
+is doing so in concert with the IAB's CCPA Framework and has given the user 
+explicit notice somewhere on their page. This sample script does not include 
+other methods by which you may monitor and set the CCPA preference of a user. It 
+should be placed as early on the page as possible to gain the maximum performance 
+result from leveraging GPC.
 
+    // This will cover cases where it is set to null or set.
+    // In the case of older user agents, it should not be assumed that the lack of a signal is equivalent to permission to sell.
+        if (navigator.globalPrivacyControl){
+            var CCPAConsent = ''
+            switch (navigator.globalPrivacyControl) {
+                case "1":
+                    // Y indicates the user has selected opt out
+                    CCPAConsent = 'Y';
+                    break;
+                default:
+                    // N indicates the user has not selected to opt out
+                    CCPAConsent = 'N';
+            }
+            var uspFramework = {
+                version: 1,
+                notice: 'Y',
+                optOut: CCPAConsent, // You will have other things
+                                     // besides GPC that are likely to
+                                     // set this value.
+                lspa: 'Y'
+            }
+            // Will return a USP string like `1YYY`
+            var uspString = Object.values(uspFramework).reduce((a, c) => { return a+c }, '')
+            window.__uspapi = (command, version, callback) => {
+                if (command === 'getUSPData' && version === 1) {
+                    callback(uspString, true)
+                }
+            }
+        } else {
+            // Standard logic for handling CCPA without the navigator.globalPrivacyControl setting.
+        }
 
-Additionally, GPC is currently being implemented across the web. A number of
-browsers, extensions, and publishers are supporting or implementing GPC (see
-below).
-
----Benefit
-title: How does GPC benefit consumers, publishers, software makers, and advertisers?
+---Results
+title: Results
 ---
-
-The online advertising ecosystem is evolving, and consumer expectations are
-changing. An increasing number of web users do not want to be tracked by parties
-they aren’t choosing to interact with, and new laws, technological changes, and
-advertising business models reflect these preferences.
-
-GPC provides consumers and businesses with clear expectations and guidelines for
-the sharing and sale of data online. It permits users to easily and clearly
-exercise their privacy rights, facilitates greater trust between businesses and
-their customers, and fosters certainty for businesses and advertisers by relying
-on an open standard.
-
-
----IsItBinding
-title: Is GPC legally binding?
----
-
-GPC is intended to serve as an expression of users’ intent to
-invoke their online privacy rights. Depending on the jurisdiction
-and applicable laws, a user’s expression through GPC may have
-legal impact. However, GPC on its own does not create any
-legally binding obligations.
-
-GPC may impact existing law in several ways: In California, Section 1798.135(c)
-of the [California Consumer Privacy Act
-(CCPA)](http://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=3.&part=4.&lawCode=CIV&title=1.81.5)
-gives users the right to opt out of the sale of their personal information.
-
-
-Furthermore, Section 999.315 of the [CCPA
-Regulations](https://oag.ca.gov/privacy/ccpa/regs) requires businesses to honor
-these opt-out requests. The regulations specify that "[a] business shall provide
-two or more designated methods for submitting requests to opt-out […]
-[including] user-enabled global privacy controls, such as a browser plug-in or
-privacy setting, device setting, or other mechanism, that communicate or signal
-the consumer’s choice to opt-out of the sale of their personal information. […]
-User-enabled global privacy controls, such as a browser plug-in or privacy
-setting, device setting, or other mechanism, that communicate or signal the
-consumer’s choice to opt-out of the sale of their personal information shall be
-considered a request directly from the consumer, not through an authorized
-agent."
-
-On this basis, it is possible that the GPC may become a legally binding opt-out
-signal in California.
-
-In addition, the [European General Data Protection Regulation
-(GDPR)](https://gdpr-info.eu/) gives users the right to object to their personal
-data being processed. The GPC signal is intended to convey a general request
-that data controllers limit the sale or sharing of the user's personal data to
-other data controllers.  It is possible that a GPC signal opting out of
-processing could create a legally binding obligation for data processors.
-
-In Bermuda, the Privacy Commissioner has
-[indicated](https://www.privacy.bm/post/global-privacy-control-interoperability-in-action)
-that he believes the GPC may be used to create a legally binding obligation on
-businesses under their laws, which provide users the right to “request an
-organisation to cease, or not begin, using his [or her] personal information
-[…] for the purposes of advertising, marketing or public relations,” or
-“where the use of that personal information is causing or is likely to cause
-substantial damage or substantial distress to the individual or to another
-individual.”
-
-Additional information is available in the [proposed
-specification](https://globalprivacycontrol.github.io/gpc-spec/).
-
----DND
-title: Why not just use Do Not Track (DNT)?
----
-
-Do Not Track was an effort preceding GPC to permit users to communicate their
-privacy preferences to websites they visit. Unfortunately, in the appendices to
-their Final Statement of Reasons, the California Attorney General (AG)
-determined that the AG could not require businesses to comply with DNT requests
-because the requests do not clearly convey users’ intent to opt out of the sale
-of their data. A more detailed discussion of the inadequacies of DNT is
-available as [Appendix E](https://oag.ca.gov/privacy/ccpa/regs) of
-the AG’s Final Statement of Reasons.
-
-When considering whether DNT was sufficient under the CCPA, the AG specifically
-determined that a new type of privacy signal would benefit users and businesses
-and that its regulation is “intended to support innovation for privacy services
-that facilitate the exercise of consumer rights in furtherance of the CCPA.”
-
-GPC responds to this call for innovation by providing a mechanism for privacy
-signaling that is applicable to current laws, technologies, and business
-practices. The Attorney General has said that he believes GPC is “a technical
-standard that would make it easier for consumers to stop the sale of their
-personal information” and that he is
-“[heartened](https://twitter.com/AGBecerra/status/1313884769478828032?s=20) to
-see a wave of innovation in this space.”
-
-
----ExistingDNS
-title: How does GPC interact with companies' existing Do Not Sell links?
----
-
-The California AG has determined that businesses must honor two methods of
-submitting opt-outs.  GPC is meant to provide users with an additional option
-for objecting to the sale of their data, and it functions identically to
-clicking a “Do Not Sell My Personal Information” link provided by a business.
-
----Conflict
-title: What if there is a conflict between a GPC signal and a user-selected privacy preference?
----
-
-Some jurisdictions allow businesses to sell user data when there is a conflict
-between global and site-specific preferences — for instance, if a user has
-provided specific permission to a website to sell their data. The [CCPA
-Regulations](https://globalprivacycontrol.github.io/gpc-spec/#bib-ccpa-regulations)
-§999.315(c)(2) state that when a GPC signal conflicts with the existing privacy
-settings a consumer has with the business, the business shall respect the GPC
-signal but may notify the consumer of the conflict and give the consumer an
-opportunity to confirm the business-specific privacy setting or participation in
-a financial incentive program.
-
-A conflict between GPC and site-specific privacy preferences may be resolved
-differently in other jurisdictions.
-
-Additionally, some implementations of GPC allow users to consent to the sale or
-sharing of their data on an individual basis.
-
----Default
-title: Can GPC be enabled by default?
----
-
-The GPC preference expression should accurately reflect the users’ privacy
-preferences.  The threshold for obtaining user consent differs between
-jurisdictions. GPC strives to honor those differences while still providing
-users with choice about how businesses use their data. In some jurisdictions,
-the presence of GPC in a user’s browser may constitute an adequate signal to not
-sell their data, while regulations in another jurisdiction may require the
-user’s explicit consent in order to send a GPC signal.
-
-What constitutes a deliberate choice may differ between regional
-regulations. For example, regulations in one jurisdiction may consider the use
-of a privacy-focused browser to imply a GPC preference, such as under the CCPA
-[Final Statement of Reasons - Appendix E
-#73](https://oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-fsor-appendix-e.pdf)
-("_The consumer exercises their choice by affirmatively choosing the privacy
-control […]  including when utilizing privacy-by-design products or
-services_"), while regulations in another jurisdiction may require explicit
-consent from the user to send a GPC signal.
+Because of its presence at the level of the browser and its immediate availability, 
+requests with GPC where CCPA has to be followed have a significantly lower time to 
+first ad load.

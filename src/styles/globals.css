@@ -1,5 +1,6 @@
 @import './fonts.css';
 @import './variables.css';
+@import 'highlight.js/styles/default.css';
 
 html {
   scroll-behavior: smooth;
