@@ -86,7 +86,7 @@
   text-align: center;
 
   @media (--media-breakpoint-up-md) {
-    padding: 180px 0 190px;
+    padding: 150px 0 160px;
     text-align: left;
   }
 }

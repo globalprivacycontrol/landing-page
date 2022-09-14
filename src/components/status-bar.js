@@ -28,27 +28,37 @@ export default function StatusBar() {
                 hasGpc ? styles.dotGreen : styles.dotRed
               } d-inline-block status-dot rounded-circle mr-2`}
               style={{
-                backgroundColor: hasGpc ? '#058A5E' : 'de0000'
+                backgroundColor: hasGpc ? '#058A5E' : '#de0000'
               }}
             ></span>
             <span className="mb-0 text-center">
               {hasGpc ? (
                 <>
-                  GPC signal detected.
-                  <br />
-                  <a href="https://global-privacy-control.glitch.me">
-                    Test against the reference server.
-                  </a>
+                  <span className={`${styles.statusText}`}>
+                    GPC signal detected.
+                  </span>
+                  <span className={`${styles.statusCheck}`}>
+                    Test against the
+                    <a href="https://global-privacy-control.glitch.me">
+                      reference server.
+                    </a>
+                    .
+                  </span>
                 </>
               ) : (
                 <>
-                  GPC signal not detected.
-                  <br />
-                  <Link href="/#download">
-                    <a>
-                      Please download a browser or extension that supports it.
-                    </a>
-                  </Link>
+                  <span className={`${styles.statusText}`}>
+                    GPC signal not detected.
+                  </span>
+                  <span className={`${styles.statusText}`}>
+                    Please
+                    <Link href="/#download">
+                      <a>
+                        download a browser/extension
+                      </a>
+                    </Link>
+                    that supports it.
+                  </span>
                 </>
               )}
             </span>
