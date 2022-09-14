@@ -104,7 +104,7 @@ export default function ImplementationPage({ data, html, sections }) {
                       Sebastian Zimmeck
                     </Link>
                   </h3>
-                  <p>Department of Mathematics and Computer Science</p>
+                  <p>Assistant Professor of Computer Science</p>
                   <Link href="https://www.wesleyan.edu" passHref>
                     Wesleyan University
                   </Link>
@@ -136,7 +136,7 @@ export default function ImplementationPage({ data, html, sections }) {
             <div className={`col-sm-12 col-md-7 col-lg-8 ${styles.agQuoteWrapper}`}>
               <div className={`${styles.agQuote}`}>
                 <p>
-                  &ldquo;Opting out of the sale of personal information should be easy for consumers, and the GPC is one option for consumers who want to submit requests to opt-out of the sale of personal information via a user-enabled global privacy control. <b>Under law, it must be honored by covered businesses as a valid consumer request to stop the sale of personal information.</b>&rdquo;
+                  &ldquo;Opting out of the sale of personal information should be easy for consumers, and the GPC is one option for consumers who want to submit requests to opt-out of the sale of personal information via a user-enabled global privacy control. <b>Under law, it must be honored by covered businesses as a valid consumer request to stop the sale of personal information.</b>&rdquo; (emphasis added)
                 </p>
               </div>
             </div>
