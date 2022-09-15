@@ -40,7 +40,7 @@ export default function StatusBar() {
                   <span className={`${styles.statusCheck}`}>
                     Test against the
                     <a href="https://global-privacy-control.glitch.me">
-                      reference server.
+                      reference server
                     </a>
                     .
                   </span>
@@ -53,9 +53,7 @@ export default function StatusBar() {
                   <span className={`${styles.statusText}`}>
                     Please
                     <Link href="/#download">
-                      <a>
-                        download a browser/extension
-                      </a>
+                      <a>download a browser/extension</a>
                     </Link>
                     that supports it.
                   </span>
