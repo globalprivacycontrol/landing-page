@@ -127,8 +127,7 @@ ways to comply with CCPA, the USP API is the most commonly used so instructions 
 syncing GPC with the USP API follow. If you use a CMP, it is highly likely that
 your use of the USP API is dependent on their system. Before moving forward with
 the guidance below, check with your CMP to see if they support GPC and if they
-provide a way to turn that support on. [If you are using OneTrust, here is a link to how you can turn on GPC support](https://wecomply.noyb.eu/static/app/pdf/OneTrustGuide.766f4ff956c0.pdf)
-([MyOneTrust portal; login required](https://my.onetrust.com/s/article/UUID-7c78b8b2-8399-d284-b9e9-fe4ec44e8aed?language=en_US)).
+provide a way to turn that support on. [If you are using OneTrust, here is a link to how you can turn on GPC support](https://my.onetrust.com/s/article/UUID-7c78b8b2-8399-d284-b9e9-fe4ec44e8aed?language=en_US).
 Your CMS may also include tools to comply with GPC. [Here’s an example for Express-based NodeJS applications](https://www.npmjs.com/package/express-gpc).
 
 The following example relies on the assumption that the page accepting the signal
