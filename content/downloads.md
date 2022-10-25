@@ -17,7 +17,7 @@ entries:
     url: https://blog.mozilla.org/netpolicy/2021/10/28/implementing-global-privacy-control/
     img: /img/download-logos/firefox.png
   - name: OptMeowt by privacy-tech-lab
-    url: https://privacytechlab.org/optmeowt
+    url: https://github.com/privacy-tech-lab/gpc-optmeowt
     img: /img/download-logos/optmeowt.png
   - name: Privacy Badger by EFF
     url: https://privacybadger.org
