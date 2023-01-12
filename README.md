@@ -11,16 +11,19 @@ This project adheres to the Contributor Covenant [code of conduct](CODE_OF_CONDU
 By participating, you are expected to uphold this code. Please report unacceptable behavior via our Github repository.
 
 ## Getting Involved
+
 We appreciate offers to help but are not currently accepting pull requests for non-essential or design-related updates.
 
 ## License
+
 Apart from any logos or marks that may be contained in this repo, this work is licensed under a
 [Creative Commons Attribution 4.0 International License](https://github.com/globalprivacycontrol/landing-page/blob/master/LICENSE).
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
 ## Resources
-- Read [proposed specification](https://globalprivacycontrol.github.io/gpc-spec) for technical details
+
+- Read [proposed specification](https://privacycg.github.io/gpc-spec/) for technical details
 - Visit [test site](https://global-privacy-control.glitch.me) to learn how to interact with the GPC signal
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/

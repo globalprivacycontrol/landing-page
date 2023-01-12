@@ -88,7 +88,7 @@ title: "Transparency: Implementing .well-known/gpc.json and Privacy Policy Updat
 ---
 
 GPC makes use of [_.well-known_ identifiers](https://datatracker.ietf.org/doc/html/rfc5785)
-for sites to signal compliance with the [GPC specification](https://globalprivacycontrol.github.io/gpc-spec/).
+for sites to signal compliance with the [GPC specification](https://privacycg.github.io/gpc-spec/).
 The existence of this file indicates you are using GPC as part of your compliance with
 privacy laws. There may be a variety of tools for implementing _.well-known_ files in
 your Content Management System (CMS) or website. Here is an [example for WordPress](https://github.com/pfefferle/wordpress-well-known)
