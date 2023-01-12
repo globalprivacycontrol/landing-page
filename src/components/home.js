@@ -252,7 +252,7 @@ export default function Home({
                   as="a"
                   variant="primary"
                   className="d-block"
-                  href="https://globalprivacycontrol.github.io/gpc-spec/"
+                  href="https://privacycg.github.io/gpc-spec/"
                 >
                   View Full Spec
                 </Button>
