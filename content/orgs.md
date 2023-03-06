@@ -33,6 +33,10 @@ entries:
     img: /img/participating-logos/cr.svg
     type: Business
     isFeaturedIndex: 1
+  - name: Didomi
+    url: https://www.didomi.io/
+    img: /img/participating-logos/didomi.png
+    type: Business
   - name: Disconnect
     url: https://disconnect.me/
     img: /img/participating-logos/disconnect.svg
