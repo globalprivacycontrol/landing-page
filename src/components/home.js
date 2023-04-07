@@ -208,8 +208,7 @@ export default function Home({
                     Now you can exercise your legal privacy rights in one step
                     via Global Privacy Control (
                     <abbr title="Global Privacy Control">GPC</abbr>), required
-                    under the California Consumer Protection Act (CCPA) and
-                    Europe’s Global Data Protection Regulation (GDPR).
+                    under the California Consumer Protection Act (CCPA).
                   </p>
 
                   <p className="font-weight-bolder">
