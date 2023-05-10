@@ -19,9 +19,9 @@ entries:
     browser_img: /img/browser-logos/brave.svg
     type: Downloadable
     isFeaturedIndex: 1
-  - name: CafeMedia
-    url: https://cafemedia.com/
-    img: /img/participating-logos/cafemedia.svg
+  - name: Raptive
+    url: https://raptive.com/
+    img: /img/participating-logos/raptive.svg
     type: Business
     isFeaturedIndex: 12
   - name: Complianz
