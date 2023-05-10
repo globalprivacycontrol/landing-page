@@ -15,6 +15,12 @@ By participating, you are expected to uphold this code. Please report unacceptab
 To run the landing page on a local server, clone this repo and run
 
 ```terminal
+npm install
+```
+
+to install required packages. Then, to build and preview the site, run
+
+```terminal
 npm run build
 npm run start
 ```
