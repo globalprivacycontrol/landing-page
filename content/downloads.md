@@ -22,6 +22,9 @@ entries:
   - name: Privacy Badger by EFF
     url: https://privacybadger.org
     img: /img/download-logos/badger.png
+  - name: lockrMail by lockr
+    url: https://lockrMail.com
+    img: /img/download-logos/lockr.png
 ---
 
 Download a supported browser or extension and start exercising your privacy rights with GPC.
