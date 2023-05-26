@@ -95,7 +95,7 @@ entries:
     img: /img/participating-logos/onetrust.svg
     type: Business
   - name: OptMeowt by privacy-tech-lab
-    url: https://www.privacytechlab.org/optmeowt/
+    url: https://github.com/privacy-tech-lab/gpc-optmeowt
     img: /img/participating-logos/optmeowt.svg
     browser_img: /img/browser-logos/optmeowt.svg
     type: Downloadable
@@ -125,21 +125,23 @@ entries:
     url: https://www.wirewheel.io
     img: /img/participating-logos/wirewheel.svg
     type: Business
-
 ---
 
 The following organizations, representing 50 million users and hundreds of thousands of websites, are in support of GPC.
 
 ---Browsers
 green: Browsers + Extensions
-gray:  / (Collectively Over ~50million Users)
+gray: / (Collectively Over ~50million Users)
+
 ---
 
 ---Business
 green: Founding Organizations
-gray:  / (Collectively Over Hundreds of Thousands of Websites and Blogs)
+gray: / (Collectively Over Hundreds of Thousands of Websites and Blogs)
+
 ---
 
 ---Partners
 green: Supporting Partners
+
 ---
