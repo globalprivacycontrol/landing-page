@@ -104,6 +104,7 @@ entries:
     browser_img: /img/browser-logos/privacybadger.svg
     type: Downloadable
   - name: privacy-tech-lab
+    img: /img/participating-logos/optmeowt.svg
     url: https://privacytechlab.org/
     type: Business
   - name: Raptive
