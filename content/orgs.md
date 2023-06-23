@@ -1,6 +1,6 @@
 ---
 title: Founding Organizations
-headerText: Global Privacy Control has broad industry support. Below, you’ll find browsers and extensions which send the GPC signal, businesses that honor GPC and other supporting partners involved in the creating the specification.
+headerText: Global Privacy Control has broad industry support. Below, you’ll find browsers and extensions which send the GPC signal, businesses that honor GPC and other supporting partners involved in creating the specification.
 entries:
   - name: Abine
     url: https://www.abine.com/
@@ -8,22 +8,19 @@ entries:
     browser_img: /img/browser-logos/abine.svg
     type: Downloadable
     isFeaturedIndex: 1
+    inOrganizations: true
   - name: Automattic
     url: https://automattic.com/
     img: /img/participating-logos/automattic.svg
     type: Business
     isFeaturedIndex: 1
-  - name: Brave
+  - name: Brave Software
     url: https://brave.com/global-privacy-content/
     img: /img/participating-logos/brave.svg
     browser_img: /img/browser-logos/brave.svg
     type: Downloadable
     isFeaturedIndex: 1
-  - name: Raptive
-    url: https://raptive.com/
-    img: /img/participating-logos/raptive.svg
-    type: Business
-    isFeaturedIndex: 12
+    inOrganizations: true
   - name: Complianz
     url: https://complianz.io/
     img: /img/participating-logos/complianz.svg
@@ -43,6 +40,7 @@ entries:
     browser_img: /img/browser-logos/disconnect.svg
     type: Downloadable
     isFeaturedIndex: 1
+    inOrganizations: true
   - name: Digital Content Next
     url: https://digitalcontentnext.org/
     img: /img/participating-logos/dcn.svg
@@ -53,6 +51,7 @@ entries:
     browser_img: /img/browser-logos/DDG.svg
     type: Downloadable
     isFeaturedIndex: 1
+    inOrganizations: true
   - name: EFF
     url: https://www.eff.org/
     img: /img/participating-logos/eff.svg
@@ -104,6 +103,14 @@ entries:
     img: /img/participating-logos/privacybadger.svg
     browser_img: /img/browser-logos/privacybadger.svg
     type: Downloadable
+  - name: privacy-tech-lab
+    url: https://privacytechlab.org/
+    type: Business
+  - name: Raptive
+    url: https://raptive.com/
+    img: /img/participating-logos/raptive.svg
+    type: Business
+    isFeaturedIndex: 12
   - name: SourcePoint
     url: https://www.sourcepoint.com/
     img: /img/participating-logos/sourcepoint.svg
@@ -136,8 +143,8 @@ gray: / (Collectively Over ~50million Users)
 ---
 
 ---Business
-green: Founding Organizations
-gray: / (Collectively Over Hundreds of Thousands of Websites and Blogs)
+green: Organizations
+gray: / (Browser and extension vendors, publishers, consent management platforms, ...)
 
 ---
 
