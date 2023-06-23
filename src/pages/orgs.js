@@ -12,8 +12,7 @@ export default function OrgsPage({
   data: { title, headerText, entries } = {},
   sections
 }) {
-  //const partners = entries.filter((e) => e.type == 'Partner');
-  const Business = entries.filter((e) => e.type == 'Business');
+  const Business = entries.filter((e) => e.type == 'Business' || e.inOrganizations == true);
   return (
     <Layout title="Founding Organizations | Global Privacy Control">
       <Article title={title}>
@@ -42,10 +41,6 @@ export default function OrgsPage({
             </div>
           </section>
 
-          {/* <OrgsHeader section={sections.filter(e => e.key == 'Partners')[0].data}/>
-        <section className="col-9 pb-3" >
-          <OrgList entries={partners} type="Partners"/>
-        </section> */}
         </div>
       </Article>
     </Layout>
