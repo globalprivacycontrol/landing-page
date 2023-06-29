@@ -1,6 +1,10 @@
 ---
 title: Press & Announcements
 entries:
+  - datePublished: Mar 23, 2023
+    contentUrl: https://www.badcredit.org/news/global-privacy-control-stops-companies-from-selling-online-information/
+    title: "Global Privacy Control Boosts Online Privacy by Empowering Consumers with Proactive Protection"
+    source: badcredit.org
   - datePublished: Oct. 26, 2021
     contentUrl: https://www.washingtonpost.com/technology/2021/10/26/global-privacy-control-firefox/
     title: "Your browser can tell websites how to treat your data. But companies didn’t have to listen — until now"
