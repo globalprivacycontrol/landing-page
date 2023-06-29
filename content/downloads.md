@@ -4,8 +4,8 @@ entries:
   - name: Abine
     url: https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/
     img: /img/download-logos/abine.png
-  - name: Brave Privacy Browser
-    url: https://brave.com/global-privacy-content/
+  - name: Brave Browser
+    url: https://brave.com/web-standards-at-brave/4-global-privacy-control/
     img: /img/download-logos/brave.png
   - name: Disconnect
     url: https://disconnect.me/
