@@ -70,6 +70,10 @@ entries:
     img: /img/participating-logos/firefox.svg
     browser_img: /img/browser-logos/firefox.svg
     type: Downloadable
+  - name: lockr
+    url: https://lockrmail.com/
+    img: public/img/download-logos/lockr.png
+    type: Business
   - name: Meredith Digital
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
