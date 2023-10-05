@@ -72,7 +72,7 @@ entries:
     type: Downloadable
   - name: lockr
     url: https://lockrmail.com/
-    img: public/img/download-logos/lockr.png
+    img: /img/download-logos/lockr.png
     type: Business
   - name: Meredith Digital
     url: https://www.meredith.com/
