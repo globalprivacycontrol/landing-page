@@ -10,23 +10,23 @@ export default function Navbar({ isLarge = false }) {
     <nav className={`${styles.navbar} navbar navbar-expand-md`}>
       <div className="navbar__logos">
         <Link href="/">
-          <a>
-            <VisuallyHidden>Home</VisuallyHidden>
-            <img
-              className="d-lg-none"
-              src={`${process.env.publicPrefix}/img/gpc-logo-mobile.svg`}
-              alt="global privacy control logo"
-              id="hero-logo"
-            />
-            <img
-              className={`d-none d-lg-block ${isLarge ? styles.headerLogoLarge : styles.headerLogoSmall}`}
-              src={`${process.env.publicPrefix}/img/${
-                isLarge ? 'gpc-logo.svg' : 'gpc-logo-small.svg'
-              }`}
-              alt="global privacy control logo"
-              id="hero-logo"
-            />
-          </a>
+
+          <VisuallyHidden>Home</VisuallyHidden>
+          <img
+            className="d-lg-none"
+            src={`${process.env.publicPrefix}/img/gpc-logo-mobile.svg`}
+            alt="global privacy control logo"
+            id="hero-logo"
+          />
+          <img
+            className={`d-none d-lg-block ${isLarge ? styles.headerLogoLarge : styles.headerLogoSmall}`}
+            src={`${process.env.publicPrefix}/img/${
+              isLarge ? 'gpc-logo.svg' : 'gpc-logo-small.svg'
+            }`}
+            alt="global privacy control logo"
+            id="hero-logo"
+          />
+
         </Link>
       </div>
 
@@ -81,38 +81,38 @@ function Links() {
   return (
     <ul className={`navbar-nav ${styles.linkList}`}>
       <li className="nav-item">
-        <Link href="/#about">
-          <a className="nav-link text-uppercase">About</a>
+        <Link href="/#about" className="nav-link text-uppercase">
+          About
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#gpc-spec">
-          <a className="nav-link text-uppercase">Spec</a>
+        <Link href="/#gpc-spec" className="nav-link text-uppercase">
+          Spec
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/implementation">
-          <a className="nav-link text-uppercase">Implementation</a>
+        <Link href="/implementation" className="nav-link text-uppercase">
+          Implementation
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#download">
-          <a className="nav-link text-uppercase">Download</a>
+        <Link href="/#download" className="nav-link text-uppercase">
+          Download
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#orgs">
-          <a className="nav-link text-uppercase">Organizations</a>
+        <Link href="/#orgs" className="nav-link text-uppercase">
+          Organizations
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#press">
-          <a className="nav-link text-uppercase">Press</a>
+        <Link href="/#press" className="nav-link text-uppercase">
+          Press
         </Link>
       </li>
       <li className="nav-item">
-        <Link href="/#faq">
-          <a className="nav-link text-uppercase">FAQ</a>
+        <Link href="/#faq" className="nav-link text-uppercase">
+          FAQ
         </Link>
       </li>
     </ul>

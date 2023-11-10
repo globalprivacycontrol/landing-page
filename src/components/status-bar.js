@@ -53,7 +53,7 @@ export default function StatusBar() {
                   <span className={`${styles.statusText}`}>
                     Please
                     <Link href="/#download">
-                      <a>download a browser/extension</a>
+                      download a browser/extension
                     </Link>
                     that supports it.
                   </span>
