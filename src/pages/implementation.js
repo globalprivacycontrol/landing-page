@@ -40,7 +40,10 @@ export default function ImplementationPage({ data, html, sections }) {
                 {/* <!-- HERO BUTTON --> */}
                 <div className={`row ${styles.heroBtns}`}>
                   <div className="col-sm-12 col-md-6 mb-5 mb-lg-0">
-                    <Link href={`${process.env.publicPrefix}/Implementing GPC for Publishers.pdf`} passHref>
+                    <Link
+                      href={`${process.env.publicPrefix}/Implementing GPC for Publishers.pdf`}
+                      passHref
+                      legacyBehavior>
                       <Button
                         as="a"
                         variant="primaryInverted"
@@ -173,7 +176,10 @@ export default function ImplementationPage({ data, html, sections }) {
           </div>
           <div className="row">
             <div className={`col-12 ${styles.downloadContainer}`}>
-              <Link href={`${process.env.publicPrefix}/Implementing GPC for Publishers.pdf`} passHref>
+              <Link
+                href={`${process.env.publicPrefix}/Implementing GPC for Publishers.pdf`}
+                passHref
+                legacyBehavior>
                 <Button
                   as="a"
                   variant="primary"
