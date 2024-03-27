@@ -121,7 +121,7 @@ entries:
     img: /img/participating-logos/sourcepoint.svg
     type: Business
   - name: TrustArc
-    url: https://trustarc.com/blog/2021/09/10/what-is-global-privacy-control-and-why-do-you-keep-hearing-about-it/
+    url: https://trustarc.com/resource/global-privacy-control/
     img: /img/participating-logos/trustarc.svg
     type: Business
   - name: Wesleyan University
