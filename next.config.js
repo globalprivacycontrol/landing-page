@@ -9,5 +9,6 @@ module.exports = {
   },
   crossOrigin: 'anonymous',
   basePath: isProd ? GH_PAGES_PREFIX : '',
-  assetPrefix: isProd ? GH_PAGES_PREFIX : ''
+  assetPrefix: isProd ? GH_PAGES_PREFIX : '',
+  output: 'export'
 };
