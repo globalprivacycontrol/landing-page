@@ -2,8 +2,8 @@
 title: Founding Organizations
 headerText: Global Privacy Control has broad industry support. Below, you’ll find browsers and extensions which send the GPC signal, businesses that honor GPC and other supporting partners involved in creating the specification.
 entries:
-  - name: Abine
-    url: https://www.abine.com/
+  - name: Abine DeleteMe
+    url: https://joindeleteme.com/blog/how-to-enable-global-privacy-control/
     img: /img/participating-logos/abine.svg
     browser_img: /img/browser-logos/abine.svg
     type: Downloadable

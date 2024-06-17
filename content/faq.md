@@ -36,7 +36,7 @@ Post](https://www.washingtonpost.com/), [Financial Times](https://www.ft.com/),
 [DuckDuckGo](https://spreadprivacy.com/announcing-global-privacy-control/),
 [Brave](https://brave.com/global-privacy-control/),
 [Mozilla](https://www.mozilla.org/en-US/), [Disconnect](https://disconnect.me/),
-[Abine](https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/),
+[Abine](https://joindeleteme.com/blog/how-to-enable-global-privacy-control/),
 [Digital Content Next (DCN)](https://digitalcontentnext.org/), [Consumer
 Reports](https://advocacy.consumerreports.org/issue/tech-privacy/), and the
 [Electronic Frontier Foundation (EFF)](https://www.eff.org/).
