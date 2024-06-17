@@ -23,7 +23,7 @@ entries:
     inOrganizations: true
   - name: Check My Ads
     url: https://checkmyads.org/
-    img: /img/participating-logs/checkmyads.svg
+    img: /img/participating-logos/checkmyads.svg
     type: Business
   - name: Complianz
     url: https://complianz.io/
