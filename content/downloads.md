@@ -1,8 +1,8 @@
 ---
 title: Join over 50 million users.
 entries:
-  - name: Abine
-    url: https://www.abine.com/blog/2020/online-privacy-leaders-launch-gpc-global-privacy-control-standard/
+  - name: Abine DeleteMe
+    url: https://joindeleteme.com/blog/how-to-enable-global-privacy-control/
     img: /img/download-logos/abine.png
   - name: Brave Browser
     url: https://brave.com/web-standards-at-brave/4-global-privacy-control/
