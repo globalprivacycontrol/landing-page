@@ -21,6 +21,10 @@ entries:
     type: Downloadable
     isFeaturedIndex: 1
     inOrganizations: true
+  - name: Check My Ads
+    url: https://checkmyads.org/
+    img: /img/participating-logs/checkmyads.svg
+    type: Business
   - name: Complianz
     url: https://complianz.io/
     img: /img/participating-logos/complianz.svg
