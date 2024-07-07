@@ -10,7 +10,6 @@ export default function Navbar({ isLarge = false }) {
     <nav className={`${styles.navbar} navbar navbar-expand-md`}>
       <div className="navbar__logos">
         <Link href="/">
-
           <VisuallyHidden>Home</VisuallyHidden>
           <img
             className="d-lg-none"
@@ -19,14 +18,15 @@ export default function Navbar({ isLarge = false }) {
             id="hero-logo"
           />
           <img
-            className={`d-none d-lg-block ${isLarge ? styles.headerLogoLarge : styles.headerLogoSmall}`}
+            className={`d-none d-lg-block ${
+              isLarge ? styles.headerLogoLarge : styles.headerLogoSmall
+            }`}
             src={`${process.env.publicPrefix}/img/${
               isLarge ? 'gpc-logo.svg' : 'gpc-logo-small.svg'
             }`}
             alt="global privacy control logo"
             id="hero-logo"
           />
-
         </Link>
       </div>
 
@@ -91,8 +91,13 @@ function Links() {
         </Link>
       </li>
       <li className="nav-item">
+        <Link href="/GPC_for_Users.pdf" className="nav-link text-uppercase">
+          For Users
+        </Link>
+      </li>
+      <li className="nav-item">
         <Link href="/implementation" className="nav-link text-uppercase">
-          Implementation
+          For Implementers
         </Link>
       </li>
       <li className="nav-item">
