@@ -22,7 +22,7 @@ to install required packages. Then, to build and preview the site, run
 
 ```terminal
 npm run build
-npm run start
+npm run dev
 ```
 
 ## Getting Involved
