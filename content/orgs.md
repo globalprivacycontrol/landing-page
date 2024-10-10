@@ -78,6 +78,10 @@ entries:
     url: https://lockrmail.com/
     img: /img/download-logos/lockr.png
     type: Business
+  - name: Mee Foundation
+    url: https://mee.foundation/
+    img: /img/participating-logos/mee.svg
+    type: Downloadable
   - name: Meredith Digital
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
