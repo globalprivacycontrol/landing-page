@@ -74,6 +74,10 @@ entries:
     img: /img/participating-logos/firefox.svg
     browser_img: /img/browser-logos/firefox.svg
     type: Downloadable
+  - name: Ketch
+    url: https://www.ketch.com/platform/consent-management
+    img: /img/participating-logos/ketch.svg
+    type: Business
   - name: lockr
     url: https://lockrmail.com/
     img: /img/download-logos/lockr.png
