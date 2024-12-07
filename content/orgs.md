@@ -101,6 +101,10 @@ entries:
     url: https://www.onetrust.com/solutions/consent-management-platform/
     img: /img/participating-logos/onetrust.svg
     type: Business
+  - name: Optery
+    url: https://www.optery.com/the-optery-global-privacy-control-gpc-extension/
+    img: /img/participating-logos/optery.svg
+    type: Business
   - name: OptMeowt by privacy-tech-lab
     url: https://github.com/privacy-tech-lab/gpc-optmeowt
     img: /img/participating-logos/optmeowt.svg
