@@ -1,6 +1,10 @@
 ---
 title: Press & Announcements
 entries:
+  - datePublished: Jan. 27, 2025
+    contentUrl: https://www.adexchanger.com/data-privacy-roundup/if-youre-a-publisher-and-you-dont-know-what-a-uoom-is-then-read-this/
+    title: "If You’re A Publisher And You Don’t Know What A UOOM Is, Then Read This"
+    source: AdExchanger
   - datePublished: Mar 23, 2023
     contentUrl: https://www.badcredit.org/news/global-privacy-control-stops-companies-from-selling-online-information/
     title: "Global Privacy Control Boosts Online Privacy by Empowering Consumers with Proactive Protection"
