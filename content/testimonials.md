@@ -6,11 +6,11 @@ entries:
     img: /img/testimonial-imgs/becerra.jpg
     imgAlt: Picture of Xavier Becerra
     url: https://twitter.com/AGBecerra/status/1313884873413726208
-  - name: Roy Wyden
+  - name: Ron Wyden
     position: Senate Finance Chairman
     quote: 40 million consumers are now using web browsers and other privacy tools that support this global opt out. Major publishers, the New York Times, Washington Post, have already pledged to respect it. California's Attorney General has already said that companies must respect GPC. This is a big step in Americans privacy, a big, big step forward.
     img: /img/testimonial-imgs/wyden.png
-    imgAlt: Picture of Roy Wyden
+    imgAlt: Picture of Ron Wyden
     url: https://twitter.com/jason_kint/status/1369313187317878788?s=21
   - name: Mark R. Warner
     position: VA Senator
