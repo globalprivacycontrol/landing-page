@@ -84,8 +84,8 @@ entries:
     type: Business
   - name: Mee Foundation
     url: https://mee.foundation/
-    img: /img/participating-logos/mee.svg
-    type: Downloadable
+    img: /img/download-logos/mee.svg
+    type: Business
   - name: Meredith Digital
     url: https://www.meredith.com/
     img: /img/participating-logos/meredith.svg
