@@ -59,7 +59,7 @@ title: I’m a publisher, developer, or other service. How can I support GPC?
 
 The GPC spec is easy to implement on a wide variety of websites and other
 services. The proposed specification and back-end implementation reference
-documentation are available [here](https://global-privacy-control.glitch.me/).
+documentation are available [here](https://global-privacy-control.vercel.app/).
 For additional information, please feel free to reach out on Github or Twitter
 ([@globablprivctrl](https://twitter.com/globalprivctrl)).
 
