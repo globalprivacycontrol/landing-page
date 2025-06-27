@@ -259,7 +259,7 @@ export default function Home({
                 as="a"
                 variant="secondary"
                 className="d-block mt-4"
-                href="https://global-privacy-control.glitch.me/"
+                href="https://global-privacy-control.vercel.app/"
               >
                 Test against the reference server
               </Button>

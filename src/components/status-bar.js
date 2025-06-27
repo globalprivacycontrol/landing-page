@@ -39,7 +39,7 @@ export default function StatusBar() {
                   </span>
                   <span className={`${styles.statusCheck}`}>
                     Test against the
-                    <a href="https://global-privacy-control.glitch.me">
+                    <a href="https://global-privacy-control.vercel.app">
                       reference server
                     </a>
                     .
