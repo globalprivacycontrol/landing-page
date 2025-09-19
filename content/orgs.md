@@ -118,6 +118,10 @@ entries:
     img: /img/participating-logos/optmeowt.svg
     browser_img: /img/browser-logos/optmeowt.svg
     type: Downloadable
+  - name: Osano
+    url: https://www.osano.com/
+    img: /img/participating-logos/osano.svg
+    type: Business
   - name: Privacy Badger by EFF
     url: https://privacybadger.org/
     img: /img/participating-logos/privacybadger.svg
@@ -149,10 +153,6 @@ entries:
     img: /img/participating-logos/washington-post.svg
     type: Business
     isFeaturedIndex: 10
-  - name: WireWheel
-    url: https://www.wirewheel.io
-    img: /img/participating-logos/wirewheel.svg
-    type: Business
 ---
 
 The following organizations, representing 50 million users and hundreds of thousands of websites, are in support of GPC.
