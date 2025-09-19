@@ -41,7 +41,7 @@ Because the GPC is on a window-level object and on request headers, its presence
 the fastest way to handle decision-making around user privacy. GPC has been adopted
 by The Washington Post, The New York Times, and a variety of other publishers. It
 also is supported by a number of major Consent Management Platforms (CMPs),
-including OneTrust, SourcePoint, and WireWheel. GPC simplifies the process of user
+including OneTrust, SourcePoint, and Osano. GPC simplifies the process of user
 opt out. It does so without adding technical complexity that could slow ad execution.
 The ease of execution means that GPC is a positive development for helping sites
 follow CCPA regulations.
