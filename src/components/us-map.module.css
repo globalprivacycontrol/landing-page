@@ -1,0 +1,52 @@
+.mapWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  transform: translate(-50%, -120%);
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px auto 0;
+  width: fit-content;
+}
+
+.legendSwatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+}
+
+.mapContainer {
+  background: var(--bg-dark);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.state {
+  stroke: var(--text-dark);
+  stroke-width: 1px;
+  transition: fill 120ms ease-in-out, stroke 120ms ease-in-out;
+}
+
+.state:hover,
+.state:focus {
+  outline: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+}

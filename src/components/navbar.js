@@ -120,6 +120,11 @@ function Links() {
           FAQ
         </Link>
       </li>
+      <li className="nav-item">
+        <Link href="/map" className="nav-link text-uppercase">
+          Map
+        </Link>
+      </li>
     </ul>
   );
 }
