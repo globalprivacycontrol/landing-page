@@ -33,7 +33,7 @@
 }
 
 .mapContainer {
-  background: var(--bg-dark);
+  background: #ffffff;
   border-radius: 8px;
   padding: 12px;
 }
@@ -47,6 +47,6 @@
 .state:hover,
 .state:focus {
   outline: none;
-  stroke: #ffffff;
+  stroke: #000000;
   stroke-width: 2px;
 }

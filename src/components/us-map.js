@@ -7,7 +7,7 @@ import { getStateGpcInfo, getStateCodeByName } from '../utils/state-gpc-data';
 const US_TOPO_JSON = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json';
 
 const ACTIVE_FILL = 'var(--text-bright-green)';
-const INACTIVE_FILL = 'var(--primary-bg)';
+const INACTIVE_FILL = '#d6d6d6';
 
 export default function USMap({ height = 520 }) {
   const [hoverInfo, setHoverInfo] = useState(null);
