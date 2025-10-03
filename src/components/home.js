@@ -130,8 +130,11 @@ export default function Home({
                 />
                 <div className="card-body">
                   <h2 className="card-title">
-                    Turn On <abbr title="Global Privacy Control">GPC</abbr>
+                    <Link href="/#download" passHref legacyBehavior>
+                      Turn On GPC
+                    </Link>
                   </h2>
+
                   <p className="card-text">
                     Enable Global Privacy Control to communicate your privacy
                     preference.
@@ -152,9 +155,7 @@ export default function Home({
                 <div className="card-body">
                   <h2 className="card-title">Send the Signal</h2>
                   <p className="card-text">
-                    Your browser will send the{' '}
-                    <abbr title="Global Privacy Control">GPC</abbr> signal to
-                    websites you visit.
+                    Your browser will send the GPC signal to websites you visit.
                   </p>
                 </div>
               </div>
@@ -203,16 +204,17 @@ export default function Home({
                   </p>
                   <p>
                     Now you can exercise your legal privacy rights in one step
-                    via Global Privacy Control (
-                    <abbr title="Global Privacy Control">GPC</abbr>), required
-                    under state privacy laws such as the California Consumer
-                    Privacy Act (CCPA).
+                    via <a href="#download">Global Privacy Control (GPC)</a>,
+                    required under state privacy laws such as the California
+                    Consumer Privacy Act (CCPA).
                   </p>
 
                   <p className="font-weight-bolder">
                     Together, over a dozen organizations are developing the{' '}
-                    <abbr title="Global Privacy Control">GPC</abbr>{' '}
-                    specification.{' '}
+                    <a href="https://w3c.github.io/gpc/">
+                      <u>GPC specification</u>
+                    </a>
+                    .{' '}
                     <a href="#contact">
                       <u>Get Involved</u>
                     </a>
@@ -233,14 +235,13 @@ export default function Home({
           <div className="row">
             <div className="col-12 col-lg-5">
               <h2 className={styles.sectionTitle}>
-                <abbr title="Global Privacy Control">GPC</abbr> lets users
-                signal their desired privacy, just by browsing.
+                GPC lets users signal their desired privacy, just by browsing.
               </h2>
 
               <div className={styles.sectionText}>
                 <p>
-                  <abbr title="Global Privacy Control">GPC</abbr> is available
-                  as part of several major browsers, extensions, and websites.
+                  GPC is available as part of several major browsers,
+                  extensions, and websites.
                 </p>
               </div>
 
@@ -249,7 +250,7 @@ export default function Home({
                   as="a"
                   variant="primary"
                   className="d-block"
-                  href="https://privacycg.github.io/gpc-spec/"
+                  href="https://w3c.github.io/gpc/"
                 >
                   View Full Spec
                 </Button>
@@ -447,7 +448,7 @@ export default function Home({
           <div className="d-flex justify-content-center mt-5">
             <Link href="/faq" passHref legacyBehavior>
               <Button as="a" variant="primary" className={styles.bottomButton}>
-                View All <abbr title="frequently asked questions">FAQ</abbr>
+                View All FAQ
                 <span style={{ textTransform: 'lowercase' }}>s</span>
               </Button>
             </Link>

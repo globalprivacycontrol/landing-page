@@ -25,8 +25,8 @@ browser vendors, extension developers, academics, and
 civil rights organizations.
 
 The GPC was initially spearheaded by [Ashkan
-Soltani](https://twitter.com/ashk4n) [Georgetown
-Law](https://www.georgetowntech.org/) and [Sebastian
+Soltani](https://twitter.com/ashk4n) ([Georgetown
+Law](https://www.georgetowntech.org/)) and [Sebastian
 Zimmeck](https://twitter.com/SZimmeck) ([Wesleyan
 University](https://www.wesleyan.edu/)) in collaboration with [The New York
 Times](https://www.nytimes.com), [The Washington
@@ -47,10 +47,11 @@ title: I’m a web user. How can I use GPC to signal my privacy preferences to w
 ---
 
 GPC is available for an increasing number of browsers and browser extensions,
-listed [here](https://globalprivacycontrol.org/#download). If you want to use
-GPC, you can download and enable it via a participating browser or browser
-extension. More information about downloading GPC is available
-[here](https://globalprivacycontrol.org/).
+listed [here](https://globalprivacycontrol.org/#download). If you want to use GPC,
+you can download and enable it via a participating browser or browser
+extension ([User Guide](/GPC_for_Users.pdf)). Several browsers support GPC natively, including Brave and DuckDuckGo
+(on by default) and Firefox (available in settings). More information about downloading
+GPC is available [here](https://globalprivacycontrol.org/orgs).
 
 ---Publisher
 title: I’m a publisher, developer, or other service. How can I support GPC?
@@ -60,6 +61,7 @@ title: I’m a publisher, developer, or other service. How can I support GPC?
 The GPC spec is easy to implement on a wide variety of websites and other
 services. The proposed specification and back-end implementation reference
 documentation are available [here](https://global-privacy-control.vercel.app/).
+Follow the [publisher guide](/implementation) to learn how to implement GPC.
 For additional information, please feel free to reach out on Github or Twitter
 ([@globablprivctrl](https://twitter.com/globalprivctrl)).
 
@@ -155,7 +157,7 @@ substantial damage or substantial distress to the individual or to another
 individual.”
 
 Additional information is available in the [proposed
-specification](https://privacycg.github.io/gpc-spec/).
+specification](https://w3c.github.io/gpc/).
 
 ---DND
 title: Why not just use Do Not Track (DNT)?
@@ -202,7 +204,7 @@ title: What if there is a conflict between a GPC signal and a user-selected priv
 Some jurisdictions allow businesses to sell user data when there is a conflict
 between global and site-specific preferences — for instance, if a user has
 provided specific permission to a website to sell their data. The [CCPA
-Regulations](https://privacycg.github.io/gpc-spec/#bib-ccpa-regulations)
+Regulations](https://w3c.github.io/gpc/#bib-ccpa-regulations)
 §999.315(c)(2) state that when a GPC signal conflicts with the existing privacy
 settings a consumer has with the business, the business shall respect the GPC
 signal but may notify the consumer of the conflict and give the consumer an
@@ -237,3 +239,10 @@ of a privacy-focused browser to imply a GPC preference, such as under the CCPA
 control […] including when utilizing privacy-by-design products or
 services_"), while regulations in another jurisdiction may require explicit
 consent from the user to send a GPC signal.
+
+---StateCompliance
+title: How many states require compliance with GPC?
+
+---
+
+As of Jaunary 15, 2025, four states — California, Colorado, Connecticut, and New Jersey — have explicitly issued guidance stating that GPC must be interpreted as a legally binding opt-out request under their privacy laws. Additionally, another eight states’ privacy laws state that consumers are entitled to exercise opt-out rights through universal opt-out mechanisms. For more information, see the [Legal and Implementation Considerations Guide](/implementation)
