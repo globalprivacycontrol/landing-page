@@ -81,15 +81,7 @@ title: How can I get involved in developing the proposed specification?
 
 ---
 
-GPC was initially introduced at the World Wide Web Consortium (W3C) [Privacy
-Community Group](https://privacycg.github.io/) (Privacy CG) in April 2020. A
-number of stakeholders are part of that community. There are ongoing
-discussions in the Privacy CG. Interested parties are encouraged to engage with
-the proposal [here](https://github.com/privacycg/proposals/issues/10/).
-
-Additionally, GPC is currently being implemented across the web. A number of
-browsers, extensions, and publishers are supporting or implementing GPC (see
-below).
+GPC was initially introduced at the World Wide Web Consortium (W3C) Privacy Community Group (Privacy CG) in April 2020. In October 2024, GPC was adopted as an official work item of the W3C Privacy Working Group where it is currently in the process of being standardized. Anyone can raise issues or submit pull requests to the GPC spec [here](https://w3c.github.io/gpc/) as part of the standardization process.
 
 ---Benefit
 title: How does GPC benefit consumers, publishers, software makers, and advertisers?

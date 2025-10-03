@@ -1,5 +1,5 @@
 ---
-title: Join over 50 million users.
+title: Join over 150 million users.
 entries:
   - name: Abine DeleteMe
     url: https://joindeleteme.com/blog/how-to-enable-global-privacy-control/
