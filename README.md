@@ -38,7 +38,7 @@ Apart from any logos or marks that may be contained in this repo, this work is l
 
 ## Resources
 
-- Read [proposed specification](https://privacycg.github.io/gpc-spec/) for technical details
+- Read [proposed specification](https://w3c.github.io/gpc/) for technical details
 - Visit [test site](https://global-privacy-control.vercel.app) to learn how to interact with the GPC signal
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/

@@ -1,5 +1,5 @@
 ---
-title: Join over 50 million users.
+title: Join over 150 million users.
 entries:
   - name: Abine DeleteMe
     url: https://joindeleteme.com/blog/how-to-enable-global-privacy-control/
@@ -27,4 +27,4 @@ entries:
     img: /img/download-logos/lockr.png
 ---
 
-Download a supported browser or extension and start exercising your privacy rights with GPC.
+Download a supported browser or extension and start exercising your privacy rights on over 66,000 websites with GPC.

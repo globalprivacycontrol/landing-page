@@ -84,17 +84,16 @@ export default function Layout({
               <h1>Get Involved</h1>
 
               <p>
-                Contact us to learn more about supporting{' '}
-                <abbr title="Global Privacy Control">GPC</abbr> in your browser,
+                Contact us to learn more about supporting GPC in your browser,
                 app, or website.
               </p>
-               <p>
-                <a
-                  href="https://twitter.com/globalprivctrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  @globalprivctrl
+              <p>
+                <a href="mailto:info@globalprivacycontrol.org">
+                  info@globalprivacycontrol.org
+                </a>
+                <br />
+                <a href="https://github.com/w3c/gpc" target="_blank">
+                  W3C Github
                 </a>
               </p>
             </div>
