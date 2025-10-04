@@ -88,12 +88,12 @@ export default function Layout({
                 app, or website.
               </p>
               <p>
-                <a
-                  href="https://twitter.com/globalprivctrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  @globalprivctrl
+                <a href="mailto:info@globalprivacycontrol.org">
+                  info@globalprivacycontrol.org
+                </a>
+                <br />
+                <a href="https://github.com/w3c/gpc" target="_blank">
+                  W3C Github
                 </a>
               </p>
             </div>
