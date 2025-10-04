@@ -27,4 +27,4 @@ entries:
     img: /img/download-logos/lockr.png
 ---
 
-Download a supported browser or extension and start exercising your privacy rights with GPC.
+Download a supported browser or extension and start exercising your privacy rights on over 66,000 websites with GPC.
