@@ -92,7 +92,11 @@ export default function Layout({
                   info@globalprivacycontrol.org
                 </a>
                 <br />
-                <a href="https://github.com/w3c/gpc" target="_blank">
+                <a
+                  href="https://github.com/w3c/gpc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   W3C Github
                 </a>
               </p>

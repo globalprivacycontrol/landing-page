@@ -9,7 +9,7 @@ export default function Navbar({ isLarge = false }) {
   return (
     <nav className={`${styles.navbar} navbar navbar-expand-md`}>
       <div className="navbar__logos">
-        <Link href="/">
+        <Link href="/" passHref>
           <VisuallyHidden>Home</VisuallyHidden>
           <img
             className="d-lg-none"
