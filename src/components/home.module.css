@@ -182,6 +182,13 @@
     font-size: calc(30 * var(--px-in-rem));
     font-weight: 900;
     line-height: calc(36 * var(--px-in-rem));
+    & a {
+      color: var(--text-dark);
+      text-decoration: underline;
+      &:hover {
+        color: var(--text-bright-green);
+      }
+    }
   }
 
   & p {
@@ -284,7 +291,6 @@
     width: 100%;
   }
 }
-
 
 .carouselWrapper {
   padding: 40px;
