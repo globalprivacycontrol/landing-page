@@ -184,6 +184,7 @@
     line-height: calc(36 * var(--px-in-rem));
     & a {
       color: var(--text-dark);
+      text-decoration: underline;
       &:hover {
         color: var(--text-bright-green);
       }
