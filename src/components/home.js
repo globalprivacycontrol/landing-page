@@ -155,7 +155,8 @@ export default function Home({
                 <div className="card-body">
                   <h2 className="card-title">Send the Signal</h2>
                   <p className="card-text">
-                    Your browser will send the GPC signal to websites you visit.
+                    Your browser or app will send the GPC signal across the web
+                    and supported mobile and smart platforms.
                   </p>
                 </div>
               </div>
@@ -241,7 +242,9 @@ export default function Home({
               <div className={styles.sectionText}>
                 <p>
                   GPC is available as part of several major browsers,
-                  extensions, and websites.
+                  extensions, apps, and websites, and applies regardless of the
+                  tracking technology used (e.g., cookies, device identifiers,
+                  or fingerprinting).
                 </p>
               </div>
 

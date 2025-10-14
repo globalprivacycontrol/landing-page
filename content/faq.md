@@ -14,6 +14,11 @@ consists of a setting or extension in the user’s browser or mobile device and
 acts as a mechanism that websites can use to indicate they support the
 specification.
 
+GPC is technology-agnostic and applies across platforms, including mobile and
+smart platforms (for example, apps, smart TVs, and other connected devices).
+It is not limited to any one tracking technology and covers mechanisms such as
+cookies, local storage, pixels, device identifiers, and device fingerprinting.
+
 ---WhoIsGPC
 title: Who is supporting the development of GPC?
 
