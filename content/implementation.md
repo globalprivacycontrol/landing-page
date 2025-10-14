@@ -8,7 +8,7 @@ title: What is GPC?
 ---
 
 GPC is a way users can universally express, to all sites, their preference not
-to be tracked across the web and other connected platforms. It is a
+to be tracked across the web and other web-based platforms. It is a
 technology-agnostic signal, maintained by a browser, extension, app, or other
 privacy-focused technology on devices including mobile and smart platforms. A
 site or service can detect and honor the signal regardless of the underlying
