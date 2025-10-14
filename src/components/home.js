@@ -274,10 +274,12 @@ export default function Home({
                   Share request under the California Consumer Privacy Act, and
                   similar state privacy laws that allow users to opt out of data
                   sales or the use of their data for cross-context targeted
-                  advertising. Under the GDPR, the intent of the GPC signal is
-                  to convey a general request that data controllers limit the
-                  sale or sharing of the user’s personal data to other data
-                  controllers (
+                  advertising. Under the GDPR and other opt-in consent
+                  frameworks, the intent of the GPC signal is to convey a lack
+                  of consent or an objection to data processing, such as a
+                  general request that data controllers limit the sale or
+                  sharing of the user's personal data to other data controllers
+                  (
                   <a
                     className="font-weight-bold"
                     href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679"

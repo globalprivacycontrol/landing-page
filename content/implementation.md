@@ -25,6 +25,14 @@ use it as a tool to limit certain data sharing in only some jurisdictions. GPC
 is intended to apply to a wide range of tracking and data-sharing practices,
 including (but not limited to) cookies, local storage, pixel beacons, device
 identifiers, and device fingerprinting techniques.
+
+GPC is designed to work flexibly across different regulatory frameworks. In
+opt-out jurisdictions (such as under CCPA and similar U.S. state laws), GPC
+serves as a user's request to opt out of data sales or sharing. In opt-in
+jurisdictions, GPC can indicate a lack of consent or an objection to certain
+data processing activities. This versatility enables GPC to function as a
+universal privacy signal across diverse legal contexts.
+
 Regardless of such use, it is now recognized as a way to express Do Not Sell
 preference under the CCPA. [GPC](https://berjon.com/gpc-under-the-gdpr/) may
 also have legal effects under other legal regimes, including in Europe under the
