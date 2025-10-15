@@ -287,7 +287,8 @@ export default function Home({
                     <u>GDPR Articles 7 & 21</u>
                   </a>
                   ). The GPC may also invoke other compatible rights in other
-                  jurisdictions.
+                  jurisdictions. The precise legal meaning and effect of GPC is
+                  determined by applicable regulators in each jurisdiction.
                 </small>
               </p>
             </div>

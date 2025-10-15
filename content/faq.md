@@ -113,7 +113,9 @@ GPC is intended to serve as an expression of users’ intent to
 invoke their online privacy rights. Depending on the jurisdiction
 and applicable laws, a user’s expression through GPC may have
 legal impact. However, GPC on its own does not create any
-legally binding obligations.
+legally binding obligations. The precise meaning and legal effect
+of GPC in any given jurisdiction is ultimately determined by the
+applicable regulators in that jurisdiction.
 
 GPC may impact existing law in several ways: In California, Section 1798.135(c)
 of the [California Consumer Privacy Act

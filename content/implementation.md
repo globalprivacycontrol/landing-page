@@ -19,12 +19,14 @@ a coalition of advocates, academics, and companies to allow users to exercise
 new rights to opt out of data sharing at scale.
 
 Sites that detect GPC may interpret the signal in a variety of ways depending
-on their interpretation of the privacy laws applicable to the site. Some sites
-use GPC to turn off all third party user tracking regardless of location, others
-use it as a tool to limit certain data sharing in only some jurisdictions. GPC
-is intended to apply to a wide range of tracking and data-sharing practices,
-including (but not limited to) cookies, local storage, pixel beacons, device
-identifiers, and device fingerprinting techniques.
+on their interpretation of the privacy laws applicable to the site. The precise
+meaning and legal effect of GPC in any jurisdiction is ultimately determined by
+the applicable regulators in that jurisdiction. Some sites use GPC to turn off
+all third party user tracking regardless of location, others use it as a tool
+to limit certain data sharing in only some jurisdictions. GPC is intended to
+apply to a wide range of tracking and data-sharing practices, including (but
+not limited to) cookies, local storage, pixel beacons, device identifiers, and
+device fingerprinting techniques.
 
 GPC is designed to work flexibly across different regulatory frameworks. In
 opt-out jurisdictions (such as under CCPA and similar U.S. state laws), GPC
