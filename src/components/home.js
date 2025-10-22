@@ -155,7 +155,8 @@ export default function Home({
                 <div className="card-body">
                   <h2 className="card-title">Send the Signal</h2>
                   <p className="card-text">
-                    Your browser will send the GPC signal to websites you visit.
+                    Your browser or app will send the GPC signal across the web
+                    and supported mobile and smart platforms.
                   </p>
                 </div>
               </div>
@@ -241,7 +242,9 @@ export default function Home({
               <div className={styles.sectionText}>
                 <p>
                   GPC is available as part of several major browsers,
-                  extensions, and websites.
+                  extensions, apps, and websites, and applies regardless of the
+                  tracking technology used (e.g., cookies, device identifiers,
+                  or fingerprinting).
                 </p>
               </div>
 
@@ -271,10 +274,12 @@ export default function Home({
                   Share request under the California Consumer Privacy Act, and
                   similar state privacy laws that allow users to opt out of data
                   sales or the use of their data for cross-context targeted
-                  advertising. Under the GDPR, the intent of the GPC signal is
-                  to convey a general request that data controllers limit the
-                  sale or sharing of the user’s personal data to other data
-                  controllers (
+                  advertising. Under the GDPR and other opt-in consent
+                  frameworks, the intent of the GPC signal is to convey a lack
+                  of consent or an objection to data processing, such as a
+                  general request that data controllers limit the sale or
+                  sharing of the user's personal data to other data controllers
+                  (
                   <a
                     className="font-weight-bold"
                     href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679"
@@ -282,7 +287,8 @@ export default function Home({
                     <u>GDPR Articles 7 & 21</u>
                   </a>
                   ). The GPC may also invoke other compatible rights in other
-                  jurisdictions.
+                  jurisdictions. The precise legal meaning and effect of GPC is
+                  determined by applicable regulators in each jurisdiction.
                 </small>
               </p>
             </div>

@@ -8,17 +8,33 @@ title: What is GPC?
 ---
 
 GPC is a way users can universally express, to all sites, their preference not
-to be tracked on the web. It is a browser-level signal, maintained either by a
-browser or browser extension, that a user or privacy-focused technology can set.
+to be tracked across the web and other web-based platforms. It is a
+technology-agnostic signal, maintained by a browser, extension, app, or other
+privacy-focused technology on devices including mobile and smart platforms. A
+site or service can detect and honor the signal regardless of the underlying
+tracking technology in use.
 The easiest way to think of GPC is as a robot that selects the Do Not Sell
 preference on a site on behalf of a user. The open source tool was developed by
 a coalition of advocates, academics, and companies to allow users to exercise
 new rights to opt out of data sharing at scale.
 
 Sites that detect GPC may interpret the signal in a variety of ways depending
-on their interpretation of the privacy laws applicable to the site. Some sites
-use GPC to turn off all third party user tracking regardless of location, others
-use it as a tool to limit certain data sharing in only some jurisdictions.
+on their interpretation of the privacy laws applicable to the site. The precise
+meaning and legal effect of GPC in any jurisdiction is ultimately determined by
+the applicable regulators in that jurisdiction. Some sites use GPC to turn off
+all third party user tracking regardless of location, others use it as a tool
+to limit certain data sharing in only some jurisdictions. GPC is intended to
+apply to a wide range of tracking and data-sharing practices, including (but
+not limited to) cookies, local storage, pixel beacons, device identifiers, and
+device fingerprinting techniques.
+
+GPC is designed to work flexibly across different regulatory frameworks. In
+opt-out jurisdictions (such as under CCPA and similar U.S. state laws), GPC
+serves as a user's request to opt out of data sales or sharing. In opt-in
+jurisdictions, GPC can indicate a lack of consent or an objection to certain
+data processing activities. This versatility enables GPC to function as a
+universal privacy signal across diverse legal contexts.
+
 Regardless of such use, it is now recognized as a way to express Do Not Sell
 preference under the CCPA. [GPC](https://berjon.com/gpc-under-the-gdpr/) may
 also have legal effects under other legal regimes, including in Europe under the

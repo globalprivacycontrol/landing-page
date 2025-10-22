@@ -14,6 +14,11 @@ consists of a setting or extension in the user’s browser or mobile device and
 acts as a mechanism that websites can use to indicate they support the
 specification.
 
+GPC is technology-agnostic and applies to all web-based platforms, including mobile and
+smart platforms (for example, apps, smart TVs, and other connected devices).
+It is not limited to any one tracking technology and covers mechanisms such as
+cookies, local storage, pixels, device identifiers, and device fingerprinting.
+
 ---WhoIsGPC
 title: Who is supporting the development of GPC?
 
@@ -108,7 +113,9 @@ GPC is intended to serve as an expression of users’ intent to
 invoke their online privacy rights. Depending on the jurisdiction
 and applicable laws, a user’s expression through GPC may have
 legal impact. However, GPC on its own does not create any
-legally binding obligations.
+legally binding obligations. The precise meaning and legal effect
+of GPC in any given jurisdiction is ultimately determined by the
+applicable regulators in that jurisdiction.
 
 GPC may impact existing law in several ways: In California, Section 1798.135(c)
 of the [California Consumer Privacy Act
