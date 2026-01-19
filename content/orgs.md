@@ -96,6 +96,13 @@ entries:
     img: /img/participating-logos/mozilla.svg
     type: Business
     isFeaturedIndex: 1
+  - name: NAI
+    url: https://thenai.org/the-nai-releases-new-gpc-browser-extension/
+    img: /img/participating-logos/nai.svg
+    browser_img: /img/browser-logos/nai.svg
+    type: Downloadable
+    isFeaturedIndex: 12
+    inOrganizations: true
   - name: National Science Foundation
     url: https://www.nsf.gov/
     img: /img/participating-logos/nsf.svg
