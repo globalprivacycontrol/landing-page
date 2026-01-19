@@ -1,6 +1,10 @@
 ---
 title: Press & Announcements
 entries:
+  - datePublished: Oct 7, 2025
+    contentUrl: https://iapp.org/news/a/california-governor-signs-new-law-requiring-in-browser-opt-out-preference-signal
+    title: "California governor signs law requiring in-browser opt-out preference signal"
+    source: IAPP
   - datePublished: Sep 30, 2025
     contentUrl: https://cppa.ca.gov/announcements/2025/20250930.html
     title: "Nation's Largest Rural Lifestyle Retailer to Pay $1.35M Over CCPA Violations"
