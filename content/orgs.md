@@ -136,6 +136,12 @@ entries:
     img: /img/participating-logos/raptive.svg
     type: Business
     isFeaturedIndex: 12
+  - name: Rewarded Interest
+    url: https://rewardedinterest.com/?utm_source=gpcorg-orgs
+    img: /img/participating-logos/rewardedinterest.svg
+    browser_img: /img/browser-logos/rewardedinterest.svg
+    inOrganizations: true
+    type: Downloadable
   - name: SourcePoint
     url: https://www.sourcepoint.com/
     img: /img/participating-logos/sourcepoint.svg
