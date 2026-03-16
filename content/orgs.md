@@ -14,6 +14,10 @@ entries:
     img: /img/participating-logos/automattic.svg
     type: Business
     isFeaturedIndex: 1
+  - name: Axeptio
+    url: https://www.axept.io/
+    img: /img/participating-logos/axeptio.svg
+    type: Business
   - name: Brave Software
     url: https://brave.com/global-privacy-content/
     img: /img/participating-logos/brave.svg
