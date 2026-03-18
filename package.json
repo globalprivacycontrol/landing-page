@@ -76,5 +76,8 @@
     "eslint-config-prettier": "^8.4.0",
     "prettier": "^2.5.1",
     "prop-types": "^15.8.1"
+  },
+  "overrides": {
+    "minimatch": "^3.1.4"
   }
 }
