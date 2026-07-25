@@ -38,6 +38,10 @@ entries:
     img: /img/participating-logos/cr.svg
     type: Business
     isFeaturedIndex: 1
+  - name: DataGrail
+    url: https://datagrail.io
+    img: /img/participating-logos/datagrail.svg
+    type: Business
   - name: Didomi
     url: https://www.didomi.io/
     img: /img/participating-logos/didomi.png
