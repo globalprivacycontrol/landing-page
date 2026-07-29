@@ -1,9 +1,6 @@
 ---
 title: Join over 150 million users.
 entries:
-  - name: Abine DeleteMe
-    url: https://joindeleteme.com/blog/how-to-enable-global-privacy-control/
-    img: /img/download-logos/abine.png
   - name: Brave Browser
     url: https://brave.com/web-standards-at-brave/4-global-privacy-control/
     img: /img/download-logos/brave.png
