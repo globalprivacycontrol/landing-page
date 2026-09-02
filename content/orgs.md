@@ -152,6 +152,10 @@ entries:
     url: https://trustarc.com/resource/global-privacy-control/
     img: /img/participating-logos/trustarc.svg
     type: Business
+  - name: UniConsent
+    url: https://www.uniconsent.com/
+    img: /img/participating-logos/uniconsent.svg
+    type: Business
   - name: Wesleyan University
     url: https://wesleyan.edu/
     img: /img/participating-logos/wesleyan.svg
